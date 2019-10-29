@@ -29,6 +29,17 @@
                     "filepath": "D:\\YO\\YOFarms\\nativebindings\\iOS\\11.0\\Kony_SDKCommons-iOS-11.0.zip",
                     "enable": true
                 }
+            },
+            "10.0": {
+                "Kony_SyncV2-iOS-10.0": {
+                    "title": "Kony_SyncV2",
+                    "platform": "iOS",
+                    "os": "10.0",
+                    "isDefault": true,
+                    "url": "D:\\YO\\.imports\\.temp\\import905622698\\nativebindings\\iOS\\10.0\\Kony_SyncV2-iOS-10.0.zip",
+                    "filepath": "D:\\YO\\YOFarms\\nativebindings\\iOS\\10.0\\Kony_SyncV2-iOS-10.0.zip",
+                    "enable": true
+                }
             }
         },
         "Android": {

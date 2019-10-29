@@ -1,0 +1,16 @@
+{
+  "android": {
+    "background_color": "00000000",
+    "bg_type": "one",
+    "isForked": true
+  },
+  "background_color": "00000000",
+  "bg_type": "one",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 1,
+  "isDefaultSkin": false,
+  "kuid": "sab1eb3ce3274d6f8238e91179071343",
+  "wType": "FlexContainer"
+}

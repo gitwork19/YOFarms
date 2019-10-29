@@ -1,0 +1,220 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "45%"
+    },
+    "_indicator_": "none",
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "8dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "counter": "03",
+    "desktop": {
+        "_data_": [
+            {
+                "imgMenuItem": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "slider_menu_leads.png"
+                },
+                "lblMenuItem": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Leads"
+                }
+            },
+            {
+                "imgMenuItem": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "slider_menu_accounts.png"
+                },
+                "lblMenuItem": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Accounts"
+                }
+            },
+            {
+                "imgMenuItem": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "slider_menu_contacts.png"
+                },
+                "lblMenuItem": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Contacts"
+                }
+            },
+            {
+                "imgMenuItem": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "slider_menu_users.png"
+                },
+                "lblMenuItem": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Users"
+                }
+            }
+        ],
+        "rowTemplateId": "i65bb011ee0a4803bd86871dcc47924e",
+        "rowtemplate": "flxkonympssmmenuitemtempdw",
+        "widgetdatamap": {
+            "flxkonympssmmenuitemtempdw": "flxkonympssmmenuitemtempdw",
+            "imgMenuItem": "imgMenuItem",
+            "lblMenuItem": "lblMenuItem"
+        }
+    },
+    "editstyle": "none",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "hiddencolumns": {},
+    "id": "segMenu",
+    "ide_onRowClick": "AS_Segment_b5ebd21f20924581abe115c570994e83",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "editStyle": "none",
+            "indicator": "none",
+            "showProgressIndicator": false
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a959cd1068db4d7ab0e17791fa5da789",
+    "masterdata": {},
+    "mobile": {
+        "_data_": [
+            {
+                "imgMenuItem": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "slider_menu_leads.png"
+                },
+                "lblMenuItem": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Leads"
+                }
+            },
+            {
+                "imgMenuItem": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "slider_menu_accounts.png"
+                },
+                "lblMenuItem": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Accounts"
+                }
+            },
+            {
+                "imgMenuItem": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "slider_menu_contacts.png"
+                },
+                "lblMenuItem": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Contacts"
+                }
+            },
+            {
+                "imgMenuItem": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "slider_menu_users.png"
+                },
+                "lblMenuItem": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Users"
+                }
+            }
+        ],
+        "rowTemplateId": "g9621998350e41ec9c6c035ddb828e37",
+        "rowtemplate": "flxKonyMpssmmenuitem",
+        "sectionHeaderTemplateId": null,
+        "widgetdatamap": {
+            "flxKonyMpssmmenuitem": "flxKonyMpssmmenuitem",
+            "imgMenuItem": "imgMenuItem",
+            "lblMenuItem": "lblMenuItem"
+        }
+    },
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxHamMenu",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowcounter": 3,
+    "rowfocusskin": "s0994135919649e88ef9d11cfeb875ab",
+    "rowskin": "s6dffc5521214576b1cfa862d9f9a3b6",
+    "rowtemplate": "CopyflxKonyMpssmmenuitem",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "sdb6158af3954658964b2effcf257d37",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": false,
+    "separatorthickness": 1,
+    "showprogressindicator": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxkonympssmmenuitemtempdw": "flxkonympssmmenuitemtempdw",
+        "imgMenuItem": "imgMenuItem",
+        "lblMenuItem": "lblMenuItem"
+    },
+    "zindex": 1
+}

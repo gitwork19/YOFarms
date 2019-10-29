@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s37c1f244ca94829979f5494d276e274",
+    "_text_": "<html>\n<body>\n\n<p><font color=\"#E7AE1F\"> &#9632;</font> Paid Amount &emsp;&emsp;<font color=\"#029372\"> &#9632;</font>Paid Customer&emsp;&emsp; <font color=\"#373737\"> &#9632;</font> Due</p>\n</body>\n</html>",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "RichText0bb577b4bf5b64a",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "eb3cfa8e172a466bbc61b66bb85f9bfb",
+    "linkskin": "scdde3de7944443485cd988c1c1a5b6e",
+    "name": "kony.ui.RichText",
+    "parent": "FlexContainer0a3e882ae966a49",
+    "pf": "frmDashboard",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

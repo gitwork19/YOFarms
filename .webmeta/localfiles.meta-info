@@ -1,9 +1,75 @@
 {
     "HEAD": "w2eeb1db953548b59882bdf39599b444",
+    "w169c04a944a40da8c24c7d8f43801bc": {
+        "extension": "css",
+        "kuid": "w169c04a944a40da8c24c7d8f43801bc",
+        "name": "chartitst.css",
+        "parent": "waeefd68a7b64a049424c0e2f66f21b7",
+        "type": "F"
+    },
+    "w17555540f5644479d7ff6cc1f823e6a": {
+        "extension": "js",
+        "kuid": "w17555540f5644479d7ff6cc1f823e6a",
+        "name": "chartist.js",
+        "parent": "waeefd68a7b64a049424c0e2f66f21b7",
+        "type": "F"
+    },
     "w2eeb1db953548b59882bdf39599b444": {
-        "children": [],
+        "children": [
+            "waeefd68a7b64a049424c0e2f66f21b7"
+        ],
         "kuid": "w2eeb1db953548b59882bdf39599b444",
         "name": "localfiles",
         "type": "L"
+    },
+    "w571d7c0401a4db1a78d1a8b2e68f6dd": {
+        "extension": "html",
+        "kuid": "w571d7c0401a4db1a78d1a8b2e68f6dd",
+        "name": "donut.html",
+        "parent": "waeefd68a7b64a049424c0e2f66f21b7",
+        "type": "F"
+    },
+    "w69be6900f77411daa65eeb10e4765a8": {
+        "extension": "js",
+        "kuid": "w69be6900f77411daa65eeb10e4765a8",
+        "name": "chartist-plugin-axistitle.js",
+        "parent": "waeefd68a7b64a049424c0e2f66f21b7",
+        "type": "F"
+    },
+    "w8f979334d4144a7854ba2e7b85ccbc1": {
+        "extension": "js",
+        "kuid": "w8f979334d4144a7854ba2e7b85ccbc1",
+        "name": "LIC.js",
+        "parent": "waeefd68a7b64a049424c0e2f66f21b7",
+        "type": "F"
+    },
+    "waeefd68a7b64a049424c0e2f66f21b7": {
+        "children": [
+            "w69be6900f77411daa65eeb10e4765a8",
+            "w17555540f5644479d7ff6cc1f823e6a",
+            "wfd31ec898b44adfa339e4dc9afcb52e",
+            "w169c04a944a40da8c24c7d8f43801bc",
+            "w571d7c0401a4db1a78d1a8b2e68f6dd",
+            "wdd589baa7a047ef92f94e84164e0f21",
+            "w8f979334d4144a7854ba2e7b85ccbc1"
+        ],
+        "kuid": "waeefd68a7b64a049424c0e2f66f21b7",
+        "name": "Chart_donut",
+        "parent": "w2eeb1db953548b59882bdf39599b444",
+        "type": "D"
+    },
+    "wdd589baa7a047ef92f94e84164e0f21": {
+        "extension": "js",
+        "kuid": "wdd589baa7a047ef92f94e84164e0f21",
+        "name": "donut_chartist.js",
+        "parent": "waeefd68a7b64a049424c0e2f66f21b7",
+        "type": "F"
+    },
+    "wfd31ec898b44adfa339e4dc9afcb52e": {
+        "extension": "js",
+        "kuid": "wfd31ec898b44adfa339e4dc9afcb52e",
+        "name": "chartistlegend.js",
+        "parent": "waeefd68a7b64a049424c0e2f66f21b7",
+        "type": "F"
     }
 }

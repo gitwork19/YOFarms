@@ -1,0 +1,237 @@
+{
+    "classname": "hamburgerMenu",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "c49e4f0987cd4eb6b8dd0a460408c29e",
+                    "paramList": [
+                        {
+                            "name": "isVisible"
+                        }
+                    ],
+                    "propertyKey": "setMenuVisibility",
+                    "pw": {
+                        "displayName": "setMenuVisibility",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d011116df79f476f8482a846515be4af",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a4938074b16942da8b835a29223144e1",
+                    "paramList": [
+                        {
+                            "name": "formReference"
+                        }
+                    ],
+                    "propertyKey": "setMenuZIndex",
+                    "pw": {
+                        "displayName": "setMenuZIndex",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d011116df79f476f8482a846515be4af",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "d7d4d7a0510d4bcf98b6c8f05cbca6a5",
+                    "paramList": [
+                        {
+                            "name": "menuItemObject"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onMenuItemClick",
+                    "pw": {
+                        "displayName": "onMenuItemClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d011116df79f476f8482a846515be4af",
+                    "type": "event"
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "h39f7b64bc36450ba875db61f57ac713",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 2,
+                    "propertyKey": "onLogoutClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onLogoutClick",
+                        "srcWidget": "flxLogout",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "e486fdf700dd40d5b0f454d7e95bb07d"
+                }
+            ]
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "USER PROFILE",
+                "MENU OPTIONS"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "gfb7f2b149214e93ada6dd9277cdd034",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 5,
+                    "propertyKey": "menuVisibility",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Expand Sliding Menu",
+                        "srcWidget": "flxMenuTrans",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "e58b641695714497a0f22221683ea497"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ga3ef719527b4e4484e87a7a4aa65321",
+                    "originalPropertyKey": "data",
+                    "propertyIndex": 6,
+                    "propertyKey": "menuItems",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Menu Items",
+                        "srcWidget": "segMenu",
+                        "type": "data",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Masterdata-Segment",
+                                "dataUpdaterId": "Masterdata-Segment",
+                                "popupId": "Masterdata-Segment",
+                                "type": "SegmentMasterDataBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Button",
+                        "wType": "Segment"
+                    },
+                    "srcWgtKUID": "a959cd1068db4d7ab0e17791fa5da789"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ab810750498d4d978f30f87c70499708",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 7,
+                    "propertyKey": "userName",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "User Name",
+                        "srcWidget": "lblHeaderText1",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "cb488266b13d417f8a2624e1a577de66"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "g1f5181d25bd4b5e91b47253d5a01cce",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 8,
+                    "propertyKey": "footerText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Footer Text",
+                        "srcWidget": "lblFooterText",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "f8bbe8b924db4f38a17f9cf45463fc9f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c9efccfa8b354a45a1dca78dd169af11",
+                    "originalPropertyKey": "src",
+                    "propertyIndex": 9,
+                    "propertyKey": "profileImage",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Profile Image",
+                        "srcWidget": "imgHeader",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Imagelist",
+                                "dataUpdaterId": "Imagelist",
+                                "popupId": "Imagelist",
+                                "type": "ImageEditBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Label-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "ja69ee1c9a934d0db43f6121306a6253"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b7a20d02c81b4e76bf9b3918a5fe6bb1",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 11,
+                    "propertyKey": "userMail",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "User Email",
+                        "srcWidget": "lblEmailText",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "b217777446e445f7a6eb5095c7884120"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.konymp",
+    "version": "1.0.0"
+}

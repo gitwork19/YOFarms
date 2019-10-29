@@ -1,0 +1,28 @@
+{
+    "AS_Form_ae8fa103f9a34857a856379cadd54fb2": {
+        "id": "AS_Form_ae8fa103f9a34857a856379cadd54fb2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c855106ba94b44ad8d0d918ae746cb92"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___je4fdb15cfe94efc85b6c00cc81f656d",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "setChartValue",
+            "display": "setChartValue",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}
