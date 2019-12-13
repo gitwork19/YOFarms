@@ -15,6 +15,5 @@ define({
     /** onTouchStart defined for imgClose **/
     AS_Image_c17f2387abe64852bc89a57536f8b090: function AS_Image_c17f2387abe64852bc89a57536f8b090(eventobject, x, y) {
         var self = this;
-        undefined.isVisible = false;
     }
 });

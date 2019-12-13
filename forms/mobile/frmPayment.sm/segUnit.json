@@ -1,0 +1,212 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "cookies"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "biscuits"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "choclates"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "kid's wear"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "men's wear"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "women's wear"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "flats"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "slippers"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "spectacles"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "earrings"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "bangles"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "98%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "010",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segUnit",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "j9b69942a29d446cb4682e2cf4037485",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "fscSegmentUnit",
+    "pf": "frmPayment",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "c4ec6184e4ed4a18ad78bb8de6ed7458",
+    "rowcounter": 10,
+    "rowfocusskin": "s7b532d935334452a501435383fa75c7",
+    "rowskin": "sbdab491c4ce4498a3ba6f19a1a00bc3",
+    "rowtemplate": "flxSeg",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sd0b24cb5805400d9c86aee1c4bf109e",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "64646419",
+    "separatorrequired": true,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxSeg": "flxSeg",
+        "imgLocation": "imgLocation",
+        "lblSegmentData": "lblSegmentData"
+    },
+    "zindex": 1
+}

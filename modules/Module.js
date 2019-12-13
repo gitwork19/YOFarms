@@ -63,3 +63,38 @@ function setChart()
 
  Form1.donutchart3.legendFontSize = "8";
 }
+
+
+
+//Type your code here
+function locality(){
+    Form2.tbxLocation.autoFilter=true;
+    Form2.tbxLocation.filterList=["Vijayawada","Vellore","Guntur","Gudivada"];
+    Form2.fscSegment.zIndex="2";
+    var cityList=[];
+    Form2.fscSegment.setVisibility(true);
+    Form2.fscTotal.onClick=clicking;
+    var city=Form2.tbxLocation.text;
+    var name=[{"lblSegmentData":"Vijayawada"},
+              {"lblSegmentData":"Vellore"},
+              {"lblSegmentData":"Guntur"},
+              {"lblSegmentData":"Gudivada"}];
+    kony.print("name");
+    Form2.segCity.setData(name);
+    Form2.segCity.onRowClick = onRowClicking;
+    kony.print("segCity");
+    var arrayLength=name[0].length;
+    var names=name[0].lblSegmentData;
+    kony.print("names");  
+}
+function clicking(){
+      Form2.fscSegment.setVisibility(false);   
+    }
+function onRowClicking(){
+  Form2.fscSegment.setVisibility(false);
+  var selectedItems=Form2.segCity.selectedRowItems[0].lblSegmentData;
+  Form2.tbxLocation.text=selectedItems;
+  kony.print(Form2.tbxLocation.text);
+}
+
+

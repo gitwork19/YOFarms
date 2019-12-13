@@ -1,0 +1,28 @@
+{
+    "AS_Form_d664bf8610dd42cdbd4581dcf72ffa15": {
+        "id": "AS_Form_d664bf8610dd42cdbd4581dcf72ffa15",
+        "type": "ACTION_SEQUENCE",
+        "name": "paymentForm_Init",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPayment",
+            "type": "forms",
+            "platform": "",
+            "KUID": "j4be63a1510b4100860bd553632719f9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___aa5e56ab22ef4ee09409b4ae8c442cb5",
+            "type": "INVOKE_FUNCTION",
+            "display": "<>",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

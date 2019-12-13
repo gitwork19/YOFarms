@@ -1,0 +1,202 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Janathapet"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "BashirBagh"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "AvanthiNagar"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MothiNagar"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ABStreetNo 3"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ABStreetNo 1"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ANColony 2"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ANColony 4"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "GayatriNagar"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PRNagar 2"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segStreets",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "h22f8aa4ba73493eacd8d5bfa956209f",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "fscSegmentStreets",
+    "pf": "frmLocality",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "c4ec6184e4ed4a18ad78bb8de6ed7458",
+    "rowcounter": 9,
+    "rowfocusskin": "s7b532d935334452a501435383fa75c7",
+    "rowskin": "sbdab491c4ce4498a3ba6f19a1a00bc3",
+    "rowtemplate": "flxSeg",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sd0b24cb5805400d9c86aee1c4bf109e",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "64646419",
+    "separatorrequired": true,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxSeg": "flxSeg",
+        "imgLocation": "imgLocation",
+        "lblSegmentData": "lblSegmentData"
+    },
+    "zindex": 1
+}

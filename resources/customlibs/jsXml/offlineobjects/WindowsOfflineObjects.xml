@@ -442,6 +442,40 @@
 							</mapping>
 						</mappings>
 					</instancemethod>
+					<instancemethod name="clearOfflineData" returntype="void">
+						<params>
+							<param name="sdkObjectName" type="String"/>
+							<param name="options" type="Object"/>
+							<param name="successCallback" type="Function"/>
+							<param name="failureCallback" type="Function"/>
+						</params>
+						<mappings>
+							<mapping platform="winphone10" static="false" method="ClearOfflineDataOfSDKObject" returntype="System.Void"  >
+								<params>
+									<param type="System.String"/>
+									<param type="System.Object"/>
+									<param type="Framework.JS.Foundation.JSClosure"/>
+									<param type="Framework.JS.Foundation.JSClosure"/>
+								</params>
+							</mapping>
+							<mapping platform="windows10" static="false" method="ClearOfflineDataOfSDKObject" returntype="System.Void"  >
+								<params>
+									<param type="System.String"/>
+									<param type="System.Object"/>
+									<param type="Framework.JS.Foundation.JSClosure"/>
+									<param type="Framework.JS.Foundation.JSClosure"/>
+								</params>
+							</mapping>
+							<mapping platform="desktop_kiosk" static="false" method="ClearOfflineDataOfSDKObject" returntype="System.Void"  >
+								<params>
+									<param type="System.String"/>
+									<param type="System.Object"/>
+									<param type="Framework.JS.Foundation.JSClosure"/>
+									<param type="Framework.JS.Foundation.JSClosure"/>
+								</params>
+							</mapping>
+						</mappings>
+					</instancemethod>						
 				</instancemethods>
 			</jsclass>
 			<jsclass name="OfflineSDKObjectService">
@@ -658,6 +692,32 @@
 					</mapping>
 					<mapping platform="desktop_kiosk" library="offlineobjects.zip" namespace="OfflineObjects.FFI" class="OfflineObjectsFFI" static="true" method="SetToken" returntype="System.Void"  frameworks="">
 						<params>
+							<param type="System.String"/>
+						</params>
+					</mapping>
+				</mappings>
+			</jsfunction>
+			<jsfunction name="setCookie" returntype="void">
+				<params>
+					<param name="fabricUrl" type="String"/>
+					<param name="rawCookie" type="String"/>
+				</params>
+				<mappings>
+					<mapping platform="winphone10" library="offlineobjects.zip" namespace="OfflineObjects.FFI" class="OfflineObjectsFFI" static="true" method="SetCookie" returntype="System.Void"  frameworks="">
+						<params>
+							<param type="System.String"/>
+							<param type="System.String"/>
+						</params>
+					</mapping>
+					<mapping platform="windows10" library="offlineobjects.zip" namespace="OfflineObjects.FFI" class="OfflineObjectsFFI" static="true" method="SetCookie" returntype="System.Void"  frameworks="">
+						<params>
+							<param type="System.String"/>
+							<param type="System.String"/>
+						</params>
+					</mapping>
+					<mapping platform="desktop_kiosk" library="offlineobjects.zip" namespace="OfflineObjects.FFI" class="OfflineObjectsFFI" static="true" method="SetCookie" returntype="System.Void"  frameworks="">
+						<params>
+							<param type="System.String"/>
 							<param type="System.String"/>
 						</params>
 					</mapping>

@@ -1,0 +1,32 @@
+{
+    "AS_Button_e63e2ed693df41c39d72125b2049e454": {
+        "id": "AS_Button_e63e2ed693df41c39d72125b2049e454",
+        "type": "ACTION_SEQUENCE",
+        "name": "btnTotalCust_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c855106ba94b44ad8d0d918ae746cb92"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___bebad20da7214b28882ab6678036f80d",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmReg",
+            "formKUID": "af1b86edc5244371b0841c04791535b2",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": "",
+            "navigationObj": "{\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"btnTotalCust\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "29dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Enter Quantity",
+    "_skin_": "saaf54060c8e4052979a89db159e8491",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "1.00%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "95%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "disabledSkins": {
+        "focusSkin": "s09bb1d5139142c2b2fc4e7e3b0b059b"
+    },
+    "id": "tbxQuantity",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "keyboardstyle": "A",
+    "keyboardtype": "A",
+    "kuid": "ae136d68172f41c8b83dc1c0021da0fa",
+    "mode": "N",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxscrollMain",
+    "pf": "frmPayment",
+    "placeholderskin": "s3724127fb74484c87eb67fb6438d564",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "textinputmode": "N",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

@@ -1,0 +1,28 @@
+{
+    "AS_Button_g8362e925d6048d1a211a4ba57307d43": {
+        "id": "AS_Button_g8362e925d6048d1a211a4ba57307d43",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "footerBtnContinue",
+            "type": "templates",
+            "platform": "",
+            "KUID": "df4550e5757d49aaadae48398abfea47"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___cae917ca433942caaa3da123bcc504c8",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "frmPaymentOnClickContinue",
+            "display": "frmPaymentOnClickContinue",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

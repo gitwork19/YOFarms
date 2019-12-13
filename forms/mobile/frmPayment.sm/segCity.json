@@ -1,0 +1,192 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Accessories"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Food"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Clothes"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Footwear"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Fashionwear"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "jwellery"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Make up"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Ornaments"
+            }
+        },
+        {
+            "imgLocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "location.png"
+            },
+            "lblSegmentData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "toys"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "08",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segCity",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ab4e5af6a39441a9861d166848af997a",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "fscSegment",
+    "pf": "frmPayment",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "c4ec6184e4ed4a18ad78bb8de6ed7458",
+    "rowcounter": 8,
+    "rowfocusskin": "s7b532d935334452a501435383fa75c7",
+    "rowskin": "sbdab491c4ce4498a3ba6f19a1a00bc3",
+    "rowtemplate": "flxSeg",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sd0b24cb5805400d9c86aee1c4bf109e",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "64646419",
+    "separatorrequired": true,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxSeg": "flxSeg",
+        "imgLocation": "imgLocation",
+        "lblSegmentData": "lblSegmentData"
+    },
+    "zindex": 1
+}
