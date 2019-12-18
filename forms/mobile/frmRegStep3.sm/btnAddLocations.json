@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sc6b95441f6044cc95e2e0f52a8fa5e8",
+    "_text_": "ADD YOUR LOCATION",
+    "_top_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s070eb920a27468dbe7237f2ac3ad1bd",
+    "id": "btnAddLocations",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d7c281a44ad94c04bcfcd44ccdeb2235",
+    "name": "kony.ui.Button",
+    "parent": "flxAddLocations",
+    "pf": "frmRegStep3",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,89 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRadio",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "29dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s20b94b906c2482fb7b7866b862a1aaa",
+    "_top_": {
+        "type": "string",
+        "value": "3%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "160dp"
+    },
+    "android": {
+        "psp": {
+            "viewType": 0
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "groupcells": false,
+    "id": "RadiobtnsForTime",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "viewType": 0
+        }
+    },
+    "iphone": {
+        "psp": {
+            "viewType": 3
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "itemorientation": "horizontal",
+    "kuid": "f88ddf2e404d405a8ffcb8e4b627097b",
+    "masterdata": [
+        [
+            "AM",
+            "AM"
+        ],
+        [
+            "PM",
+            "PM"
+        ]
+    ],
+    "name": "kony.ui.RadioButtonGroup",
+    "parent": "flxMain",
+    "pf": "frmRegStep1",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "selectedkey": "AM",
+    "selectedkeyvalue": [
+        "AM",
+        "AM"
+    ],
+    "size": 18,
+    "tickedimage": "",
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "RadioButtonGroup",
+    "widgetalignment": 5,
+    "zindex": 1
+}
