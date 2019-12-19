@@ -1,17 +1,13 @@
 {
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_bottom_": {
-        "type": "string",
-        "value": "0%"
-    },
     "_height_": {
         "type": "string",
-        "value": "11.33%"
+        "value": "19%"
     },
     "_left_": {
         "type": "string",
-        "value": "4dp"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -27,10 +23,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s232d3e334c04abaaffa46f78789a4ff",
+    "_skin_": "s7d12891eecb43a99e49be26d055517f",
     "_top_": {
         "type": "string",
-        "value": "667dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -40,23 +36,23 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblReport",
-        "lblAddCust",
-        "lblProd",
-        "lblCustAttnd"
+        "Image0cb0848f240b145",
+        "lblNumber"
     ],
     "clipbounds": true,
+    "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxFooter",
+    "id": "FlexContainer0i8fbce75237246",
+    "ide_onTouchEnd": "AS_FlexContainer_ea9a1fe411164ff0bb9b67db6aac1077",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "f84da779aaea4fd3bcf871b76dd30ae6",
+    "kuid": "b85f19501afd4b2cb04b5a2c7d58287c",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "frmDashboard",
-    "pf": "frmDashboard",
+    "parent": "FlexContainer0b93f785eeb2944",
+    "pf": "TmpCustomerList",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
@@ -64,5 +60,5 @@
     "snaptogrid": true,
     "wType": "FlexContainer",
     "widgetalignment": 1,
-    "zindex": 4
+    "zindex": 1
 }

@@ -1,0 +1,30 @@
+{
+    "AS_Button_dec3aef1413f4e1ea862a5a24fc17a33": {
+        "id": "AS_Button_dec3aef1413f4e1ea862a5a24fc17a33",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "TmpCustomerList",
+            "type": "templates",
+            "KUID": "f487ea24aa064365b577fdd2c41117c5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___h29bbc31a24842039dba23acb1f4f0dd",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onEdit",
+            "display": "onEdit",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

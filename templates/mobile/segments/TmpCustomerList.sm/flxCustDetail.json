@@ -1,9 +1,8 @@
 {
     "DNDConfig": null,
-    "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "56dp"
+        "value": "150dp"
     },
     "_left_": {
         "type": "string",
@@ -23,7 +22,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s232d3e334c04abaaffa46f78789a4ff",
+    "_skin_": "s7d12891eecb43a99e49be26d055517f",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -36,20 +35,23 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "FlexContainer0fdebc77e631047"
+        "FlexContainer0b93f785eeb2944",
+        "FlexContainer0a30bb35abb5640"
     ],
     "clipbounds": true,
+    "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxHeader",
+    "id": "flxCustDetail",
     "info": null,
+    "isTemplate": true,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "d53f928ee1b343f699c4b01b2e40e374",
-    "layouttype": 2,
+    "kuid": "f403ec840627419190eaeda27e6068c1",
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "Flex0b436584c46164e",
-    "pf": "Temp0ic47b25acec843",
+    "parent": "TmpCustomerList",
+    "pf": "TmpCustomerList",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

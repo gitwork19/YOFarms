@@ -4,11 +4,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "20%"
     },
     "_left_": {
         "type": "string",
-        "value": "10%"
+        "value": "0dp"
     },
     "_margin_": [
         1,
@@ -22,15 +22,15 @@
         0,
         0
     ],
-    "_skin_": "sf88305270a54ee68765c0aa8f9e2166",
-    "_text_": "Heading",
+    "_skin_": "se5158eb7f364da3b57ca4d400b7f2aa",
+    "_text_": "Label",
     "_top_": {
         "type": "string",
-        "value": "5dp"
+        "value": "0dp"
     },
     "_width_": {
-        "type": "string",
-        "value": "200dp"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -40,9 +40,10 @@
         }
     },
     "canUpdateUI": true,
+    "containerId": true,
     "containerweight": 100,
-    "contentalignment": 5,
-    "id": "lblHeader",
+    "contentalignment": 4,
+    "id": "lblPayable",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +57,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "idee8acc93a14750b7fcfd7858abbc3b",
+    "kuid": "c3144a6f36cc495d8e625ef3f858c42b",
     "name": "kony.ui.Label",
-    "parent": "FlexContainer0fdebc77e631047",
-    "pf": "Temp0ic47b25acec843",
+    "parent": "FlexContainer0a30bb35abb5640",
+    "pf": "TmpCustomerList",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},

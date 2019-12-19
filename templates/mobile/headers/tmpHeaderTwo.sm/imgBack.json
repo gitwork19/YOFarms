@@ -34,10 +34,10 @@
         "value": "32dp"
     },
     "canUpdateUI": true,
+    "containerId": true,
     "containerweight": 100,
     "context": {
         "channel": "mobile",
-        "formID": "Temp0ic47b25acec843",
         "platform": "iphone",
         "templateType": "headers",
         "topLevelBox": null
@@ -51,7 +51,7 @@
     "kuid": "d4459e3ad13c457f9f629dfe51d20e9d",
     "name": "kony.ui.Image2",
     "parent": "FlexContainer0fdebc77e631047",
-    "pf": "Temp0ic47b25acec843",
+    "pf": "tmpHeaderTwo",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "srcType": 1,

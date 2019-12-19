@@ -1,0 +1,30 @@
+{
+    "AS_Button_df9c6bcec1234915a83fbd77ccb9f021": {
+        "id": "AS_Button_df9c6bcec1234915a83fbd77ccb9f021",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "TmpCustomerList",
+            "type": "templates",
+            "KUID": "f487ea24aa064365b577fdd2c41117c5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___bf7578b6539a4b3d9badb1bc7de0e389",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onCalendar",
+            "display": "onCalendar",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

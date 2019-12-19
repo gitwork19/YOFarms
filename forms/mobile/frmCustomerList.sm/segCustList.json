@@ -1,0 +1,534 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "Image0cb0848f240b145": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "option3.png"
+            },
+            "btnBill": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnCal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnDelete": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnEdit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "lblAddr": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPaidAmt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPayable": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "Image0cb0848f240b145": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "option3.png"
+            },
+            "btnBill": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnCal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnDelete": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnEdit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "lblAddr": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPaidAmt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPayable": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "Image0cb0848f240b145": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "option3.png"
+            },
+            "btnBill": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnCal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnDelete": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnEdit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "lblAddr": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPaidAmt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPayable": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "Image0cb0848f240b145": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "option3.png"
+            },
+            "btnBill": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnCal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnDelete": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnEdit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "lblAddr": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPaidAmt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPayable": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "Image0cb0848f240b145": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "option3.png"
+            },
+            "btnBill": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnCal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnDelete": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnEdit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "lblAddr": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPaidAmt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPayable": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "Image0cb0848f240b145": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "option3.png"
+            },
+            "btnBill": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnCal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnDelete": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnEdit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "lblAddr": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPaidAmt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPayable": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "Image0cb0848f240b145": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "option3.png"
+            },
+            "btnBill": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnCal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnDelete": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnEdit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "lblAddr": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPaidAmt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPayable": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "Image0cb0848f240b145": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "option3.png"
+            },
+            "btnBill": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnCal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnDelete": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnEdit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "lblAddr": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPaidAmt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPayable": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "Image0cb0848f240b145": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "option3.png"
+            },
+            "btnBill": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnCal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnDelete": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnEdit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "lblAddr": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPaidAmt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPayable": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "Image0cb0848f240b145": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "option3.png"
+            },
+            "btnBill": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnCal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnDelete": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnEdit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "lblAddr": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPaidAmt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPayable": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segCustList",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c01a9b9a3a3a41e6ab7cd84c885bc8a4",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxCustomerList",
+    "pf": "frmCustomerList",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "f487ea24aa064365b577fdd2c41117c5",
+    "rowcounter": 9,
+    "rowfocusskin": "s0994135919649e88ef9d11cfeb875ab",
+    "rowskin": "sbdab491c4ce4498a3ba6f19a1a00bc3",
+    "rowtemplate": "flxCustDetail",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "sdb6158af3954658964b2effcf257d37",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "CopyFlexContainer0c784ea0228a44e": "CopyFlexContainer0c784ea0228a44e",
+        "FlexContainer0a30bb35abb5640": "FlexContainer0a30bb35abb5640",
+        "FlexContainer0b93f785eeb2944": "FlexContainer0b93f785eeb2944",
+        "FlexContainer0i8fbce75237246": "FlexContainer0i8fbce75237246",
+        "Image0cb0848f240b145": "Image0cb0848f240b145",
+        "btnBill": "btnBill",
+        "btnCal": "btnCal",
+        "btnDelete": "btnDelete",
+        "btnEdit": "btnEdit",
+        "flxCustDetail": "flxCustDetail",
+        "lblAddr": "lblAddr",
+        "lblName": "lblName",
+        "lblNumber": "lblNumber",
+        "lblPaidAmt": "lblPaidAmt",
+        "lblPayable": "lblPayable"
+    },
+    "zindex": 1
+}

@@ -1,0 +1,29 @@
+{
+    "AS_Button_b7b98a2aaff74a6aa0d3bcf20e6c5ba7": {
+        "id": "AS_Button_b7b98a2aaff74a6aa0d3bcf20e6c5ba7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "TmpCustomerList",
+            "type": "templates",
+            "KUID": "f487ea24aa064365b577fdd2c41117c5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___e34d3fe8a30741ba82658fc1b246af7d",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onBillClick",
+            "display": "onBillClick",
+            "inputparams": [],
+            "parentId": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

@@ -5,11 +5,11 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "32dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "30dp"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -24,33 +24,34 @@
         0
     ],
     "_skin_": "s210536621f64987a31021f3fcfeef0c",
-    "_src_": "hammenu.png",
+    "_src_": "option3.png",
     "_top_": {
         "type": "string",
-        "value": "13dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "32dp"
+        "value": "30%"
     },
     "canUpdateUI": true,
+    "containerId": true,
     "containerweight": 100,
     "context": {
         "channel": "mobile",
-        "formID": "Temp0ic47b25acec843",
-        "templateType": "headers",
+        "platform": "iphone",
+        "templateType": "segments",
         "topLevelBox": null
     },
-    "id": "imgSearch",
+    "id": "Image0cb0848f240b145",
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ee044a4d332042eca9c4ba931b3da930",
+    "kuid": "e4083986c0f1495aa15323d8a0545f4a",
     "name": "kony.ui.Image2",
-    "parent": "FlexContainer0fdebc77e631047",
-    "pf": "Temp0ic47b25acec843",
+    "parent": "FlexContainer0i8fbce75237246",
+    "pf": "TmpCustomerList",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "srcType": 1,
