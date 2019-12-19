@@ -1,0 +1,29 @@
+{
+    "AS_Button_b80246d3590247e78a3a4a6d508df00d": {
+        "id": "AS_Button_b80246d3590247e78a3a4a6d508df00d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "TmpCustomerList",
+            "type": "templates",
+            "KUID": "f487ea24aa064365b577fdd2c41117c5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___b4919cb166be4704888a5548db41258f",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onDeleteClicked",
+            "display": "onDeleteClicked",
+            "inputparams": [],
+            "parentId": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

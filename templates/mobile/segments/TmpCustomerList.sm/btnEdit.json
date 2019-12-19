@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "se556434f92c4a848007c3c592e9098e",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "25%"
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s23ed7106b4d49f4a2586f1fbee61518",
+    "id": "btnEdit",
+    "ide_onClick": "AS_Button_dec3aef1413f4e1ea862a5a24fc17a33",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "hf831044700141758f96680dc9fed046",
+    "name": "kony.ui.Button",
+    "parent": "CopyFlexContainer0c784ea0228a44e",
+    "pf": "TmpCustomerList",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

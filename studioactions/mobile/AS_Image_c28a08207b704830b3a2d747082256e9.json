@@ -1,0 +1,34 @@
+{
+    "AS_Image_c28a08207b704830b3a2d747082256e9": {
+        "id": "AS_Image_c28a08207b704830b3a2d747082256e9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "tmpHeaderTwo",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b60b3761050d4c1cb06a9494d3009149"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___d2944c71e3604e4da8d577921d4495ff",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onBack",
+            "display": "onBack",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

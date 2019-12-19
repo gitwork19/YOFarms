@@ -30,22 +30,19 @@
     },
     "canUpdateUI": true,
     "children": [
-        "FlexContainer0a3e882ae966a49",
-        "hamburgerMenu",
-        "flxFooter"
+        "flxCustomerList"
     ],
     "containerweight": 100,
     "currentLocale": "default",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "Pixel3",
+    "device": "iPhoneXS",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-    "header": "frmDashboard_header",
-    "headersId": "e8289350234f4307838f61a1a81fd503",
-    "id": "frmDashboard",
-    "ide_postShow": "AS_Form_ae8fa103f9a34857a856379cadd54fb2",
+    "header": "frmCustomerList_header",
+    "headersId": "b60b3761050d4c1cb06a9494d3009149",
+    "id": "frmCustomerList",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -64,7 +61,7 @@
             "titleBarAttributes": {
                 "barStyle": 0,
                 "hidesBackButton": false,
-                "kuid": "df2997b70de74f4a971ac9817c84e8cc",
+                "kuid": "e1c8a22cb36744a8be2f9197cdf3d3b1",
                 "leftBarButtonItems": [],
                 "leftItemsSupplementBackButton": true,
                 "prompt": "",
@@ -75,7 +72,7 @@
                         "info": {
                             "title": "Edit"
                         },
-                        "kuid": "dca897557b454499a458c73e1efaae24",
+                        "kuid": "a4e1b97b29654cbf9ee9c4e8ad5a4e85",
                         "style": 0,
                         "tintColor": "4b88f100",
                         "type": 1
@@ -92,18 +89,18 @@
     "kiosk": {
         "needAppMenu": false
     },
-    "kuid": "c855106ba94b44ad8d0d918ae746cb92",
+    "kuid": "gd0e05dc7c864edab2924c01f2612d2f",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": false,
     "paddinginpixel": false,
-    "platform": "android",
+    "platform": "iphone",
     "prevDevice": "iPhoneXS",
     "prevPlatform": "iphone",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,
-    "shellCSS": "and_Pixel3",
+    "shellCSS": "iOS_iPhoneXS",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {

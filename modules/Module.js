@@ -97,4 +97,28 @@ function onRowClicking(){
   kony.print(Form2.tbxLocation.text);
 }
 
+function onEdit(){
+  alert("edit Clicked");
+}
+function onBillClick(){
+  alert("Bill Clicked");
+}
+function onDeleteClicked(){
+  alert("delete Clicked");
+}
+function onCalendar(){
+  alert("calendar Clicked");
+}
 
+
+function onBack(){
+  var getCurrForm = kony.application.getCurrentForm().id;
+  switch(getCurrForm)
+    {
+      default:{
+        kony.application.getPreviousForm();
+        break;
+      }
+        
+    }
+}
