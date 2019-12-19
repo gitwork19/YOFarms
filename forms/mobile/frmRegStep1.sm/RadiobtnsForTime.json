@@ -58,11 +58,19 @@
     "masterdata": [
         [
             "AM",
+<<<<<<< HEAD
             "Morning"
         ],
         [
             "PM",
             "Evening"
+=======
+            "AM"
+        ],
+        [
+            "PM",
+            "PM"
+>>>>>>> 91f4b2c7dac9f3c6904de99991d45cbffac98869
         ]
     ],
     "name": "kony.ui.RadioButtonGroup",
@@ -73,7 +81,11 @@
     "selectedkey": "AM",
     "selectedkeyvalue": [
         "AM",
+<<<<<<< HEAD
         "Morning"
+=======
+        "AM"
+>>>>>>> 91f4b2c7dac9f3c6904de99991d45cbffac98869
     ],
     "size": 18,
     "tickedimage": "",

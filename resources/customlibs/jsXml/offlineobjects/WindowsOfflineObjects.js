@@ -12,7 +12,6 @@ WindowsOfflineObjects.OfflineSDKObject.prototype.markForUpload= function(sdkObje
 WindowsOfflineObjects.OfflineSDKObject.prototype.delete= function(sdkObjectName,options,successCallback,failureCallback){};
 WindowsOfflineObjects.OfflineSDKObject.prototype.update= function(sdkObjectName,record,options,successCallback,failureCallback){};
 WindowsOfflineObjects.OfflineSDKObject.prototype.cancelSync= function(sdkObjectName,options,successCallback,failureCallback){};
-WindowsOfflineObjects.OfflineSDKObject.prototype.clearOfflineData= function(sdkObjectName,options,successCallback,failureCallback){};
 
 WindowsOfflineObjects.OfflineSDKObjectService=function(){}
 WindowsOfflineObjects.OfflineSDKObjectService.prototype.startSync= function(sdkObjectServiceName,options,successCallback,failureCallback,progressCallback){};

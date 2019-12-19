@@ -3,7 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
+<<<<<<< HEAD
         "value": "30%"
+=======
+        "value": "10%"
+>>>>>>> 91f4b2c7dac9f3c6904de99991d45cbffac98869
     },
     "_left_": {
         "type": "string",
@@ -37,12 +41,17 @@
     "canUpdateUI": true,
     "children": [
         "lblFlatNo",
+<<<<<<< HEAD
         "txtFlatNo",
         "lineHorizontalFlat",
         "flxSubApartment",
         "lineHorizontal7",
         "txtBlockNo",
         "lineHorizontalBlock",
+=======
+        "flxSubApartment",
+        "lineHorizontal7",
+>>>>>>> 91f4b2c7dac9f3c6904de99991d45cbffac98869
         "segmentforLocations"
     ],
     "clipbounds": true,
@@ -51,7 +60,11 @@
     "id": "flxFlat",
     "info": null,
     "iscustomlayout": false,
+<<<<<<< HEAD
     "isvisible": true,
+=======
+    "isvisible": false,
+>>>>>>> 91f4b2c7dac9f3c6904de99991d45cbffac98869
     "kuid": "b625a8f0458e4ec3bee1666e8a59a688",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",

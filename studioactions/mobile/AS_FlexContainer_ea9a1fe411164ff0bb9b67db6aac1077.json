@@ -1,0 +1,32 @@
+{
+    "AS_FlexContainer_ea9a1fe411164ff0bb9b67db6aac1077": {
+        "id": "AS_FlexContainer_ea9a1fe411164ff0bb9b67db6aac1077",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "TmpCustomerList",
+            "type": "templates",
+            "KUID": "f487ea24aa064365b577fdd2c41117c5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a1e3637c9fb84d6eb464fea98fc138a5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.phone.dial(frmCustomerList.segCustList.selectedRowItems[0].lblNumber)",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}
