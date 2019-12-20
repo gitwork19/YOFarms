@@ -46,11 +46,9 @@
     "id": "flxForHouse",
     "info": null,
     "iscustomlayout": false,
-<<<<<<< HEAD
-    "isvisible": false,
-=======
+
     "isvisible": true,
->>>>>>> 91f4b2c7dac9f3c6904de99991d45cbffac98869
+
     "kuid": "c26e92e60e8d4eaaa5561660451b7843",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",

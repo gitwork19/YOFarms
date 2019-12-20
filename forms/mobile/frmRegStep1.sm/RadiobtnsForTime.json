@@ -57,21 +57,13 @@
     "kuid": "f88ddf2e404d405a8ffcb8e4b627097b",
     "masterdata": [
         [
-            "AM",
-<<<<<<< HEAD
-            "Morning"
+                       "Morning"
         ],
         [
-            "PM",
-            "Evening"
-=======
-            "AM"
-        ],
-        [
-            "PM",
-            "PM"
->>>>>>> 91f4b2c7dac9f3c6904de99991d45cbffac98869
+                        "Evening"
+
         ]
+      
     ],
     "name": "kony.ui.RadioButtonGroup",
     "parent": "flxMain",
@@ -80,13 +72,9 @@
     "retainflexpositionproperties": false,
     "selectedkey": "AM",
     "selectedkeyvalue": [
-        "AM",
-<<<<<<< HEAD
+
         "Morning"
-=======
-        "AM"
->>>>>>> 91f4b2c7dac9f3c6904de99991d45cbffac98869
-    ],
+],
     "size": 18,
     "tickedimage": "",
     "viewconfig": {

@@ -40,15 +40,10 @@
     "device": "GalaxyS5",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-<<<<<<< HEAD
+
     "footer": "frmRegStep1_footer",
     "footersId": "df4550e5757d49aaadae48398abfea47",
     "header": "frmRegStep1_header",
-=======
-    "footer": "frmReg_footer",
-    "footersId": "df4550e5757d49aaadae48398abfea47",
-    "header": "frmReg_header",
->>>>>>> 91f4b2c7dac9f3c6904de99991d45cbffac98869
     "headersId": "a8c3d144f3e9454cbc619e189c1b6be5",
     "id": "frmRegStep1",
     "ide_preShow": "AS_Form_aa16f5fcb5364fe5a389d5cdede5d6c3",
