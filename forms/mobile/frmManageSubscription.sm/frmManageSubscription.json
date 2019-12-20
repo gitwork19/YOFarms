@@ -29,13 +29,15 @@
         "needAppMenu": false
     },
     "canUpdateUI": true,
-    "children": [],
+    "children": [
+        "FlexScrollContainer0ia52c47478e543"
+    ],
     "containerweight": 100,
     "currentLocale": "default",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhoneXS",
+    "device": "Pixel3",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "frmManageSubscription",
@@ -89,13 +91,13 @@
     "name": "kony.ui.Form2",
     "needappmenu": false,
     "paddinginpixel": false,
-    "platform": "iphone",
-    "prevDevice": "iPhoneXS",
+    "platform": "android",
+    "prevDevice": "Pixel3XL",
     "prevPlatform": "iphone",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhoneXS",
+    "shellCSS": "and_Pixel3",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {
