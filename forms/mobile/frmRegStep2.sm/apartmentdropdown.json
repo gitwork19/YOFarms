@@ -37,9 +37,7 @@
     "containerweight": 100,
     "context": {
         "channel": "mobile",
-
-        "formID": "frmRegStep2",
-
+        "formID": "frmLocality",
         "platform": "android",
         "templateType": "forms",
         "topLevelBox": null

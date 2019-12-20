@@ -40,9 +40,6 @@
     },
     "displaytext": true,
     "id": "btnFlat",
-
-    "ide_onClick": "AS_Button_h0041879ae3441fb96e2a4b082846e29",
-
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
