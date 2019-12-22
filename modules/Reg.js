@@ -2,32 +2,32 @@
 
 function frmReg_Init(){
   kony.print("in frmRegInit");
-  frmReg.lblErrMsg.text ="";
-//   frmReg.tbxFirstName.text = "";
-//   frmReg.tbxLastName.text = "" ;
-//   frmReg.tbxMobileNumber.text = "";
-//   frmReg.tbxEmail.text = "";
-  frmReg.footers[0].btnContinue.onClick = showLocalityForm;
- // frmReg.headers[0].ImgBackArrow.onTouchStart=onClickBackImgfrmReg;
+  frmRegStep1.lblErrMsg.text ="";
+//   frmRegStep1.tbxFirstName.text = "";
+//   frmRegStep1.tbxLastName.text = "" ;
+//   frmRegStep1.tbxMobileNumber.text = "";
+//   frmRegStep1.tbxEmail.text = "";
+  frmRegStep1.footers[0].btnContinue.onClick = showLocalityForm;
+ // frmRegStep1.headers[0].ImgBackArrow.onTouchStart=onClickBackImgfrmReg;
 }
 
 function onClickBackImgfrmReg()
   {
-    frmPayment.lblErrMsgPayment.text = "";
+    frmRegStep3.lblErrMsgPayment.text = "";
     frmPayment_Init();
-    frmPayment.show();
+    frmRegStep3.show();
   }
 
 function showLocalityForm(){
-  var firstName = frmReg.tbxFirstName.text;
+  var firstName = frmRegStep1.tbxFirstName.text;
   // alert(firstName);
-  var lastName = frmReg.tbxLastName.text;
+  var lastName = frmRegStep1.tbxLastName.text;
   //alert(lastName);
-  var mobNum = frmReg.tbxMobileNumber.text;
+  var mobNum = frmRegStep1.tbxMobileNumber.text;
   //alert(mobNum);
-  var email = frmReg.tbxEmail.text;
+  var email = frmRegStep1.tbxEmail.text;
   //alert(email);
-  var shiftTime = frmReg.RadiobtnsForTime.selectedKey;
+  var shiftTime = frmRegStep1.RadiobtnsForTime.selectedKey;
   //alert(shiftTime);
   if((firstName !== "" && firstName !== null && firstName !== undefined) &&
      (lastName !== "" && lastName !== null && lastName !== undefined) &&
@@ -35,70 +35,70 @@ function showLocalityForm(){
      (email !== "" && email !== null && email !== undefined) &&
      (shiftTime !== "" && shiftTime !== null && shiftTime !== undefined))
   {
-     frmPayment.lblErrMsgPayment.text = "";
+     frmRegStep3.lblErrMsgPayment.text = "";
     kony.print("in showLocalityForm");
-    frmLocality.tbxLocation.placeholder= "Choose Your Location";
-    frmLocality.tbxLocation.setEnabled(false);
-    frmLocality.tbxStreet.placeholder= "Choose Your Street";
-    frmLocality.tbxStreet.setEnabled(false);
+    frmRegStep2.tbxLocation.placeholder= "Choose Your Location";
+    frmRegStep2.tbxLocation.setEnabled(false);
+    frmRegStep2.tbxStreet.placeholder= "Choose Your Street";
+    frmRegStep2.tbxStreet.setEnabled(false);
     frmLocality_Init();
-    frmLocality.show();
+    frmRegStep2.show();
   }else{
-    frmReg.lblErrMsg.text = "Please fill all the details";
-    frmReg.lblErrMsg.skin = "lblRedErrMsg" ;   
+    frmRegStep1.lblErrMsg.text = "Please fill all the details";
+    frmRegStep1.lblErrMsg.skin = "lblRedErrMsg" ;   
   }
 }
 
 function frmLocality_Init(){
 
-//   frmLocality.tbxLocation.text = "";
-//   frmLocality.tbxStreet.text = "";
-//   frmLocality.tbxHouseNo.text = "";
-//   frmLocality.tbxApartment.text = "";
-//   frmLocality.tbxLandmark.text = "";
-  frmLocality.lblErrMsg.text = "";
+//   frmRegStep2.tbxLocation.text = "";
+//   frmRegStep2.tbxStreet.text = "";
+//   frmRegStep2.tbxHouseNo.text = "";
+//   frmRegStep2.tbxApartment.text = "";
+//   frmRegStep2.tbxLandmark.text = "";
+  frmRegStep2.lblErrMsg.text = "";
 
-  frmLocality.btnFlat.onClick = showFlatDetails;
-  frmLocality.btnHouse.onClick = showHouseDetails;
-  frmLocality.footers[0].btnContinue.onClick  = showPaymentForm;
-  frmLocality.headers[0].ImgBackArrow.onTouchStart = onClickOfBackArrow;
-  frmLocality.imgDropDown.onTouchStart = showLocations;
-  frmLocality.imgDropDown2.onTouchStart = showStreets;
-  frmLocality.btnAddLocations.onClick = hideSegment;
-  frmLocality.btnAddStreets.onClick = hideStreetSeg;
+  frmRegStep2.btnFlat.onClick = showFlatDetails;
+  frmRegStep2.btnHouse.onClick = showHouseDetails;
+  frmRegStep2.footers[0].btnContinue.onClick  = showPaymentForm;
+  frmRegStep2.headers[0].ImgBackArrow.onTouchStart = onClickOfBackArrow;
+  frmRegStep2.imgDropDown.onTouchStart = showLocations;
+  frmRegStep2.imgDropDown2.onTouchStart = showStreets;
+  frmRegStep2.btnAddLocations.onClick = hideSegment;
+  frmRegStep2.btnAddStreets.onClick = hideStreetSeg;
 }
 
 function onClickOfBackArrow(){
   kony.print("in onClickOfBackArrow");
   frmReg_Init();
-  frmReg.show();
+  frmRegStep1.show();
 }
 
 function showFlatDetails(){
-  frmLocality.btnFlat.skin="bgGreen";
-  frmLocality.btnHouse.skin="btnsknGreyBG";
-  frmLocality.btnHouse.zIndex=1;
-  frmLocality.btnFlat.zIndex=2;
-  frmLocality.flxFlat.setVisibility(true);
-  frmLocality.flxForHouse.setVisibility(false); 
+  frmRegStep2.btnFlat.skin="bgGreen";
+  frmRegStep2.btnHouse.skin="btnsknGreyBG";
+  frmRegStep2.btnHouse.zIndex=1;
+  frmRegStep2.btnFlat.zIndex=2;
+  frmRegStep2.flxFlat.setVisibility(true);
+  frmRegStep2.flxForHouse.setVisibility(false); 
 }
 
 function showHouseDetails(){
-  frmLocality.btnHouse.skin="bgGreen";
-  frmLocality.btnFlat.skin="btnsknGreyBG";
-  frmLocality.btnHouse.zIndex=2;
-  frmLocality.btnFlat.zIndex=1;
-  frmLocality.flxForHouse.setVisibility(true);
-  frmLocality.flxFlat.setVisibility(false); 
+  frmRegStep2.btnHouse.skin="bgGreen";
+  frmRegStep2.btnFlat.skin="btnsknGreyBG";
+  frmRegStep2.btnHouse.zIndex=2;
+  frmRegStep2.btnFlat.zIndex=1;
+  frmRegStep2.flxForHouse.setVisibility(true);
+  frmRegStep2.flxFlat.setVisibility(false); 
 }
 
 function showPaymentForm(){
   kony.print("in payment form");
-  var locality = frmLocality.tbxLocation.text;
-  var street = frmLocality.tbxStreet.text;
-  var houseNo = frmLocality.tbxHouseNo.text;
-  var flatNo = frmLocality.tbxApartment.text;
-  var landmark = frmLocality.tbxLandmark.text;
+  var locality = frmRegStep2.tbxLocation.text;
+  var street = frmRegStep2.tbxStreet.text;
+  var houseNo = frmRegStep2.tbxHouseNo.text;
+  var flatNo = frmRegStep2.tbxApartment.text;
+  var landmark = frmRegStep2.tbxLandmark.text;
   if(((locality !== null && locality !== "" && locality !== undefined)&&
       (street !== null && street !== "" && street !== undefined) &&
       (houseNo !== null && houseNo !== "" && houseNo !== undefined) &&
@@ -108,578 +108,578 @@ function showPaymentForm(){
       (flatNo !== null && flatNo !== "" && flatNo !== undefined) &&
       (landmark !== null && landmark !== "" && landmark !== undefined)))
   {
-    frmPayment.tbxSelectProduct.placeholder= "Choose Your Product";
-    frmPayment.tbxSelectProduct.setEnabled(false);
-     frmPayment.tbxSelectUnit.placeholder= "Choose Your unit";
-    frmPayment.tbxSelectUnit.setEnabled(false);
+    frmRegStep3.tbxSelectProduct.placeholder= "Choose Your Product";
+    frmRegStep3.tbxSelectProduct.setEnabled(false);
+     frmRegStep3.tbxSelectUnit.placeholder= "Choose Your unit";
+    frmRegStep3.tbxSelectUnit.setEnabled(false);
     onClickOfBtnMyChoice();
-    frmPayment.lblErrMsgPayment.text = "";
+    frmRegStep3.lblErrMsgPayment.text = "";
     //frmPayment_Init();
-    frmPayment.show();
+    frmRegStep3.show();
   }else
   {
-    frmLocality.lblErrMsg.text = "Please fill all the details .";
-    frmLocality.lblErrMsg.skin = "lblRedErrMsg";
+    frmRegStep2.lblErrMsg.text = "Please fill all the details .";
+    frmRegStep2.lblErrMsg.skin = "lblRedErrMsg";
   }
 }
 
 function frmPayment_Init(){
   
-//   frmPayment.tbxSelectProduct.text="";
-//   frmPayment.tbxSelectUnit.text="";
-//   frmPayment.lblErrMsgPayment.text = "";
-//   frmPayment.tbxQuantity.text="";
-//   frmPayment.tbxDeliveryCharges.text="";
-//   frmPayment.tbxS.text="";
-//   frmPayment.tbxMoonS.text="";
-//   frmPayment.tbxM.text="";
-//   frmPayment.tbxMoonM.text="";
-//   frmPayment.tbxT.text="";
-//   frmPayment.tbxMoonT.text="";
-//   frmPayment.tbxW.text="";
-//   frmPayment.tbxMoonW.text="";
-//   frmPayment.tbxTh.text="";
-//   frmPayment.tbxMoonTh.text="";
-//   frmPayment.tbxF.text="";
-//   frmPayment.tbxMoonF.text="";
-//   frmPayment.tbxSat.text="";
-//   frmPayment.tbxMoonSat.text="";
+//   frmRegStep3.tbxSelectProduct.text="";
+//   frmRegStep3.tbxSelectUnit.text="";
+//   frmRegStep3.lblErrMsgPayment.text = "";
+//   frmRegStep3.tbxQuantity.text="";
+//   frmRegStep3.tbxDeliveryCharges.text="";
+//   frmRegStep3.tbxS.text="";
+//   frmRegStep3.tbxMoonS.text="";
+//   frmRegStep3.tbxM.text="";
+//   frmRegStep3.tbxMoonM.text="";
+//   frmRegStep3.tbxT.text="";
+//   frmRegStep3.tbxMoonT.text="";
+//   frmRegStep3.tbxW.text="";
+//   frmRegStep3.tbxMoonW.text="";
+//   frmRegStep3.tbxTh.text="";
+//   frmRegStep3.tbxMoonTh.text="";
+//   frmRegStep3.tbxF.text="";
+//   frmRegStep3.tbxMoonF.text="";
+//   frmRegStep3.tbxSat.text="";
+//   frmRegStep3.tbxMoonSat.text="";
   
-  frmPayment.headers[0].ImgBackArrow.onTouchStart = onClickBackfrmPayment;
-  frmPayment.btnDaily.onClick = onClickOfBtnDialy;
-  frmPayment.btnMyChoice.onClick = onClickOfBtnMyChoice;
-  frmPayment.btnPrepaid.onClick = onClickOfPrepaid;
-  frmPayment.btnPostpaid.onClick = onClickOfPostpaid;
-  frmPayment.imgDropDown.onTouchStart = chooseProduct;
-  frmPayment.btnAddLocations.onClick= hideSegmentProducts;
-  frmPayment.imgDropDown2.onTouchStart = chooseUnit;
-  frmPayment.btnAddUnits.onClick= hideSegmentUnits;
-  frmPayment.footers[0].flxBtn.onTouchStart=frmPaymentOnClickContinue;
-  frmPayment.flxRoundS.onTouchStart = onTouchStartTbxS;
-  frmPayment.flxRoundM.onTouchStart = onTouchStartTbxM;
-  frmPayment.flxRoundT.onTouchStart = onTouchStartTbxT;
-  frmPayment.flxRoundW.onTouchStart = onTouchStartTbxW;
-  frmPayment.flxRoundTh.onTouchStart = onTouchStartTbxTh;
-  frmPayment.flxRoundF.onTouchStart = onTouchStartTbxF;
-  frmPayment.flxRoundSat.onTouchStart = onTouchStartTbxSat;
+  frmRegStep3.headers[0].ImgBackArrow.onTouchStart = onClickBackfrmPayment;
+  frmRegStep3.btnDaily.onClick = onClickOfBtnDialy;
+  frmRegStep3.btnMyChoice.onClick = onClickOfBtnMyChoice;
+  frmRegStep3.btnPrepaid.onClick = onClickOfPrepaid;
+  frmRegStep3.btnPostpaid.onClick = onClickOfPostpaid;
+  frmRegStep3.imgDropDown.onTouchStart = chooseProduct;
+  frmRegStep3.btnAddLocations.onClick= hideSegmentProducts;
+  frmRegStep3.imgDropDown2.onTouchStart = chooseUnit;
+  frmRegStep3.btnAddUnits.onClick= hideSegmentUnits;
+  frmRegStep3.footers[0].flxBtn.onTouchStart=frmPaymentOnClickContinue;
+  frmRegStep3.flxRoundS.onTouchStart = onTouchStartTbxS;
+  frmRegStep3.flxRoundM.onTouchStart = onTouchStartTbxM;
+  frmRegStep3.flxRoundT.onTouchStart = onTouchStartTbxT;
+  frmRegStep3.flxRoundW.onTouchStart = onTouchStartTbxW;
+  frmRegStep3.flxRoundTh.onTouchStart = onTouchStartTbxTh;
+  frmRegStep3.flxRoundF.onTouchStart = onTouchStartTbxF;
+  frmRegStep3.flxRoundSat.onTouchStart = onTouchStartTbxSat;
 }
 
 function onClickBackfrmPayment()
 {
    //frmLocality_Init();
-   frmLocality.show();
+   frmRegStep2.show();
 }
 
 function  onTouchStartTbxS()
 {
-  frmPayment.flxRoundS.skin = "roundBgBlueWhitelbl";
-  frmPayment.lblS.skin="txtWhite";
-  frmPayment.flxRoundM.skin = "flxbgGrey";
-  frmPayment.lblM.skin="txtGrey";
-  frmPayment.flxRoundT.skin = "flxbgGrey";
-  frmPayment.lblT.skin="txtGrey";
-  frmPayment.flxRoundW.skin = "flxbgGrey";
-  frmPayment.lblW.skin="txtGrey";
-  frmPayment.flxRoundTh.skin = "flxbgGrey";
-  frmPayment.lblTh.skin="txtGrey";
-  frmPayment.flxRoundF.skin = "flxbgGrey";
-  frmPayment.lblF.skin="txtGrey";
-  frmPayment.flxRoundSat.skin = "flxbgGrey";
-  frmPayment.lblSat.skin="txtGrey";
+  frmRegStep3.flxRoundS.skin = "roundBgBlueWhitelbl";
+  frmRegStep3.lblS.skin="txtWhite";
+  frmRegStep3.flxRoundM.skin = "flxbgGrey";
+  frmRegStep3.lblM.skin="txtGrey";
+  frmRegStep3.flxRoundT.skin = "flxbgGrey";
+  frmRegStep3.lblT.skin="txtGrey";
+  frmRegStep3.flxRoundW.skin = "flxbgGrey";
+  frmRegStep3.lblW.skin="txtGrey";
+  frmRegStep3.flxRoundTh.skin = "flxbgGrey";
+  frmRegStep3.lblTh.skin="txtGrey";
+  frmRegStep3.flxRoundF.skin = "flxbgGrey";
+  frmRegStep3.lblF.skin="txtGrey";
+  frmRegStep3.flxRoundSat.skin = "flxbgGrey";
+  frmRegStep3.lblSat.skin="txtGrey";
   
-  frmPayment.tbxS.skin="tbxgreyborderbluetxt100";
-  frmPayment.tbxMoonS.skin="tbxgreyborderbluetxt100";
-  frmPayment.tbxM.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonM.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxT.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonT.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxW.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonW.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxTh.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonTh.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxF.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonF.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxSat.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonSat.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxS.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxMoonS.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxM.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonM.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxT.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonT.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxW.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonW.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxTh.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonTh.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxF.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonF.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxSat.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonSat.skin="tbxgreyborderblacktxt100";
   
-  frmPayment.tbxS.setEnabled(true);
-  frmPayment.tbxMoonS.setEnabled(true);
-  frmPayment.tbxM.setEnabled(false);
-  frmPayment.tbxMoonM.setEnabled(false);
-  frmPayment.tbxT.setEnabled(false);
-  frmPayment.tbxMoonT.setEnabled(false);
-  frmPayment.tbxW.setEnabled(false);
-  frmPayment.tbxMoonW.setEnabled(false);
-  frmPayment.tbxTh.setEnabled(false);
-  frmPayment.tbxMoonTh.setEnabled(false);
-  frmPayment.tbxF.setEnabled(false);
-  frmPayment.tbxMoonF.setEnabled(false);
-  frmPayment.tbxSat.setEnabled(false);
-  frmPayment.tbxMoonSat.setEnabled(false);
+  frmRegStep3.tbxS.setEnabled(true);
+  frmRegStep3.tbxMoonS.setEnabled(true);
+  frmRegStep3.tbxM.setEnabled(false);
+  frmRegStep3.tbxMoonM.setEnabled(false);
+  frmRegStep3.tbxT.setEnabled(false);
+  frmRegStep3.tbxMoonT.setEnabled(false);
+  frmRegStep3.tbxW.setEnabled(false);
+  frmRegStep3.tbxMoonW.setEnabled(false);
+  frmRegStep3.tbxTh.setEnabled(false);
+  frmRegStep3.tbxMoonTh.setEnabled(false);
+  frmRegStep3.tbxF.setEnabled(false);
+  frmRegStep3.tbxMoonF.setEnabled(false);
+  frmRegStep3.tbxSat.setEnabled(false);
+  frmRegStep3.tbxMoonSat.setEnabled(false);
 }
 
 function  onTouchStartTbxM()
 {
-  frmPayment.flxRoundM.skin = "roundBgBlueWhitelbl";
-  frmPayment.lblM.skin="txtWhite";
-  frmPayment.flxRoundS.skin = "flxbgGrey";
-  frmPayment.lblS.skin="txtGrey"; 
-  frmPayment.flxRoundT.skin = "flxbgGrey";
-  frmPayment.lblT.skin="txtGrey";
-  frmPayment.flxRoundW.skin = "flxbgGrey";
-  frmPayment.lblW.skin="txtGrey";
-  frmPayment.flxRoundTh.skin = "flxbgGrey";
-  frmPayment.lblTh.skin="txtGrey";
-  frmPayment.flxRoundF.skin = "flxbgGrey";
-  frmPayment.lblF.skin="txtGrey";
-  frmPayment.flxRoundSat.skin = "flxbgGrey";
-  frmPayment.lblSat.skin="txtGrey";
+  frmRegStep3.flxRoundM.skin = "roundBgBlueWhitelbl";
+  frmRegStep3.lblM.skin="txtWhite";
+  frmRegStep3.flxRoundS.skin = "flxbgGrey";
+  frmRegStep3.lblS.skin="txtGrey"; 
+  frmRegStep3.flxRoundT.skin = "flxbgGrey";
+  frmRegStep3.lblT.skin="txtGrey";
+  frmRegStep3.flxRoundW.skin = "flxbgGrey";
+  frmRegStep3.lblW.skin="txtGrey";
+  frmRegStep3.flxRoundTh.skin = "flxbgGrey";
+  frmRegStep3.lblTh.skin="txtGrey";
+  frmRegStep3.flxRoundF.skin = "flxbgGrey";
+  frmRegStep3.lblF.skin="txtGrey";
+  frmRegStep3.flxRoundSat.skin = "flxbgGrey";
+  frmRegStep3.lblSat.skin="txtGrey";
   
-  frmPayment.tbxS.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonS.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxM.skin="tbxgreyborderbluetxt100";
-  frmPayment.tbxMoonM.skin="tbxgreyborderbluetxt100";
-  frmPayment.tbxT.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonT.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxW.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonW.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxTh.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonTh.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxF.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonF.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxSat.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonSat.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxS.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonS.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxM.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxMoonM.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxT.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonT.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxW.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonW.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxTh.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonTh.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxF.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonF.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxSat.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonSat.skin="tbxgreyborderblacktxt100";
   
-  frmPayment.tbxS.setEnabled(false);
-  frmPayment.tbxMoonS.setEnabled(false);
-  frmPayment.tbxM.setEnabled(true);
-  frmPayment.tbxMoonM.setEnabled(true);
-  frmPayment.tbxT.setEnabled(false);
-  frmPayment.tbxMoonT.setEnabled(false);
-  frmPayment.tbxW.setEnabled(false);
-  frmPayment.tbxMoonW.setEnabled(false);
-  frmPayment.tbxTh.setEnabled(false);
-  frmPayment.tbxMoonTh.setEnabled(false);
-  frmPayment.tbxF.setEnabled(false);
-  frmPayment.tbxMoonF.setEnabled(false);
-  frmPayment.tbxSat.setEnabled(false);
-  frmPayment.tbxMoonSat.setEnabled(false);
+  frmRegStep3.tbxS.setEnabled(false);
+  frmRegStep3.tbxMoonS.setEnabled(false);
+  frmRegStep3.tbxM.setEnabled(true);
+  frmRegStep3.tbxMoonM.setEnabled(true);
+  frmRegStep3.tbxT.setEnabled(false);
+  frmRegStep3.tbxMoonT.setEnabled(false);
+  frmRegStep3.tbxW.setEnabled(false);
+  frmRegStep3.tbxMoonW.setEnabled(false);
+  frmRegStep3.tbxTh.setEnabled(false);
+  frmRegStep3.tbxMoonTh.setEnabled(false);
+  frmRegStep3.tbxF.setEnabled(false);
+  frmRegStep3.tbxMoonF.setEnabled(false);
+  frmRegStep3.tbxSat.setEnabled(false);
+  frmRegStep3.tbxMoonSat.setEnabled(false);
 }
 
 function  onTouchStartTbxT()
 {
-  frmPayment.flxRoundT.skin = "roundBgBlueWhitelbl";
-  frmPayment.lblT.skin="txtWhite";   
-  frmPayment.flxRoundS.skin = "flxbgGrey";
-  frmPayment.lblS.skin="txtGrey"; 
-  frmPayment.flxRoundM.skin = "flxbgGrey";
-  frmPayment.lblM.skin="txtGrey";  
-  frmPayment.flxRoundW.skin = "flxbgGrey";
-  frmPayment.lblW.skin="txtGrey";
-  frmPayment.flxRoundTh.skin = "flxbgGrey";
-  frmPayment.lblTh.skin="txtGrey";
-  frmPayment.flxRoundF.skin = "flxbgGrey";
-  frmPayment.lblF.skin="txtGrey";
-  frmPayment.flxRoundSat.skin = "flxbgGrey";
-  frmPayment.lblSat.skin="txtGrey";
+  frmRegStep3.flxRoundT.skin = "roundBgBlueWhitelbl";
+  frmRegStep3.lblT.skin="txtWhite";   
+  frmRegStep3.flxRoundS.skin = "flxbgGrey";
+  frmRegStep3.lblS.skin="txtGrey"; 
+  frmRegStep3.flxRoundM.skin = "flxbgGrey";
+  frmRegStep3.lblM.skin="txtGrey";  
+  frmRegStep3.flxRoundW.skin = "flxbgGrey";
+  frmRegStep3.lblW.skin="txtGrey";
+  frmRegStep3.flxRoundTh.skin = "flxbgGrey";
+  frmRegStep3.lblTh.skin="txtGrey";
+  frmRegStep3.flxRoundF.skin = "flxbgGrey";
+  frmRegStep3.lblF.skin="txtGrey";
+  frmRegStep3.flxRoundSat.skin = "flxbgGrey";
+  frmRegStep3.lblSat.skin="txtGrey";
   
-  frmPayment.tbxS.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonS.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxM.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonM.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxT.skin="tbxgreyborderbluetxt100";
-  frmPayment.tbxMoonT.skin="tbxgreyborderbluetxt100";
-  frmPayment.tbxW.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonW.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxTh.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonTh.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxF.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonF.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxSat.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonSat.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxS.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonS.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxM.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonM.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxT.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxMoonT.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxW.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonW.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxTh.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonTh.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxF.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonF.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxSat.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonSat.skin="tbxgreyborderblacktxt100";
   
-  frmPayment.tbxS.setEnabled(false);
-  frmPayment.tbxMoonS.setEnabled(false);
-  frmPayment.tbxM.setEnabled(false);
-  frmPayment.tbxMoonM.setEnabled(false);
-  frmPayment.tbxT.setEnabled(true);
-  frmPayment.tbxMoonT.setEnabled(true);
-  frmPayment.tbxW.setEnabled(false);
-  frmPayment.tbxMoonW.setEnabled(false);
-  frmPayment.tbxTh.setEnabled(false);
-  frmPayment.tbxMoonTh.setEnabled(false);
-  frmPayment.tbxF.setEnabled(false);
-  frmPayment.tbxMoonF.setEnabled(false);
-  frmPayment.tbxSat.setEnabled(false);
-  frmPayment.tbxMoonSat.setEnabled(false);
+  frmRegStep3.tbxS.setEnabled(false);
+  frmRegStep3.tbxMoonS.setEnabled(false);
+  frmRegStep3.tbxM.setEnabled(false);
+  frmRegStep3.tbxMoonM.setEnabled(false);
+  frmRegStep3.tbxT.setEnabled(true);
+  frmRegStep3.tbxMoonT.setEnabled(true);
+  frmRegStep3.tbxW.setEnabled(false);
+  frmRegStep3.tbxMoonW.setEnabled(false);
+  frmRegStep3.tbxTh.setEnabled(false);
+  frmRegStep3.tbxMoonTh.setEnabled(false);
+  frmRegStep3.tbxF.setEnabled(false);
+  frmRegStep3.tbxMoonF.setEnabled(false);
+  frmRegStep3.tbxSat.setEnabled(false);
+  frmRegStep3.tbxMoonSat.setEnabled(false);
 }
 
 function  onTouchStartTbxW()
 {
   
-  frmPayment.flxRoundS.skin = "flxbgGrey";
-  frmPayment.lblS.skin="txtGrey"; 
-  frmPayment.flxRoundM.skin = "flxbgGrey";
-  frmPayment.lblM.skin="txtGrey";  
-  frmPayment.flxRoundT.skin = "flxbgGrey";
-  frmPayment.lblT .skin="txtGrey";
-  frmPayment.flxRoundTh.skin = "flxbgGrey";
-  frmPayment.lblTh.skin="txtGrey";
-  frmPayment.flxRoundF.skin = "flxbgGrey";
-  frmPayment.lblF.skin="txtGrey";
-  frmPayment.flxRoundSat.skin = "flxbgGrey";
-  frmPayment.lblSat.skin="txtGrey";
-  frmPayment.flxRoundW.skin = "roundBgBlueWhitelbl";
-  frmPayment.lblW.skin="txtWhite";
+  frmRegStep3.flxRoundS.skin = "flxbgGrey";
+  frmRegStep3.lblS.skin="txtGrey"; 
+  frmRegStep3.flxRoundM.skin = "flxbgGrey";
+  frmRegStep3.lblM.skin="txtGrey";  
+  frmRegStep3.flxRoundT.skin = "flxbgGrey";
+  frmRegStep3.lblT .skin="txtGrey";
+  frmRegStep3.flxRoundTh.skin = "flxbgGrey";
+  frmRegStep3.lblTh.skin="txtGrey";
+  frmRegStep3.flxRoundF.skin = "flxbgGrey";
+  frmRegStep3.lblF.skin="txtGrey";
+  frmRegStep3.flxRoundSat.skin = "flxbgGrey";
+  frmRegStep3.lblSat.skin="txtGrey";
+  frmRegStep3.flxRoundW.skin = "roundBgBlueWhitelbl";
+  frmRegStep3.lblW.skin="txtWhite";
   
-  frmPayment.tbxS.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonS.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxM.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonM.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxT.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonT.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxW.skin="tbxgreyborderbluetxt100";
-  frmPayment.tbxMoonW.skin="tbxgreyborderbluetxt100";
-  frmPayment.tbxTh.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonTh.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxF.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonF.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxSat.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonSat.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxS.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonS.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxM.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonM.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxT.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonT.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxW.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxMoonW.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxTh.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonTh.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxF.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonF.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxSat.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonSat.skin="tbxgreyborderblacktxt100";
   
-  frmPayment.tbxS.setEnabled(false);
-  frmPayment.tbxMoonS.setEnabled(false);
-  frmPayment.tbxM.setEnabled(false);
-  frmPayment.tbxMoonM.setEnabled(false);
-  frmPayment.tbxT.setEnabled(false);
-  frmPayment.tbxMoonT.setEnabled(false);
-  frmPayment.tbxW.setEnabled(true);
-  frmPayment.tbxMoonW.setEnabled(true);
-  frmPayment.tbxTh.setEnabled(false);
-  frmPayment.tbxMoonTh.setEnabled(false);
-  frmPayment.tbxF.setEnabled(false);
-  frmPayment.tbxMoonF.setEnabled(false);
-  frmPayment.tbxSat.setEnabled(false);
-  frmPayment.tbxMoonSat.setEnabled(false);
+  frmRegStep3.tbxS.setEnabled(false);
+  frmRegStep3.tbxMoonS.setEnabled(false);
+  frmRegStep3.tbxM.setEnabled(false);
+  frmRegStep3.tbxMoonM.setEnabled(false);
+  frmRegStep3.tbxT.setEnabled(false);
+  frmRegStep3.tbxMoonT.setEnabled(false);
+  frmRegStep3.tbxW.setEnabled(true);
+  frmRegStep3.tbxMoonW.setEnabled(true);
+  frmRegStep3.tbxTh.setEnabled(false);
+  frmRegStep3.tbxMoonTh.setEnabled(false);
+  frmRegStep3.tbxF.setEnabled(false);
+  frmRegStep3.tbxMoonF.setEnabled(false);
+  frmRegStep3.tbxSat.setEnabled(false);
+  frmRegStep3.tbxMoonSat.setEnabled(false);
 }
 
 function  onTouchStartTbxTh()
 {
-  frmPayment.flxRoundS.skin = "flxbgGrey";
-  frmPayment.lblS.skin="txtGrey"; 
-  frmPayment.flxRoundM.skin = "flxbgGrey";
-  frmPayment.lblM.skin="txtGrey";  
-  frmPayment.flxRoundT.skin = "flxbgGrey";
-  frmPayment.lblT .skin="txtGrey";
-  frmPayment.flxRoundW.skin = "flxbgGrey";
-  frmPayment.lblW.skin="txtGrey";
-  frmPayment.flxRoundF.skin = "flxbgGrey";
-  frmPayment.lblF.skin="txtGrey";
-  frmPayment.flxRoundSat.skin = "flxbgGrey";
-  frmPayment.lblSat.skin="txtGrey";
+  frmRegStep3.flxRoundS.skin = "flxbgGrey";
+  frmRegStep3.lblS.skin="txtGrey"; 
+  frmRegStep3.flxRoundM.skin = "flxbgGrey";
+  frmRegStep3.lblM.skin="txtGrey";  
+  frmRegStep3.flxRoundT.skin = "flxbgGrey";
+  frmRegStep3.lblT .skin="txtGrey";
+  frmRegStep3.flxRoundW.skin = "flxbgGrey";
+  frmRegStep3.lblW.skin="txtGrey";
+  frmRegStep3.flxRoundF.skin = "flxbgGrey";
+  frmRegStep3.lblF.skin="txtGrey";
+  frmRegStep3.flxRoundSat.skin = "flxbgGrey";
+  frmRegStep3.lblSat.skin="txtGrey";
   
-  frmPayment.tbxS.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonS.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxM.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonM.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxT.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonT.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxW.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonW.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxTh.skin="tbxgreyborderbluetxt100";
-  frmPayment.tbxMoonTh.skin="tbxgreyborderbluetxt100";
-  frmPayment.tbxF.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonF.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxSat.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonSat.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxS.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonS.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxM.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonM.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxT.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonT.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxW.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonW.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxTh.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxMoonTh.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxF.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonF.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxSat.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonSat.skin="tbxgreyborderblacktxt100";
   
-  frmPayment.flxRoundTh.skin = "roundBgBlueWhitelbl";
-  frmPayment.lblTh.skin="txtWhite";
-  frmPayment.tbxS.setEnabled(false);
-  frmPayment.tbxMoonS.setEnabled(false);
-  frmPayment.tbxM.setEnabled(false);
-  frmPayment.tbxMoonM.setEnabled(false);
-  frmPayment.tbxT.setEnabled(false);
-  frmPayment.tbxMoonT.setEnabled(false);
-  frmPayment.tbxW.setEnabled(false);
-  frmPayment.tbxMoonW.setEnabled(false);
-  frmPayment.tbxTh.setEnabled(true);
-  frmPayment.tbxMoonTh.setEnabled(true);
-  frmPayment.tbxF.setEnabled(false);
-  frmPayment.tbxMoonF.setEnabled(false);
-  frmPayment.tbxSat.setEnabled(false);
-  frmPayment.tbxMoonSat.setEnabled(false);
+  frmRegStep3.flxRoundTh.skin = "roundBgBlueWhitelbl";
+  frmRegStep3.lblTh.skin="txtWhite";
+  frmRegStep3.tbxS.setEnabled(false);
+  frmRegStep3.tbxMoonS.setEnabled(false);
+  frmRegStep3.tbxM.setEnabled(false);
+  frmRegStep3.tbxMoonM.setEnabled(false);
+  frmRegStep3.tbxT.setEnabled(false);
+  frmRegStep3.tbxMoonT.setEnabled(false);
+  frmRegStep3.tbxW.setEnabled(false);
+  frmRegStep3.tbxMoonW.setEnabled(false);
+  frmRegStep3.tbxTh.setEnabled(true);
+  frmRegStep3.tbxMoonTh.setEnabled(true);
+  frmRegStep3.tbxF.setEnabled(false);
+  frmRegStep3.tbxMoonF.setEnabled(false);
+  frmRegStep3.tbxSat.setEnabled(false);
+  frmRegStep3.tbxMoonSat.setEnabled(false);
 }
 
 function  onTouchStartTbxF()
 {
-  frmPayment.flxRoundS.skin = "flxbgGrey";
-  frmPayment.lblS.skin="txtGrey"; 
-  frmPayment.flxRoundM.skin = "flxbgGrey";
-  frmPayment.lblM.skin="txtGrey";  
-  frmPayment.flxRoundT.skin = "flxbgGrey";
-  frmPayment.lblT .skin="txtGrey";
-  frmPayment.flxRoundW.skin = "flxbgGrey";
-  frmPayment.lblW.skin="txtGrey";
-  frmPayment.flxRoundTh.skin = "flxbgGrey";
-  frmPayment.lblTh.skin="txtGrey";
-  frmPayment.flxRoundSat.skin = "flxbgGrey";
-  frmPayment.lblSat.skin="txtGrey";
+  frmRegStep3.flxRoundS.skin = "flxbgGrey";
+  frmRegStep3.lblS.skin="txtGrey"; 
+  frmRegStep3.flxRoundM.skin = "flxbgGrey";
+  frmRegStep3.lblM.skin="txtGrey";  
+  frmRegStep3.flxRoundT.skin = "flxbgGrey";
+  frmRegStep3.lblT .skin="txtGrey";
+  frmRegStep3.flxRoundW.skin = "flxbgGrey";
+  frmRegStep3.lblW.skin="txtGrey";
+  frmRegStep3.flxRoundTh.skin = "flxbgGrey";
+  frmRegStep3.lblTh.skin="txtGrey";
+  frmRegStep3.flxRoundSat.skin = "flxbgGrey";
+  frmRegStep3.lblSat.skin="txtGrey";
   
-  frmPayment.tbxS.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonS.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxM.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonM.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxT.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonT.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxW.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonW.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxTh.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonTh.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxF.skin="tbxgreyborderbluetxt100";
-  frmPayment.tbxMoonF.skin="tbxgreyborderbluetxt100";
-  frmPayment.tbxSat.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonSat.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxS.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonS.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxM.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonM.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxT.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonT.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxW.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonW.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxTh.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonTh.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxF.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxMoonF.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxSat.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonSat.skin="tbxgreyborderblacktxt100";
   
-  frmPayment.flxRoundF.skin = "roundBgBlueWhitelbl";
-  frmPayment.lblF.skin="txtWhite";
-  frmPayment.tbxS.setEnabled(false);
-  frmPayment.tbxMoonS.setEnabled(false);
-  frmPayment.tbxM.setEnabled(false);
-  frmPayment.tbxMoonM.setEnabled(false);
-  frmPayment.tbxT.setEnabled(false);
-  frmPayment.tbxMoonT.setEnabled(false);
-  frmPayment.tbxW.setEnabled(false);
-  frmPayment.tbxMoonW.setEnabled(false);
-  frmPayment.tbxTh.setEnabled(false);
-  frmPayment.tbxMoonTh.setEnabled(false);
-  frmPayment.tbxF.setEnabled(true);
-  frmPayment.tbxMoonF.setEnabled(true);
-  frmPayment.tbxSat.setEnabled(false);
-  frmPayment.tbxMoonSat.setEnabled(false);
+  frmRegStep3.flxRoundF.skin = "roundBgBlueWhitelbl";
+  frmRegStep3.lblF.skin="txtWhite";
+  frmRegStep3.tbxS.setEnabled(false);
+  frmRegStep3.tbxMoonS.setEnabled(false);
+  frmRegStep3.tbxM.setEnabled(false);
+  frmRegStep3.tbxMoonM.setEnabled(false);
+  frmRegStep3.tbxT.setEnabled(false);
+  frmRegStep3.tbxMoonT.setEnabled(false);
+  frmRegStep3.tbxW.setEnabled(false);
+  frmRegStep3.tbxMoonW.setEnabled(false);
+  frmRegStep3.tbxTh.setEnabled(false);
+  frmRegStep3.tbxMoonTh.setEnabled(false);
+  frmRegStep3.tbxF.setEnabled(true);
+  frmRegStep3.tbxMoonF.setEnabled(true);
+  frmRegStep3.tbxSat.setEnabled(false);
+  frmRegStep3.tbxMoonSat.setEnabled(false);
 }
 
 function  onTouchStartTbxSat()
 {
-  frmPayment.flxRoundS.skin = "flxbgGrey";
-  frmPayment.lblS.skin="txtGrey"; 
-  frmPayment.flxRoundM.skin = "flxbgGrey";
-  frmPayment.lblM.skin="txtGrey";  
-  frmPayment.flxRoundT.skin = "flxbgGrey";
-  frmPayment.lblT .skin="txtGrey";
-  frmPayment.flxRoundTh.skin = "flxbgGrey";
-  frmPayment.lblTh.skin="txtGrey";
-  frmPayment.flxRoundF.skin = "flxbgGrey";
-  frmPayment.lblF.skin="txtGrey";
-  frmPayment.flxRoundW.skin = "flxbgGrey";
-  frmPayment.lblW.skin="txtGrey";
+  frmRegStep3.flxRoundS.skin = "flxbgGrey";
+  frmRegStep3.lblS.skin="txtGrey"; 
+  frmRegStep3.flxRoundM.skin = "flxbgGrey";
+  frmRegStep3.lblM.skin="txtGrey";  
+  frmRegStep3.flxRoundT.skin = "flxbgGrey";
+  frmRegStep3.lblT .skin="txtGrey";
+  frmRegStep3.flxRoundTh.skin = "flxbgGrey";
+  frmRegStep3.lblTh.skin="txtGrey";
+  frmRegStep3.flxRoundF.skin = "flxbgGrey";
+  frmRegStep3.lblF.skin="txtGrey";
+  frmRegStep3.flxRoundW.skin = "flxbgGrey";
+  frmRegStep3.lblW.skin="txtGrey";
   
-  frmPayment.tbxS.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonS.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxM.skin="tbxgreyborderbluetxt100";
-  frmPayment.tbxMoonM.skin="tbxgreyborderbluetxt100";
-  frmPayment.tbxT.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonT.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxW.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonW.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxTh.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonTh.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxF.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxMoonF.skin="tbxgreyborderblacktxt100";
-  frmPayment.tbxSat.skin="tbxgreyborderbluetxt100";
-  frmPayment.tbxMoonSat.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxS.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonS.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxM.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxMoonM.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxT.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonT.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxW.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonW.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxTh.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonTh.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxF.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxMoonF.skin="tbxgreyborderblacktxt100";
+  frmRegStep3.tbxSat.skin="tbxgreyborderbluetxt100";
+  frmRegStep3.tbxMoonSat.skin="tbxgreyborderbluetxt100";
   
-  frmPayment.flxRoundSat.skin = "roundBgBlueWhitelbl";
-  frmPayment.lblSat.skin="txtWhite";
-  frmPayment.tbxS.setEnabled(false);
-  frmPayment.tbxMoonS.setEnabled(false);
-  frmPayment.tbxM.setEnabled(false);
-  frmPayment.tbxMoonM.setEnabled(false);
-  frmPayment.tbxT.setEnabled(false);
-  frmPayment.tbxMoonT.setEnabled(false);
-  frmPayment.tbxW.setEnabled(false);
-  frmPayment.tbxMoonW.setEnabled(false);
-  frmPayment.tbxTh.setEnabled(false);
-  frmPayment.tbxMoonTh.setEnabled(false);
-  frmPayment.tbxF.setEnabled(false);
-  frmPayment.tbxMoonF.setEnabled(false);
-  frmPayment.tbxSat.setEnabled(true);
-  frmPayment.tbxMoonSat.setEnabled(true);
+  frmRegStep3.flxRoundSat.skin = "roundBgBlueWhitelbl";
+  frmRegStep3.lblSat.skin="txtWhite";
+  frmRegStep3.tbxS.setEnabled(false);
+  frmRegStep3.tbxMoonS.setEnabled(false);
+  frmRegStep3.tbxM.setEnabled(false);
+  frmRegStep3.tbxMoonM.setEnabled(false);
+  frmRegStep3.tbxT.setEnabled(false);
+  frmRegStep3.tbxMoonT.setEnabled(false);
+  frmRegStep3.tbxW.setEnabled(false);
+  frmRegStep3.tbxMoonW.setEnabled(false);
+  frmRegStep3.tbxTh.setEnabled(false);
+  frmRegStep3.tbxMoonTh.setEnabled(false);
+  frmRegStep3.tbxF.setEnabled(false);
+  frmRegStep3.tbxMoonF.setEnabled(false);
+  frmRegStep3.tbxSat.setEnabled(true);
+  frmRegStep3.tbxMoonSat.setEnabled(true);
 }
 
 
 function onClickOfBtnMyChoice(){
-  frmPayment.btnDaily.skin = "btnsknGreyBG";
-  frmPayment.btnMyChoice.skin = "bgGreen" ;
-  frmPayment.btnDaily.zIndex=1;
-  frmPayment.btnMyChoice.zIndex=2;
-  frmPayment.tbxM.setEnabled(false);
-  frmPayment.tbxMoonM.setEnabled(false);
-  frmPayment.tbxT.setEnabled(false);
-  frmPayment.tbxMoonT.setEnabled(false);
-  frmPayment.tbxW.setEnabled(false);
-  frmPayment.tbxMoonW.setEnabled(false);
-  frmPayment.tbxTh.setEnabled(false);
-  frmPayment.tbxMoonTh.setEnabled(false);
-  frmPayment.tbxF.setEnabled(false);
-  frmPayment.tbxMoonF.setEnabled(false);
-  frmPayment.tbxSat.setEnabled(false);
-  frmPayment.tbxMoonSat.setEnabled(false);
-  frmPayment.flxTbxs.setVisibility(true);
-  frmPayment.flxTbxsDown.setVisibility(true);
-  frmPayment.tbxSunDaily.setVisibility(false);
-  frmPayment.tbxMoonDaily.setVisibility(false);
+  frmRegStep3.btnDaily.skin = "btnsknGreyBG";
+  frmRegStep3.btnMyChoice.skin = "bgGreen" ;
+  frmRegStep3.btnDaily.zIndex=1;
+  frmRegStep3.btnMyChoice.zIndex=2;
+  frmRegStep3.tbxM.setEnabled(false);
+  frmRegStep3.tbxMoonM.setEnabled(false);
+  frmRegStep3.tbxT.setEnabled(false);
+  frmRegStep3.tbxMoonT.setEnabled(false);
+  frmRegStep3.tbxW.setEnabled(false);
+  frmRegStep3.tbxMoonW.setEnabled(false);
+  frmRegStep3.tbxTh.setEnabled(false);
+  frmRegStep3.tbxMoonTh.setEnabled(false);
+  frmRegStep3.tbxF.setEnabled(false);
+  frmRegStep3.tbxMoonF.setEnabled(false);
+  frmRegStep3.tbxSat.setEnabled(false);
+  frmRegStep3.tbxMoonSat.setEnabled(false);
+  frmRegStep3.flxTbxs.setVisibility(true);
+  frmRegStep3.flxTbxsDown.setVisibility(true);
+  frmRegStep3.tbxSunDaily.setVisibility(false);
+  frmRegStep3.tbxMoonDaily.setVisibility(false);
   
  
   
 }
 
 function onClickOfBtnDialy(){
-  frmPayment.btnDaily.skin = "bgGreen";
-  frmPayment.btnMyChoice.skin = "btnsknGreyBG" ;
-  frmPayment.btnDaily.zIndex=2;
-  frmPayment.btnMyChoice.zIndex=1;
-  frmPayment.flxTbxs.setVisibility(false);
-  frmPayment.flxTbxsDown.setVisibility(false);
-  frmPayment.tbxSunDaily.setVisibility(true);
-  frmPayment.tbxMoonDaily.setVisibility(true);
+  frmRegStep3.btnDaily.skin = "bgGreen";
+  frmRegStep3.btnMyChoice.skin = "btnsknGreyBG" ;
+  frmRegStep3.btnDaily.zIndex=2;
+  frmRegStep3.btnMyChoice.zIndex=1;
+  frmRegStep3.flxTbxs.setVisibility(false);
+  frmRegStep3.flxTbxsDown.setVisibility(false);
+  frmRegStep3.tbxSunDaily.setVisibility(true);
+  frmRegStep3.tbxMoonDaily.setVisibility(true);
 }
 
 function onClickOfPrepaid(){
 
-  frmPayment.btnPrepaid.skin = "bgGreen";
-  frmPayment.btnPostpaid.skin = "btnsknGreyBG" ;
-  frmPayment.btnPrepaid.zIndex=2;
-  frmPayment.btnPostpaid.zIndex=1;
+  frmRegStep3.btnPrepaid.skin = "bgGreen";
+  frmRegStep3.btnPostpaid.skin = "btnsknGreyBG" ;
+  frmRegStep3.btnPrepaid.zIndex=2;
+  frmRegStep3.btnPostpaid.zIndex=1;
 }
 
 function onClickOfPostpaid()
 {
-  frmPayment.btnPrepaid.skin = "btnsknGreyBG";
-  frmPayment.btnPostpaid.skin = "bgGreen" ;
-  frmPayment.btnPrepaid.zIndex=1;
-  frmPayment.btnPostpaid.zIndex=2;
+  frmRegStep3.btnPrepaid.skin = "btnsknGreyBG";
+  frmRegStep3.btnPostpaid.skin = "bgGreen" ;
+  frmRegStep3.btnPrepaid.zIndex=1;
+  frmRegStep3.btnPostpaid.zIndex=2;
 }
 
 
 function showLocations()
 {
-  frmLocality.lineHorizontal.setVisibility(false);
-  frmLocality.flxSegmentLocality.setVisibility(true); 
-  frmLocality.segCity.onRowClick = selectCityName;
+  frmRegStep2.lineHorizontal.setVisibility(false);
+  frmRegStep2.flxSegmentLocality.setVisibility(true); 
+  frmRegStep2.segCity.onRowClick = selectCityName;
 }
 
 function showStreets()
 {
-  frmLocality.lblUnderline2.setVisibility(false);
-  frmLocality.flxSegmentStreets.setVisibility(true); 
-  frmLocality.segStreets.onRowClick = selectStreetName;
+  frmRegStep2.lblUnderline2.setVisibility(false);
+  frmRegStep2.flxSegmentStreets.setVisibility(true); 
+  frmRegStep2.segStreets.onRowClick = selectStreetName;
 }
 
 
 function selectStreetName()
 {
-  var array = frmLocality.segStreets.selectedRowItems;
+  var array = frmRegStep2.segStreets.selectedRowItems;
   //alert(array);
   //kony.print(array);
-  frmLocality.tbxStreet.text=array[0].lblSegmentData;
-  frmLocality.lblUnderline2.setVisibility(true);
-  frmLocality.flxSegmentStreets.setVisibility(false);
+  frmRegStep2.tbxStreet.text=array[0].lblSegmentData;
+  frmRegStep2.lblUnderline2.setVisibility(true);
+  frmRegStep2.flxSegmentStreets.setVisibility(false);
 
 
 }
 function selectCityName()
 {
-  var array = frmLocality.segCity.selectedRowItems;
+  var array = frmRegStep2.segCity.selectedRowItems;
   //alert(array);
   //kony.print(array);
-  frmLocality.tbxLocation.text=array[0].lblSegmentData;
-  frmLocality.lineHorizontal.setVisibility(true);
-  frmLocality.flxSegmentLocality.setVisibility(false);
+  frmRegStep2.tbxLocation.text=array[0].lblSegmentData;
+  frmRegStep2.lineHorizontal.setVisibility(true);
+  frmRegStep2.flxSegmentLocality.setVisibility(false);
 
 
 }
 function hideSegment()
 {
-  frmLocality.tbxLocation.text = "";
-  frmLocality.tbxLocation.placeholder= "Enter Your Location";
-  frmLocality.tbxLocation.setEnabled(true);
-  frmLocality.flxSegmentLocality.setVisibility(false);
-  frmLocality.tbxLocation.setFocus(true);
-  frmLocality.lineHorizontal.setVisibility(true);
+  frmRegStep2.tbxLocation.text = "";
+  frmRegStep2.tbxLocation.placeholder= "Enter Your Location";
+  frmRegStep2.tbxLocation.setEnabled(true);
+  frmRegStep2.flxSegmentLocality.setVisibility(false);
+  frmRegStep2.tbxLocation.setFocus(true);
+  frmRegStep2.lineHorizontal.setVisibility(true);
 }
 
 function hideStreetSeg()
 {
-  frmLocality.tbxStreet.text = "";
-  frmLocality.tbxStreet.placeholder= "Enter Your Street";
-  frmLocality.tbxStreet.setEnabled(true);
-  frmLocality.flxSegmentStreets.setVisibility(false);
-  frmLocality.tbxStreet.setFocus(true);
-  frmLocality.lblUnderline2.setVisibility(true);
+  frmRegStep2.tbxStreet.text = "";
+  frmRegStep2.tbxStreet.placeholder= "Enter Your Street";
+  frmRegStep2.tbxStreet.setEnabled(true);
+  frmRegStep2.flxSegmentStreets.setVisibility(false);
+  frmRegStep2.tbxStreet.setFocus(true);
+  frmRegStep2.lblUnderline2.setVisibility(true);
 }
 
 
 function chooseProduct()
 {
-  frmPayment.lineHorizontal.setVisibility(false);
-  frmPayment.flxSegmentLocality.setVisibility(true); 
-  frmPayment.segCity.onRowClick = selectProduct;
+  frmRegStep3.lineHorizontal.setVisibility(false);
+  frmRegStep3.flxSegmentLocality.setVisibility(true); 
+  frmRegStep3.segCity.onRowClick = selectProduct;
 }
 
 
     
 function selectProduct()
 {
-  var array =frmPayment.segCity.selectedRowItems; 
+  var array =frmRegStep3.segCity.selectedRowItems; 
   //alert(array);
   //kony.print(array);
-  frmPayment.tbxSelectProduct.text=array[0].lblSegmentData;
-  frmPayment.lineHorizontal.setVisibility(true);
-  frmPayment.flxSegmentLocality.setVisibility(false);
+  frmRegStep3.tbxSelectProduct.text=array[0].lblSegmentData;
+  frmRegStep3.lineHorizontal.setVisibility(true);
+  frmRegStep3.flxSegmentLocality.setVisibility(false);
 }
 
 function hideSegmentProducts()
 {
-  frmPayment.tbxSelectProduct.text = "";
-  frmPayment.tbxSelectProduct.placeholder= "Enter Your Product";
-  frmPayment.tbxSelectProduct.setEnabled(true);
-  frmPayment.flxSegmentLocality.setVisibility(false);
-  frmPayment.tbxSelectProduct.setFocus(true);
-  frmPayment.lineHorizontal.setVisibility(true);
+  frmRegStep3.tbxSelectProduct.text = "";
+  frmRegStep3.tbxSelectProduct.placeholder= "Enter Your Product";
+  frmRegStep3.tbxSelectProduct.setEnabled(true);
+  frmRegStep3.flxSegmentLocality.setVisibility(false);
+  frmRegStep3.tbxSelectProduct.setFocus(true);
+  frmRegStep3.lineHorizontal.setVisibility(true);
 }
 
 function chooseUnit()
 { 
-  frmPayment.lblUnderLine2.setVisibility(false);
-  frmPayment.flxSegmentUnit.setVisibility(true); 
-  frmPayment.segUnit.onRowClick = selectUnit;
+  frmRegStep3.lblUnderLine2.setVisibility(false);
+  frmRegStep3.flxSegmentUnit.setVisibility(true); 
+  frmRegStep3.segUnit.onRowClick = selectUnit;
 }
 
 function selectUnit()
 {
-  var array =frmPayment.segUnit.selectedRowItems; 
-  frmPayment.tbxSelectUnit.text=array[0].lblSegmentData;
-  frmPayment.lblUnderLine2.setVisibility(true);
-  frmPayment.flxSegmentUnit.setVisibility(false);
+  var array =frmRegStep3.segUnit.selectedRowItems; 
+  frmRegStep3.tbxSelectUnit.text=array[0].lblSegmentData;
+  frmRegStep3.lblUnderLine2.setVisibility(true);
+  frmRegStep3.flxSegmentUnit.setVisibility(false);
 }
 
 function hideSegmentUnits()
 {
-  frmPayment.tbxSelectUnit.text = "";
-  frmPayment.tbxSelectUnit.placeholder= "Enter Your Unit";
-  frmPayment.tbxSelectUnit.setEnabled(true);
-  frmPayment.flxSegmentUnit.setVisibility(false);
-  frmPayment.tbxSelectUnit.setFocus(true);
-  frmPayment.lblUnderLine2.setVisibility(true);
+  frmRegStep3.tbxSelectUnit.text = "";
+  frmRegStep3.tbxSelectUnit.placeholder= "Enter Your Unit";
+  frmRegStep3.tbxSelectUnit.setEnabled(true);
+  frmRegStep3.flxSegmentUnit.setVisibility(false);
+  frmRegStep3.tbxSelectUnit.setFocus(true);
+  frmRegStep3.lblUnderLine2.setVisibility(true);
 }
 
 function frmPaymentOnClickContinue()
 {
-  var product = frmPayment.tbxSelectProduct.text;
-  var unit=frmPayment.tbxSelectUnit.text;
-  var quantity=frmPayment.tbxQuantity.text;
-  var deliveryCharges=frmPayment.tbxDeliveryCharges.text;
+  var product = frmRegStep3.tbxSelectProduct.text;
+  var unit=frmRegStep3.tbxSelectUnit.text;
+  var quantity=frmRegStep3.tbxQuantity.text;
+  var deliveryCharges=frmRegStep3.tbxDeliveryCharges.text;
   
   if(((product !== null && product !== "" && product !== undefined)&&
       (unit !== null && unit !== "" && unit !== undefined) &&
@@ -687,14 +687,14 @@ function frmPaymentOnClickContinue()
       (deliveryCharges !== null && deliveryCharges !== "" && deliveryCharges !== undefined)))
       {
         kony.print("in validations success");
-         frmPayment.lblErrMsgPayment.text = "";
+         frmRegStep3.lblErrMsgPayment.text = "";
        // frmReg_Init();
-        //frmReg.show();
+        //frmRegStep1.show();
                  //alert("Validations satisfied");
       }else
         {
-          frmPayment.lblErrMsgPayment.text = "Please fill all the details .";
-          frmPayment.lblErrMsgPayment.skin = "lblRedErrMsg";
+          frmRegStep3.lblErrMsgPayment.text = "Please fill all the details .";
+          frmRegStep3.lblErrMsgPayment.skin = "lblRedErrMsg";
           //alert("error message");
         }
 }
