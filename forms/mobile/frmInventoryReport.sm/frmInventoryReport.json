@@ -30,26 +30,21 @@
     },
     "canUpdateUI": true,
     "children": [
-        "flxMain"
+        "flxMain",
+        "flxSegDeliveryBoy"
     ],
     "containerweight": 100,
     "currentLocale": "default",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "GalaxyS5",
+    "device": "GalaxyS7",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-    "footer": "frmRegStep1_footer",
-    "footersId": "df4550e5757d49aaadae48398abfea47",
-    "header": "frmRegStep1_header",
-    "headersId": "a8c3d144f3e9454cbc619e189c1b6be5",
-    "id": "frmRegStep1",
-    "ide_preShow": "AS_Form_aa16f5fcb5364fe5a389d5cdede5d6c3",
+    "id": "frmInventoryReport",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
-    "invokedProperty": "footers",
     "ipad": {
         "needAppMenu": false,
         "psp": {
@@ -64,7 +59,7 @@
             "titleBarAttributes": {
                 "barStyle": 0,
                 "hidesBackButton": false,
-                "kuid": "he4693b9c86e4f48b6c1a4fc42680346",
+                "kuid": "e4a1d78bfcc84cabbcd0919c2cce73e5",
                 "leftBarButtonItems": [],
                 "leftItemsSupplementBackButton": true,
                 "prompt": "",
@@ -75,7 +70,7 @@
                         "info": {
                             "title": "Edit"
                         },
-                        "kuid": "b991eaddf46e45659835bfd788f6e710",
+                        "kuid": "ea64d9b554fb4ffdb331742d14fd4676",
                         "style": 0,
                         "tintColor": "4b88f100",
                         "type": 1
@@ -92,18 +87,18 @@
     "kiosk": {
         "needAppMenu": false
     },
-    "kuid": "af1b86edc5244371b0841c04791535b2",
+    "kuid": "d8160263828f4cbcbd67ff7ed2839e47",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": false,
     "paddinginpixel": false,
     "platform": "android",
-    "prevDevice": "iPhoneXS",
+    "prevDevice": "GalaxyS2",
     "prevPlatform": "iphone",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,
-    "shellCSS": "and_GalaxyS5",
+    "shellCSS": "and_GalaxyS7",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {
@@ -127,7 +122,7 @@
     "spawinphone8": {
         "needAppMenu": false
     },
-    "titleBarSkin": "s7a5bd2dd766453fb725174e7c7c2e95",
+    "titleBarSkin": "s54e0fbeaa8543408c681a0b05e21824",
     "titlebar": true,
     "type": 3,
     "wType": "Form",

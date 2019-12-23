@@ -1,0 +1,35 @@
+{
+    "AS_Image_f756ca6380004642919bd24a91194f3f": {
+        "id": "AS_Image_f756ca6380004642919bd24a91194f3f",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmInventorySelBoy_OnTuchStart",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmRegStep2",
+            "type": "forms",
+            "platform": "",
+            "KUID": "g6012068be6848febb2e8b6870bf8de6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___e2189e7ae7574c07b676c594e611e6d3",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "inventorySelBoy",
+            "display": "inventorySelBoy",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

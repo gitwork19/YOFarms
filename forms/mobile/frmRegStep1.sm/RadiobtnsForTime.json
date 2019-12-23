@@ -29,7 +29,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "160dp"
+        "value": "213dp"
     },
     "android": {
         "psp": {
@@ -57,24 +57,24 @@
     "kuid": "f88ddf2e404d405a8ffcb8e4b627097b",
     "masterdata": [
         [
-                       "Morning"
+            "Morning",
+            "Morning"
         ],
         [
-                        "Evening"
-
+            "Evening",
+            "Evening"
         ]
-      
     ],
     "name": "kony.ui.RadioButtonGroup",
     "parent": "flxMain",
     "pf": "frmRegStep1",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "selectedkey": "AM",
+    "selectedkey": "Morning",
     "selectedkeyvalue": [
-
+        "Morning",
         "Morning"
-],
+    ],
     "size": 18,
     "tickedimage": "",
     "viewconfig": {
