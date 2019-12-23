@@ -1,0 +1,35 @@
+{
+    "AS_Label_j9e028ca712f4c3293f7a7e402b0123b": {
+        "id": "AS_Label_j9e028ca712f4c3293f7a7e402b0123b",
+        "type": "ACTION_SEQUENCE",
+        "name": "lblCustAttnd_TuchStart",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c855106ba94b44ad8d0d918ae746cb92"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___c5536f12d1374c2fb9a9dc35885104da",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showInvetoryForm",
+            "display": "showInvetoryForm",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

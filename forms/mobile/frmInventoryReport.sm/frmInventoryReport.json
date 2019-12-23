@@ -29,13 +29,16 @@
         "needAppMenu": false
     },
     "canUpdateUI": true,
-    "children": [],
+    "children": [
+        "flxMain",
+        "flxSegDeliveryBoy"
+    ],
     "containerweight": 100,
     "currentLocale": "default",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhoneXS",
+    "device": "GalaxyS7",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "frmInventoryReport",
@@ -89,13 +92,13 @@
     "name": "kony.ui.Form2",
     "needappmenu": false,
     "paddinginpixel": false,
-    "platform": "iphone",
-    "prevDevice": "iPhoneXS",
+    "platform": "android",
+    "prevDevice": "GalaxyS2",
     "prevPlatform": "iphone",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhoneXS",
+    "shellCSS": "and_GalaxyS7",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {

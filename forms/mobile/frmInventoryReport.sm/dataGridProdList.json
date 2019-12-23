@@ -1,0 +1,174 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTable",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "col1": "Jeevana",
+            "col2": "Desi Cow Milk",
+            "col3": "500 ml",
+            "col4": "1"
+        },
+        {
+            "col1": "Jeevana",
+            "col2": "Natural Buffalo Milk",
+            "col3": "500ml",
+            "col4": "48"
+        },
+        {
+            "col1": "Jeevana",
+            "col2": "Panner",
+            "col3": "200 gms",
+            "col4": "1"
+        },
+        {
+            "col1": "",
+            "col2": "",
+            "col3": "Total",
+            "col4": "50"
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "96%"
+    },
+    "android": {
+        "psp": {
+            "gridlineColor": "ffffff00"
+        }
+    },
+    "canUpdateUI": true,
+    "cellBorder": "4px solid #ffffff",
+    "columnheadersconfig": [
+        {
+            "columnContentAlignment": 4,
+            "columnHeaderTemplate": null,
+            "columnHeaderText": "     Dairy",
+            "columnHeaderType": "text",
+            "columnID": "col1",
+            "columnOnClick": null,
+            "columnText": "Not Defined",
+            "columnType": "text",
+            "columnWidthInPercentage": 20,
+            "ide_onClick": null,
+            "isColumnSortable": false,
+            "kuid": "g678ac0eccef4139a7dead6db19b0bae"
+        },
+        {
+            "columnContentAlignment": 4,
+            "columnHeaderTemplate": null,
+            "columnHeaderText": "     Product",
+            "columnHeaderType": "text",
+            "columnID": "col2",
+            "columnOnClick": null,
+            "columnText": "Not Defined",
+            "columnType": "text",
+            "columnWidthInPercentage": 30,
+            "ide_onClick": null,
+            "isColumnSortable": false,
+            "kuid": "b5b8c1be05054f74a8264ba8bec750ce"
+        },
+        {
+            "columnContentAlignment": 5,
+            "columnHeaderTemplate": null,
+            "columnHeaderText": "Unit",
+            "columnHeaderType": "text",
+            "columnID": "col3",
+            "columnOnClick": null,
+            "columnText": "Not Defined",
+            "columnType": "text",
+            "columnWidthInPercentage": 20,
+            "ide_onClick": null,
+            "isColumnSortable": false,
+            "kuid": "i831631c5868483bb3bcdca5404cba64"
+        },
+        {
+            "columnContentAlignment": 5,
+            "columnHeaderTemplate": null,
+            "columnHeaderText": "Qunatity",
+            "columnHeaderType": "text",
+            "columnID": "col4",
+            "columnOnClick": null,
+            "columnText": "Not Defined",
+            "columnType": "text",
+            "columnWidthInPercentage": 30,
+            "ide_onClick": null,
+            "isColumnSortable": false,
+            "kuid": "jac7cfdb84d741a4b9ff82c2b2b7195a"
+        }
+    ],
+    "columnids": [
+        "col1",
+        "col2",
+        "col3",
+        "col4"
+    ],
+    "columntype": [
+        "text",
+        "text",
+        "text",
+        "text"
+    ],
+    "containerweight": 100,
+    "contentalignment": 5,
+    "context": {
+        "channel": "mobile",
+        "formID": "frmInventoryReport",
+        "platform": "android",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "counter": "33",
+    "focusedindex": null,
+    "focuseditem": null,
+    "gridlinestyle": "solid",
+    "headerskin": "s27e0c75350f41b8bab88ef2e743435a",
+    "id": "dataGridProdList",
+    "info": null,
+    "iscustomlayout": false,
+    "ismultiselect": false,
+    "isvisible": true,
+    "kuid": "h575588e86e141e2a6320bed15216658",
+    "name": "kony.ui.DataGrid",
+    "parent": "flxProductList",
+    "pf": "frmInventoryReport",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "rowalternateskin": "s4c5ef48593b41a1a6461b497e0879a5",
+    "rowcount": 4,
+    "rowfocusskin": "sa4422985a7247cfa1e3f27cecaa682e",
+    "rownormalskin": "s4c5ef48593b41a1a6461b497e0879a5",
+    "selectedcellindex": null,
+    "selectedcellitem": null,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditem": null,
+    "selecteditems": null,
+    "showcolumnheaders": true,
+    "wType": "DataGrid",
+    "zindex": 1
+}
