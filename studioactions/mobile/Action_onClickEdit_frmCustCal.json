@@ -1,0 +1,32 @@
+{
+    "AS_Button_j23562d6e725417ea461e406c7c251bb": {
+        "id": "AS_Button_j23562d6e725417ea461e406c7c251bb",
+        "type": "ACTION_SEQUENCE",
+        "name": "Action_onClickEdit_frmCustCal",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCustomerCalendar",
+            "type": "forms",
+            "platform": "",
+            "KUID": "i6092e71fb244536ba7146230db7015c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___cc181bacf8af470d9352b2421ecf2378",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmEdit",
+            "formKUID": "i553d084f3ff409a82fc94770912dd37",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": "",
+            "navigationObj": "{\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"btnEdit\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

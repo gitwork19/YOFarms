@@ -1,0 +1,466 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        },
+        {
+            "lblCustProduct": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Product"
+            },
+            "lblCustQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Quantity"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblNotification": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Notification"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "019",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segCustInventory",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e446030d8c3f4f91ad27a8d727818f1e",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxScrollProd",
+    "pf": "frmInventoryReport",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "af793fcdb60744ab8f4a1c2c39258bd6",
+    "rowcounter": 19,
+    "rowfocusskin": "s0994135919649e88ef9d11cfeb875ab",
+    "rowskin": "sbdab491c4ce4498a3ba6f19a1a00bc3",
+    "rowtemplate": "flxCustProdList",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sdb6158af3954658964b2effcf257d37",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxCustList": "flxCustList",
+        "flxCustProdList": "flxCustProdList",
+        "lblCustProduct": "lblCustProduct",
+        "lblCustQuantity": "lblCustQuantity",
+        "lblName": "lblName",
+        "lblNotification": "lblNotification"
+    },
+    "zindex": 1
+}

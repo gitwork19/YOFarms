@@ -1,0 +1,22 @@
+{
+    "AS_Button_ced49555b57c43c6b3dd1f6e6e15b8fc": {
+        "id": "AS_Button_ced49555b57c43c6b3dd1f6e6e15b8fc",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___d5e709a3f4e042e587c1361b226e3d29",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "downloadSegDaa",
+            "display": "downloadSegDaa",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

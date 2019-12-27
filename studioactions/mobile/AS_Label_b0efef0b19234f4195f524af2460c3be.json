@@ -1,0 +1,34 @@
+{
+    "AS_Label_b0efef0b19234f4195f524af2460c3be": {
+        "id": "AS_Label_b0efef0b19234f4195f524af2460c3be",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c855106ba94b44ad8d0d918ae746cb92"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___fa88ee9e7de248e295e97ce9ffba934a",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showInvetoryForm",
+            "display": "showInvetoryForm",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

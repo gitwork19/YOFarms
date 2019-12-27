@@ -1,0 +1,132 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgDairyfarm": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "profile.png"
+            },
+            "lblProductName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Natural Buffalo Milk"
+            },
+            "lblQtyValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2"
+            },
+            "lblQuantity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Qty:"
+            },
+            "lblUnits": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "500 ml"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segCustProd",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "g177b60a9dd948b1885d4fe76e3a6534",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSeg",
+    "pf": "frmCustomerCalendar",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "ff824473129849b99370bf7443042642",
+    "rowcounter": 0,
+    "rowfocusskin": "s0994135919649e88ef9d11cfeb875ab",
+    "rowskin": "sbdab491c4ce4498a3ba6f19a1a00bc3",
+    "rowtemplate": "flxProdListByDate",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sdb6158af3954658964b2effcf257d37",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "FlexContainer0g3850448416a4b": "FlexContainer0g3850448416a4b",
+        "flxProdListByDate": "flxProdListByDate",
+        "flxProductDetails": "flxProductDetails",
+        "flxQunatity": "flxQunatity",
+        "flximgDairyfarm": "flximgDairyfarm",
+        "imgDairyfarm": "imgDairyfarm",
+        "lblProductName": "lblProductName",
+        "lblQtyValue": "lblQtyValue",
+        "lblQuantity": "lblQuantity",
+        "lblUnits": "lblUnits"
+    },
+    "zindex": 1
+}

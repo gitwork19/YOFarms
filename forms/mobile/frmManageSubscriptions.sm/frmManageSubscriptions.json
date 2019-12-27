@@ -40,10 +40,13 @@
     "device": "Pixel3",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "header": "frmManageSubscriptions_header",
+    "headersId": "b60b3761050d4c1cb06a9494d3009149",
     "id": "frmManageSubscriptions",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
+    "invokedProperty": "headers",
     "ipad": {
         "needAppMenu": false,
         "psp": {
@@ -92,7 +95,7 @@
     "needappmenu": false,
     "paddinginpixel": false,
     "platform": "android",
-    "prevDevice": "Pixel3XL",
+    "prevDevice": "iPhoneXS",
     "prevPlatform": "iphone",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

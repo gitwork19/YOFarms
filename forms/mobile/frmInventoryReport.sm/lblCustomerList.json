@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "15dp"
+        "value": "5%"
     },
     "_margin_": [
         1,
@@ -24,13 +24,9 @@
     ],
     "_skin_": "s3a8ddcf18984906b5a6b96eb621120e",
     "_text_": "Customer Specific List of Products and Qunatities",
-    "_top_": {
-        "type": "string",
-        "value": "8dp"
-    },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "90%"
     },
     "_wrapping_": 2,
     "android": {
@@ -56,7 +52,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e273a843f2e74a229b3d830ee2d6e64b",
+    "kuid": "aa5f299aaac24d13a14f4fb7bcd38d93",
     "name": "kony.ui.Label",
     "parent": "flxCustomer",
     "pf": "frmInventoryReport",

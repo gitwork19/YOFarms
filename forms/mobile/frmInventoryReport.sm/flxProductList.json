@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "30%"
+        "value": "25%"
     },
     "_left_": {
         "type": "string",
@@ -37,7 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "lblproductList",
-        "dataGridProdList"
+        "flxPrdouctValues",
+        "flxScrollProdList"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -47,7 +48,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "e132ac8693274ceda48a54fe28a569cb",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxMain",
     "pf": "frmInventoryReport",

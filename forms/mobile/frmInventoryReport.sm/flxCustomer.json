@@ -2,8 +2,8 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "30%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -26,18 +26,19 @@
     "_skin_": "s7d12891eecb43a99e49be26d055517f",
     "_top_": {
         "type": "string",
-        "value": "3dp"
+        "value": "3%"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
+    "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
         "lblCustomerList",
-        "dataGridCustList"
+        "flxCustList",
+        "flxScrollProd"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -46,8 +47,8 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "g1b5405a9b094f44919e390281924f63",
-    "layouttype": 2,
+    "kuid": "c6c18e0b9df4438a8db38dc40a1b41cd",
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxMain",
     "pf": "frmInventoryReport",

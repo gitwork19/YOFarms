@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "40dp"
+        "value": "84%"
     },
     "_margin_": [
         6,
@@ -18,18 +18,22 @@
         0,
         0
     ],
-    "_skin_": "s0bd03286b9844cd9d0f3930068e16be",
+    "_right_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_skin_": "s81cbfc4784f47e1a7cdb330a9234843",
     "_text_": "Get Report",
     "_top_": {
-        "type": "number",
-        "value": "0"
+        "type": "string",
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "300dp"
+        "value": "46%"
     },
     "canUpdateUI": true,
-    "centerx": {
+    "centery": {
         "type": "string",
         "value": "50%"
     },
@@ -41,9 +45,9 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "bb29d9b599704952ace3cf0df329df1c",
+    "kuid": "bb7fdc7aa65040ddb29e90554e035343",
     "name": "kony.ui.Button",
-    "parent": "flxMain",
+    "parent": "flxGetReport",
     "pf": "frmInventoryReport",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

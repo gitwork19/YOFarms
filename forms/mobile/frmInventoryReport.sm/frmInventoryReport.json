@@ -30,21 +30,24 @@
     },
     "canUpdateUI": true,
     "children": [
-        "flxMain",
-        "flxSegDeliveryBoy"
+        "flxMain"
     ],
     "containerweight": 100,
     "currentLocale": "default",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "GalaxyS7",
+    "device": "GalaxyS8Plus",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "enablescrolling": false,
+    "header": "frmInventoryReport_header",
+    "headersId": "b60b3761050d4c1cb06a9494d3009149",
     "id": "frmInventoryReport",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
+    "invokedProperty": "headers",
     "ipad": {
         "needAppMenu": false,
         "psp": {
@@ -93,12 +96,12 @@
     "needappmenu": false,
     "paddinginpixel": false,
     "platform": "android",
-    "prevDevice": "GalaxyS2",
+    "prevDevice": "iPhoneXS",
     "prevPlatform": "iphone",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,
-    "shellCSS": "and_GalaxyS7",
+    "shellCSS": "and_GalaxyS8Plus",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {

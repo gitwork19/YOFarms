@@ -1,0 +1,35 @@
+{
+    "AS_Label_c941397147834ad898b4c7ed05a98add": {
+        "id": "AS_Label_c941397147834ad898b4c7ed05a98add",
+        "type": "ACTION_SEQUENCE",
+        "name": "Action_onClickReport",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c855106ba94b44ad8d0d918ae746cb92"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___d4fdbce3c99c4a6b835f54a18836e56d",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "currentMonthData",
+            "display": "currentMonthData",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

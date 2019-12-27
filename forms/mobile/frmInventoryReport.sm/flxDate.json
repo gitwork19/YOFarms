@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "33dp"
+        "value": "38dp"
     },
     "_left_": {
         "type": "string",
-        "value": "2dp"
+        "value": "5%"
     },
     "_margin_": [
         0,
@@ -23,21 +23,21 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s540cd8fdf8d4dda980e26193feb29e4",
+    "_skin_": "s7d12891eecb43a99e49be26d055517f",
     "_top_": {
         "type": "string",
-        "value": "3dp"
+        "value": "8dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "90%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblDate",
-        "calSel"
+        "lblSelDate",
+        "calSelDate"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -46,7 +46,7 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "d37103d15688405e8dd95c5ed73881ce",
+    "kuid": "i5df7af665334db3bba03dd03ee0cc65",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "flxMain",
