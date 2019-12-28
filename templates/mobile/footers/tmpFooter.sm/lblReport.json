@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0.25%"
+        "value": "0dp"
     },
     "_margin_": [
         1,
@@ -22,11 +22,15 @@
         0,
         0
     ],
-    "_skin_": "s9b9f075c3d5434bb55b65bbe8aa8a44",
-    "_text_": "Customer Attendance",
+    "_skin_": "s1251d78d79242a8899ace59525dd0cd",
+    "_text_": "Reeport",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_width_": {
         "type": "string",
-        "value": "25%"
+        "value": "24.50%"
     },
     "_wrapping_": 2,
     "android": {
@@ -38,7 +42,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "lblCustAttnd",
+    "id": "lblReport",
     "info": null,
     "ipad": {
         "psp": {
@@ -52,10 +56,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "f675085707154f769ae912a2d6f94c62",
+    "kuid": "h9bc46e2dae34dc3b820247a34eb0675",
     "name": "kony.ui.Label",
     "parent": "flxFooter",
-    "pf": "frmDashboard",
+    "pf": "tmpFooter",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},

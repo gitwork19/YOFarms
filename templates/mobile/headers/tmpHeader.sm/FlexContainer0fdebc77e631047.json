@@ -36,10 +36,10 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "imgBack",
+        "imgMenu",
         "lblHeader",
         "Image0gf3cf9a44ff74b",
-        "imgMenu"
+        "imgBack"
     ],
     "clipbounds": true,
     "containerId": true,

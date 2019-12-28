@@ -98,7 +98,7 @@ function onRowClicking(){
 }
 
 function onEdit(){
-  alert("edit Clicked");
+ frmManageSubscriptions.show();
 }
 function onBillClick(){
   alert("Bill Clicked");
@@ -107,7 +107,7 @@ function onDeleteClicked(){
   alert("delete Clicked");
 }
 function onCalendar(){
-  alert("calendar Clicked");
+  frmCustomerCalendar.show();
 }
 
 

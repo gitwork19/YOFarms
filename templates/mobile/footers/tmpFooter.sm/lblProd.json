@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0.25%"
     },
     "_margin_": [
         1,
@@ -22,8 +22,8 @@
         0,
         0
     ],
-    "_skin_": "s1251d78d79242a8899ace59525dd0cd",
-    "_text_": "Reeport",
+    "_skin_": "s9b9f075c3d5434bb55b65bbe8aa8a44",
+    "_text_": "Add / Edit Product",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -42,7 +42,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "lblReport",
+    "id": "lblProd",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +56,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "abebd1ac29274f989bf9c70b1e0d950c",
+    "kuid": "ff1d0608897d4d62a5b49a1ec0ab0179",
     "name": "kony.ui.Label",
     "parent": "flxFooter",
-    "pf": "frmDashboard",
+    "pf": "tmpFooter",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},

@@ -1,11 +1,16 @@
 {
-    "AS_Button_e63e2ed693df41c39d72125b2049e454": {
-        "id": "AS_Button_e63e2ed693df41c39d72125b2049e454",
+    "AS_Label_f7d3db0d4bd144ada5281f16bc10cac8": {
+        "id": "AS_Label_f7d3db0d4bd144ada5281f16bc10cac8",
         "type": "ACTION_SEQUENCE",
-        "name": "btnTotalCust_onClick",
         "params": [{
             "datatype": "collection",
             "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
         }],
         "contextObj": {
             "name": "frmDashboard",
@@ -15,7 +20,7 @@
         },
         "language": "js",
         "actions": [{
-            "id": "NAVIGATE_TO_FORM___bebad20da7214b28882ab6678036f80d",
+            "id": "NAVIGATE_TO_FORM___bac1c4453c5e484c9b8f838792d8a189",
             "type": "NAVIGATE_TO_FORM",
             "formId": "frmCustomerList",
             "formKUID": "gd0e05dc7c864edab2924c01f2612d2f",
@@ -25,7 +30,7 @@
             "callbackType": null,
             "enableMappingEditor": true,
             "package": "",
-            "navigationObj": "{\n\"_meta_\" : {\n\t\"eventName\" : \"onClick\",\n\t\"widgetId\" : \"btnTotalCust\"\n}\n}",
+            "navigationObj": "{\n\"_meta_\" : {\n\t\"eventName\" : \"\",\n\t\"widgetId\" : \"\"\n}\n}",
             "isCustomInput": false
         }]
     }

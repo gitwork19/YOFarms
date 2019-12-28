@@ -23,14 +23,10 @@
         0
     ],
     "_skin_": "s9b9f075c3d5434bb55b65bbe8aa8a44",
-    "_text_": "Add / Edit Product",
-    "_top_": {
-        "type": "string",
-        "value": "0dp"
-    },
+    "_text_": "Customer Attendance",
     "_width_": {
         "type": "string",
-        "value": "24.50%"
+        "value": "25%"
     },
     "_wrapping_": 2,
     "android": {
@@ -42,7 +38,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "lblProd",
+    "id": "lblCustAttnd",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +52,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e432babe6e9d404ea13dcd3b065ee26f",
+    "kuid": "j907936746c448d9a99f5681739f6eae",
     "name": "kony.ui.Label",
     "parent": "flxFooter",
-    "pf": "frmDashboard",
+    "pf": "tmpFooter",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},

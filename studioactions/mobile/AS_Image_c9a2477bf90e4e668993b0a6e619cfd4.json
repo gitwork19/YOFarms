@@ -1,0 +1,30 @@
+{
+    "AS_Image_c9a2477bf90e4e668993b0a6e619cfd4": {
+        "id": "AS_Image_c9a2477bf90e4e668993b0a6e619cfd4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "tmpHeader",
+            "type": "templates",
+            "platform": "",
+            "KUID": "e8289350234f4307838f61a1a81fd503"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c32739494a7d4c109329a6bab34d733f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var menuShow = require(\"hamburgerMenuController\");\nmenuShow.setMenuVisibility(true);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

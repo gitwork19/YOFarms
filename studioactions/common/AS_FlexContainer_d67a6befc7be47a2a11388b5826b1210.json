@@ -17,7 +17,8 @@
             "type": "ADD_SNIPPET",
             "codeSnippet": "this.setMenuVisibility(false);",
             "parentId": null,
-            "callbackType": null
+            "callbackType": null,
+            "disabled": true
         }]
     }
 }

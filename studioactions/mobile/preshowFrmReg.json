@@ -8,7 +8,7 @@
             "name": "eventobject"
         }],
         "contextObj": {
-            "name": "frmReg",
+            "name": "frmRegStep1",
             "type": "forms",
             "platform": "",
             "KUID": "af1b86edc5244371b0841c04791535b2"

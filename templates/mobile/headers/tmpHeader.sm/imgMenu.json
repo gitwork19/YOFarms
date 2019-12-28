@@ -38,11 +38,13 @@
     "containerweight": 100,
     "context": {
         "channel": "mobile",
-        "platform": "iphone",
+        "formID": "frmDashboard_header",
+        "platform": "android",
         "templateType": "headers",
-        "topLevelBox": null
+        "topLevelBox": false
     },
     "id": "imgMenu",
+    "ide_onTouchEnd": "AS_Image_c9a2477bf90e4e668993b0a6e619cfd4",
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",

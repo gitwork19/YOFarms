@@ -7,7 +7,7 @@
     },
     "_height_": {
         "type": "string",
-        "value": "11.33%"
+        "value": "11%"
     },
     "_left_": {
         "type": "string",
@@ -46,17 +46,18 @@
         "lblCustAttnd"
     ],
     "clipbounds": true,
+    "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxFooter",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "f84da779aaea4fd3bcf871b76dd30ae6",
+    "kuid": "aa07be46d9f644669cf19251c2fdf0ba",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "frmDashboard",
-    "pf": "frmDashboard",
+    "parent": "tmpFooter",
+    "pf": "tmpFooter",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

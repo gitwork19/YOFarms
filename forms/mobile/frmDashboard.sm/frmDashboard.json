@@ -31,8 +31,7 @@
     "canUpdateUI": true,
     "children": [
         "FlexContainer0a3e882ae966a49",
-        "hamburgerMenu",
-        "flxFooter"
+        "hamburgerMenu"
     ],
     "containerweight": 100,
     "currentLocale": "default",
@@ -42,6 +41,9 @@
     "device": "Pixel3",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "footer": "frmDashboard_footer",
+    "footeroverlap": false,
+    "footersId": "b71bfd4df0a143689f4076b4e771cac0",
     "header": "frmDashboard_header",
     "headersId": "e8289350234f4307838f61a1a81fd503",
     "id": "frmDashboard",
@@ -49,7 +51,7 @@
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
-    "invokedProperty": "headers",
+    "invokedProperty": "footers",
     "ipad": {
         "needAppMenu": false,
         "psp": {

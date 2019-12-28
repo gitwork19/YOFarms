@@ -52,7 +52,7 @@
     "id": "hamburgerMenu",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "b8ae4a7deca243898a8d402002b7f1b2",
     "layouttype": 2,
     "masterType": 1,

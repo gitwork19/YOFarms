@@ -38,9 +38,10 @@
     "containerweight": 100,
     "context": {
         "channel": "mobile",
-        "platform": "iphone",
+        "formID": "frmDashboard_header",
+        "platform": "android",
         "templateType": "headers",
-        "topLevelBox": null
+        "topLevelBox": false
     },
     "id": "Image0gf3cf9a44ff74b",
     "imagescalemode": 1,
