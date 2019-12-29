@@ -1,0 +1,43 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "_base64_": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s210536621f64987a31021f3fcfeef0c",
+    "_src_": "imagedrag.png",
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "ispercent": true,
+        "platform": "iphone",
+        "templateType": "popups",
+        "topLevelBox": false
+    },
+    "id": "imgSrc",
+    "imagescalemode": 1,
+    "info": null,
+    "iscustomlayout": false,
+    "ispercent": true,
+    "isvisible": true,
+    "kuid": "hf0103aca031489cab61babf89c39394",
+    "name": "kony.ui.Image2",
+    "parent": "VBox0c7c40f81ec5047",
+    "pf": "PopupErrorScreen",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5
+}

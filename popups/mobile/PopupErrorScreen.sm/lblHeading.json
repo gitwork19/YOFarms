@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_margin_": [
+        1,
+        2,
+        1,
+        2
+    ],
+    "_padding_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_skin_": "s39496ce739f443b9c5d70a3e12420bc",
+    "_text_": "ERROR",
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblHeading",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a7c0380a62ef42888ed2f0184f76d745",
+    "margininpixel": false,
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "PopupErrorScreen",
+    "pf": "PopupErrorScreen",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "textstyle": {},
+    "tooltip": "",
+    "wType": "Label"
+}

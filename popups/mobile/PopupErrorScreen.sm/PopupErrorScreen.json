@@ -1,0 +1,68 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizForm",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sbce3e3ef68b481d9195ba59ff332f84",
+    "_title_": null,
+    "addWidgetsdone": false,
+    "allboxes": [],
+    "android": {
+        "psp": {
+            "windowSoftInputMode": 2
+        }
+    },
+    "canUpdateUI": true,
+    "children": [
+        "lblHeading",
+        "Line0ee55cea056994f",
+        "HBox0a09bd0cb832e41",
+        "HBox0da1805a0c1c34e"
+    ],
+    "containerweight": 90,
+    "currentLocale": "default",
+    "desktopweb": {
+        "psp": {
+            "titleBarConfig": {
+                "closeIcon": "close.png",
+                "maxIcon": "max.png",
+                "minIcon": "min.png"
+            }
+        }
+    },
+    "device": "iPhoneX",
+    "displayorientation": 3,
+    "enabledforidletimeout": false,
+    "id": "PopupErrorScreen",
+    "info": null,
+    "initdone": false,
+    "inputaccessoryviewtype": 4,
+    "iscustomlayout": false,
+    "ismodal": false,
+    "isvisible": true,
+    "kuid": "j86478f056954c388e32095c6e106939",
+    "name": "kony.ui.Popup",
+    "paddinginpixel": false,
+    "platform": "iphone",
+    "prevDevice": "iPhoneXS",
+    "prevPlatform": "iphone",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainscrollposition": false,
+    "shellCSS": "iOS_iPhoneX",
+    "titlebar": true,
+    "transparencybehindthepopup": 100,
+    "wType": "Popup"
+}
