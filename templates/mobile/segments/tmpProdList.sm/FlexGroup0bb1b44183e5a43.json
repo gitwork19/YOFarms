@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "30%"
+        "value": "90%"
     },
     "_left_": {
         "type": "string",
-        "value": "3%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -26,37 +26,37 @@
     "_skin_": "s7d12891eecb43a99e49be26d055517f",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "10%"
     },
     "_width_": {
         "type": "string",
-        "value": "97%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "CopylblTotalCust0gb381841cb3c4e",
-        "btnDesiMilk"
+        "lblProdName",
+        "btnCount"
     ],
     "clipbounds": true,
+    "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyFlexContainer0ea08e567f4ad4a",
+    "id": "FlexGroup0bb1b44183e5a43",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "hc102858fa114b789a494b81caac357f",
+    "kuid": "da26beba170245fd8d8c228db99f3790",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxInventory",
-    "pf": "frmDashboard",
+    "parent": "flxProducts",
+    "pf": "tmpProdList",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }

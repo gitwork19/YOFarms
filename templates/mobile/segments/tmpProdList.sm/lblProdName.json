@@ -23,14 +23,14 @@
         0
     ],
     "_skin_": "s39496ce739f443b9c5d70a3e12420bc",
-    "_text_": "Due Customer",
+    "_text_": "Label",
     "_top_": {
         "type": "string",
         "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "60%"
+        "value": "67%"
     },
     "_wrapping_": 2,
     "android": {
@@ -40,9 +40,10 @@
         }
     },
     "canUpdateUI": true,
+    "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "CopylblTotalCust0gb381841cb3c4e",
+    "id": "lblProdName",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +57,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "hc1e3c82ed9948a6938047804ee146b3",
+    "kuid": "g20afcc53c8a419585111e3a860d91fc",
     "name": "kony.ui.Label",
-    "parent": "CopyFlexContainer0ea08e567f4ad4a",
-    "pf": "frmDashboard",
+    "parent": "FlexGroup0bb1b44183e5a43",
+    "pf": "tmpProdList",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},

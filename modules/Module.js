@@ -110,6 +110,13 @@ function onCalendar(){
   frmCustomerCalendar.show();
 }
 
+function onClickMenu()
+{
+  if(isMenuVisible === false)
+  	frmDashboard.hamburgerMenu.setMenuVisibility(true);
+  else
+    frmDashboard.hamburgerMenu.setMenuVisibility(false);
+}
 
 function onBack(){
   var getCurrForm = kony.application.getCurrentForm().id;
@@ -119,6 +126,5 @@ function onBack(){
         kony.application.getPreviousForm();
         break;
       }
-        
     }
 }

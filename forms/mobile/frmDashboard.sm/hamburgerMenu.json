@@ -47,12 +47,14 @@
     "canUpdateUI": true,
     "clipbounds": true,
     "containerweight": 0,
-    "data": {},
+    "data": {
+        "menuVisibility": false
+    },
     "enablescrolling": true,
     "id": "hamburgerMenu",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "b8ae4a7deca243898a8d402002b7f1b2",
     "layouttype": 2,
     "masterType": 1,

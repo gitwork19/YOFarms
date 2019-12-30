@@ -49,8 +49,10 @@ define(function() {
                 this.view.flxMenuTrans.isVisible = true;
                 this.view.width = "100%";
                 this.view.height = "100%";
+              	isMenuVisible = true;
             } else {
                 this.view.flxMenuTrans.isVisible = false;
+              isMenuVisible = false;
                 if (deviceInfo === "thinclient") {
                     this.view.width = "10%";
                     this.view.height = "5%";

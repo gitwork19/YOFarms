@@ -4,11 +4,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "80%"
+        "value": "73%"
     },
     "_left_": {
         "type": "string",
-        "value": "10%"
+        "value": "5%"
     },
     "_margin_": [
         6,
@@ -22,33 +22,32 @@
         0,
         0
     ],
-    "_right_": {
-        "type": "string",
-        "value": "10%"
-    },
     "_skin_": "sfefe4c758b040cfab8f0ecf3c1b6d70",
-    "_text_": "45",
+    "_text_": "70",
     "_top_": {
         "type": "string",
-        "value": "10%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "25%"
+        "value": "26%"
     },
     "canUpdateUI": true,
+    "containerId": true,
     "containerweight": 100,
     "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "s23ed7106b4d49f4a2586f1fbee61518"
+    },
     "displaytext": true,
-    "focusskin": "s23ed7106b4d49f4a2586f1fbee61518",
-    "id": "btnDesiMilk",
+    "id": "btnCount",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "bac13e1a878a468bb0eba36c280213ce",
+    "kuid": "i6bd8cb6058f4e24baff7ff0d3e2d297",
     "name": "kony.ui.Button",
-    "parent": "CopyFlexContainer0ea08e567f4ad4a",
-    "pf": "frmDashboard",
+    "parent": "FlexGroup0bb1b44183e5a43",
+    "pf": "tmpProdList",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "wType": "Button",

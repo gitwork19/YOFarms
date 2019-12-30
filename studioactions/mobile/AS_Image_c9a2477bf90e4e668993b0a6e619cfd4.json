@@ -20,11 +20,15 @@
         },
         "language": "js",
         "actions": [{
-            "id": "ADD_SNIPPET__c32739494a7d4c109329a6bab34d733f",
-            "type": "ADD_SNIPPET",
-            "codeSnippet": "var menuShow = require(\"hamburgerMenuController\");\nmenuShow.setMenuVisibility(true);",
+            "id": "INVOKE_FUNCTION___e2def8e2c597419ebd5ed16488425fc4",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onClickMenu",
+            "display": "onClickMenu",
+            "inputparams": [],
             "parentId": null,
-            "callbackType": null
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
         }]
     }
 }
