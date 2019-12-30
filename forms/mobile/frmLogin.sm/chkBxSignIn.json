@@ -37,7 +37,7 @@
         "value": "60%"
     },
     "containerweight": 100,
-    "id": "CheckBoxGroup0e4dcfaeea54a43",
+    "id": "chkBxSignIn",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,7 +55,7 @@
     "kuid": "d87c676c80894cd89c2c96a0e2664f27",
     "masterdata": [
         [
-            "cbg1",
+            "selected",
             "Keep me signed in"
         ]
     ],
@@ -66,16 +66,9 @@
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "selectedkey": null,
-    "selectedkeys": [
-        "cbg1"
-    ],
+    "selectedkeys": [],
     "selectedkeyvalue": null,
-    "selectedkeyvalues": [
-        [
-            "cbg1",
-            "Keep me signed in"
-        ]
-    ],
+    "selectedkeyvalues": null,
     "size": 18,
     "tickedimage": "",
     "viewtype": 0,

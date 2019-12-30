@@ -39,8 +39,7 @@
         "lblWelcome",
         "lblTo",
         "lblOrgName",
-        "lblAdmin",
-        "lblCustomer"
+        "flcLbl"
     ],
     "clipbounds": true,
     "containerweight": 100,

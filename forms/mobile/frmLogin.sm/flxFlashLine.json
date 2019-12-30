@@ -37,7 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "flxAdmin",
-        "flxCustomer"
+        "flxCustomer",
+        "flxDelBoy"
     ],
     "clipbounds": true,
     "containerweight": 100,

@@ -15,7 +15,7 @@
         0
     ],
     "_skin_": "s210536621f64987a31021f3fcfeef0c",
-    "_src_": "imagedrag.png",
+    "_src_": "tooltip.png",
     "canUpdateUI": true,
     "containerweight": 100,
     "context": {
@@ -28,6 +28,7 @@
     "id": "imgSrc",
     "imagescalemode": 1,
     "info": null,
+    "invokedProperty": "src",
     "iscustomlayout": false,
     "ispercent": true,
     "isvisible": true,
