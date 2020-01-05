@@ -1,0 +1,29 @@
+{
+    "AS_Form_h2915d8a69e1452cae11715dd309a147": {
+        "id": "AS_Form_h2915d8a69e1452cae11715dd309a147",
+        "type": "ACTION_SEQUENCE",
+        "name": "action_preshow_frmMNgSub",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmManageSubscriptions",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b077344bfb4c45fab71a9b3ae6789683"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___a6246141ef4f42c09e7327e7b474d9e4",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "MngSubPreShow",
+            "display": "MngSubPreShow",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

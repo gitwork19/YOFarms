@@ -1,0 +1,21 @@
+{
+    "AS_Button_fbfec0788a3e4a3f9eb0b1eba9adca8a": {
+        "id": "AS_Button_fbfec0788a3e4a3f9eb0b1eba9adca8a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_a4931b750630431e8cacdb6d347b2203",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "animationMngTop",
+            "display": "animationMngTop",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

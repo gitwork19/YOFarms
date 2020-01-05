@@ -1,0 +1,38 @@
+{
+    "AS_Label_hb9ce2cfff4342f8a5881326dff074b0": {
+        "id": "AS_Label_hb9ce2cfff4342f8a5881326dff074b0",
+        "type": "ACTION_SEQUENCE",
+        "name": "action_footer_AddEditProd",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "tmpFooter",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b71bfd4df0a143689f4076b4e771cac0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___fcec66064cdd44a4b7ba7fea4d0a7ca1",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmAddEditProduct",
+            "formKUID": "j34e2dc2eb0c4854bcf7ccc99c1072a3",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": "",
+            "navigationObj": "{\n    \"_meta_\": {\n        \"eventName\": \"onTouchStart\",\n        \"widgetId\": \"lblProd\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

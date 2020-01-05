@@ -1,7 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizDateField",
     "DNDConfig": null,
-    "Image": "calendar_category.png",
+    "Image": "date_selection_button.png",
     "__id": "frmManageSubscription_Calendar0j927781e34ee4d",
     "__input": "Calendar0j927781e34ee4d",
     "__parentReadjusting__": false,
@@ -37,7 +37,7 @@
         "value": "56%"
     },
     "advview": "default",
-    "calendaricon": "calendar_category.png",
+    "calendaricon": "date_selection_button.png",
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 5,

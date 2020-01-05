@@ -1,0 +1,34 @@
+{
+    "AS_Label_f4049730a1374e86a8f109f335bbb94a": {
+        "id": "AS_Label_f4049730a1374e86a8f109f335bbb94a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "tmpFooter",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b71bfd4df0a143689f4076b4e771cac0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___be934d3925524acca2de25aee16fabd2",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "currentMonthData",
+            "display": "currentMonthData",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

@@ -19,7 +19,7 @@
     "_padding_": [
         1,
         0,
-        0,
+        2,
         0
     ],
     "_placeholder_": "Please Select",
@@ -59,7 +59,7 @@
     ],
     "name": "kony.ui.ListBox",
     "paddinginpixel": false,
-    "parent": "FlexContainer0a7c8704052134a",
+    "parent": "flxSelDairy",
     "pf": "frmManageSubscriptions",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

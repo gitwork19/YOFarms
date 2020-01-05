@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_skin_": "s81cbfc4784f47e1a7cdb330a9234843",
+    "_text_": "SUBMIT",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "42%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s81cbfc4784f47e1a7cdb330a9234843",
+    "id": "btnSubmitSE",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d53f9932f96f4c529d45995c011f70d8",
+    "name": "kony.ui.Button",
+    "parent": "flxBtnSE",
+    "pf": "frmManageSubscriptions",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

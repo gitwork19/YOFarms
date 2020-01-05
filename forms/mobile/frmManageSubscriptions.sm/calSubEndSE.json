@@ -1,0 +1,81 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizDateField",
+    "DNDConfig": null,
+    "Image": "date_selection_button.png",
+    "__parentReadjusting__": false,
+    "_data_": null,
+    "_date_": "30/12/2019",
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        1,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s3c5073d0abf4b7d9689a6af926f2676",
+    "_top_": {
+        "type": "string",
+        "value": "4dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "advview": "default",
+    "calendaricon": "date_selection_button.png",
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "datecomponents": [
+        30,
+        12,
+        2019,
+        0,
+        0,
+        0
+    ],
+    "dateeditable": true,
+    "dateformat": "dd/MM/yyyy",
+    "day": 30,
+    "daytextalignmentincell": 5,
+    "format": "dd/MM/yyyy",
+    "formatteddate": "30/12/2019",
+    "hidedaysheader": false,
+    "hidemonthsheader": false,
+    "hour": 0,
+    "id": "calSubEndSE",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "baa2e7f49ab1483cb9a0b0431fb2a25b",
+    "minutes": 0,
+    "month": 12,
+    "name": "kony.ui.Calendar",
+    "noofmonths": 1,
+    "paddinginpixel": false,
+    "pagedate": "/2019",
+    "parent": "flxTOSE",
+    "pf": "frmManageSubscriptions",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "seconds": 0,
+    "selectdate": "//2019",
+    "viewtype": "default",
+    "wType": "Calendar",
+    "widgetalignment": 5,
+    "year": 2019,
+    "zindex": 1
+}

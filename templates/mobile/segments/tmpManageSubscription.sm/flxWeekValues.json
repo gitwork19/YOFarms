@@ -36,13 +36,13 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
+        "lblSunVal",
         "lblMonVal",
         "lblTueVal",
         "lblWedVal",
         "lblThrVal",
         "lblFriVal",
-        "lblSatVal",
-        "lblSunVal"
+        "lblSatVal"
     ],
     "clipbounds": true,
     "containerId": true,

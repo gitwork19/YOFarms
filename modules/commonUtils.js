@@ -12,6 +12,14 @@ function invokeServiceCall(ServiceId,Postparams,requestType,CallBackEvent,conten
 }
 
 
+function setDefaultTxtValue(wigArr){
+  
+  for(i=0;i<wigArr.length;i++){
+    wigArr[i].text = "0";
+  }
+}
+
+
 function popErrorScreenShow(errorContent){
   PopupErrorScreen.lblHeading.text = "ERROR";
   PopupErrorScreen.lblError.text = errorContent;

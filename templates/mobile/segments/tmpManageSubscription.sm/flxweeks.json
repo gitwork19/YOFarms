@@ -36,13 +36,13 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
+        "lblsun",
         "lblMon",
         "lbltue",
         "lblwed",
         "lblthr",
         "lblfri",
-        "lblsat",
-        "lblsun"
+        "lblsat"
     ],
     "clipbounds": true,
     "containerId": true,

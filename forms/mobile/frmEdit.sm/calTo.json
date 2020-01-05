@@ -1,9 +1,9 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizDateField",
     "DNDConfig": null,
-    "Image": "calendar_category.png",
-    "__id": "frmManageSubscription_Calendar0j927781e34ee4d",
-    "__input": "Calendar0j927781e34ee4d",
+    "Image": "date_selection_button.png",
+    "__id": "frmEdit_calTo",
+    "__input": "calTo",
     "__parentReadjusting__": false,
     "_data_": null,
     "_date_": "20/12/2019",
@@ -37,7 +37,7 @@
         "value": "56%"
     },
     "advview": "default",
-    "calendaricon": "calendar_category.png",
+    "calendaricon": "date_selection_button.png",
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 5,

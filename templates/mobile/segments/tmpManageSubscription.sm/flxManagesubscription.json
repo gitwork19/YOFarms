@@ -45,6 +45,7 @@
     "enablescrolling": true,
     "id": "flxManagesubscription",
     "info": null,
+    "isTemplate": true,
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "fa7e89294266421f923dd7432d86fee4",

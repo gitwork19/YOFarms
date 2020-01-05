@@ -1,0 +1,28 @@
+{
+    "AS_Button_e170499d8dd041a8b4576f84c9c7ae2f": {
+        "id": "AS_Button_e170499d8dd041a8b4576f84c9c7ae2f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmManageSubscriptions",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b077344bfb4c45fab71a9b3ae6789683"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___jed9cb792795443bacad326bf232f510",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "animationMngBtm",
+            "display": "animationMngBtm",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

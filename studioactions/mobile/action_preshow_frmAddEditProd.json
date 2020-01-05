@@ -1,0 +1,29 @@
+{
+    "AS_Form_f2a995e82a444a9a8172173bb826a0cc": {
+        "id": "AS_Form_f2a995e82a444a9a8172173bb826a0cc",
+        "type": "ACTION_SEQUENCE",
+        "name": "action_preshow_frmAddEditProd",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAddEditProduct",
+            "type": "forms",
+            "platform": null,
+            "KUID": "j34e2dc2eb0c4854bcf7ccc99c1072a3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___e41d2a8b9fad4fe1b1648a6bea5addc0",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "preshowAddEditProd",
+            "display": "preshowAddEditProd",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

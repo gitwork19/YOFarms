@@ -19,7 +19,7 @@
     "_padding_": [
         1,
         0,
-        0,
+        2,
         0
     ],
     "_placeholder_": "Please Select",
@@ -59,7 +59,7 @@
     ],
     "name": "kony.ui.ListBox",
     "paddinginpixel": false,
-    "parent": "CopyFlexContainer0f61c91d041aa49",
+    "parent": "flxProdType",
     "pf": "frmManageSubscriptions",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
