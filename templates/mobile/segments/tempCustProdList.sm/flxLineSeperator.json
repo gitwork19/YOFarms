@@ -1,11 +1,9 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizImage2",
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "2dp"
     },
     "_left_": {
         "type": "string",
@@ -17,45 +15,46 @@
         0,
         0
     ],
+    "_orientation_": 6,
     "_padding_": [
         0,
         0,
         0,
         0
     ],
-    "_skin_": "s210536621f64987a31021f3fcfeef0c",
-    "_src_": "profile.png",
+    "_percent_": true,
+    "_skin_": "se83f7ad2b694189a33e3f2ffa42cb8c",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "5dp"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
+    "allboxes": [],
+    "autogrowmode": 0,
     "canUpdateUI": true,
+    "children": [],
+    "clipbounds": true,
+    "containerId": true,
     "containerweight": 100,
-    "context": {
-        "channel": "mobile",
-        "formID": "frmMyprofile",
-        "platform": "android",
-        "templateType": "forms",
-        "topLevelBox": null
-    },
-    "id": "userImage",
-    "imagescalemode": 1,
+    "enablescrolling": true,
+    "id": "flxLineSeperator",
     "info": null,
-    "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "fb400fedecf84dbc966c4352582f6b6e",
-    "name": "kony.ui.Image2",
-    "parent": "flxImage",
-    "pf": "frmMyprofile",
+    "kuid": "d4b1b07b48934a8fa398224d7f09111e",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxVertical",
+    "pf": "tempCustProdList",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "srcType": 1,
-    "wType": "Image",
-    "widgetalignment": 5,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
     "zindex": 1
 }

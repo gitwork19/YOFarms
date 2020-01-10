@@ -1,8 +1,8 @@
 {
-    "AS_Button_e63e2ed693df41c39d72125b2049e454": {
-        "id": "AS_Button_e63e2ed693df41c39d72125b2049e454",
+    "AS_RadioButtonGroup_f895aa4edb4c4dc68e8daa26a21a577e": {
+        "id": "AS_RadioButtonGroup_f895aa4edb4c4dc68e8daa26a21a577e",
         "type": "ACTION_SEQUENCE",
-        "name": "btnTotalCust_onClick",
+        "name": "action_frmDashBoard_selMorEvng",
         "params": [{
             "datatype": "collection",
             "name": "eventobject"
@@ -15,11 +15,14 @@
         },
         "language": "js",
         "actions": [{
-            "id": "INVOKE_FUNCTION___de8f3add54464be4b2cf6e1cace88fd9",
+            "id": "INVOKE_FUNCTION___a288b5ec548a40d08231a66beff849a0",
             "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "getCustListFromService",
-            "display": "getCustListFromService",
-            "inputparams": [],
+            "sequenceKUID": "showProdDeliListDashboard",
+            "display": "showProdDeliListDashboard",
+            "inputparams": [{
+                "name": "selectedKey",
+                "value": "frmDashboard.radTime.selectedKey"
+            }],
             "parentId": null,
             "callbackType": null,
             "disabled": null,

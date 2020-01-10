@@ -1,0 +1,34 @@
+{
+    "AS_Label_d8d36b4e9df145b5b7cc3239201724d1": {
+        "id": "AS_Label_d8d36b4e9df145b5b7cc3239201724d1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "tmpFooter",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b71bfd4df0a143689f4076b4e771cac0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___ce5b4457c22447839dc0390e1e4fc9aa",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showInvetoryForm",
+            "display": "showInvetoryForm",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

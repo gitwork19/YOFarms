@@ -1,0 +1,24 @@
+{
+    "AS_RadioButtonGroup_i3e70a3caffe4637af056ef1b95b8f14": {
+        "id": "AS_RadioButtonGroup_i3e70a3caffe4637af056ef1b95b8f14",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onSelection_h6ae82486feb415b91d360c27c92ce57",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showProdDeliListDashboard",
+            "display": "showProdDeliListDashboard",
+            "inputparams": [{
+                "name": "selectedKey",
+                "value": "frmDashboard.radTime.selectedKey"
+            }],
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

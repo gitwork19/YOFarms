@@ -62,7 +62,7 @@
     "focuseditem": null,
     "groupcells": false,
     "hasSections": false,
-    "id": "Segment0e0abda4487e84c",
+    "id": "segProdDelCount",
     "info": null,
     "ipad": {
         "psp": {
@@ -115,6 +115,7 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
+        "FlexGroup0bb1b44183e5a43": "FlexGroup0bb1b44183e5a43",
         "btnCount": "btnCount",
         "flxProducts": "flxProducts",
         "lblProdName": "lblProdName"

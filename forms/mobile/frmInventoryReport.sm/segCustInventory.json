@@ -448,7 +448,7 @@
     "selectionbehavior": "default",
     "separatorcolor": "aaaaaa00",
     "separatorrequired": true,
-    "separatorthickness": 1,
+    "separatorthickness": 0,
     "showscrollbars": false,
     "viewtype": "tableview",
     "vizProps": {},
@@ -457,6 +457,8 @@
     "widgetdatamap": {
         "flxCustList": "flxCustList",
         "flxCustProdList": "flxCustProdList",
+        "flxLineSeperator": "flxLineSeperator",
+        "flxVertical": "flxVertical",
         "lblCustProduct": "lblCustProduct",
         "lblCustQuantity": "lblCustQuantity",
         "lblName": "lblName",

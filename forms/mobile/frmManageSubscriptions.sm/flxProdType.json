@@ -36,8 +36,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "CopyLabel0f860407d67d04b",
-        "CopyListBox0bc7dd94c644441"
+        "lblProdTypeAdd",
+        "listbProdTypeAdd"
     ],
     "clipbounds": true,
     "containerweight": 100,

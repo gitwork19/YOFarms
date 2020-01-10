@@ -4,11 +4,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "26dp"
     },
     "_left_": {
         "type": "string",
-        "value": "1%"
+        "value": "10.00%"
     },
     "_margin_": [
         6,
@@ -22,7 +22,7 @@
         0,
         0
     ],
-    "_skin_": "se556434f92c4a848007c3c592e9098e",
+    "_skin_": "sc74d833d7dc4c3483fafde3c6cca03c",
     "_text_": "Button",
     "_top_": {
         "type": "string",
@@ -30,14 +30,14 @@
     },
     "_width_": {
         "type": "string",
-        "value": "24%"
+        "value": "26dp"
     },
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "s23ed7106b4d49f4a2586f1fbee61518",
+    "focusskin": "sc74d833d7dc4c3483fafde3c6cca03c",
     "id": "btnDelete",
     "ide_onClick": "AS_Button_b80246d3590247e78a3a4a6d508df00d",
     "info": null,

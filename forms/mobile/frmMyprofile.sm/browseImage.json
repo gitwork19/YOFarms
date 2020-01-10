@@ -38,6 +38,7 @@
     "context": {
         "channel": "mobile",
         "formID": "frmMyprofile",
+        "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -45,7 +46,7 @@
     "imagescalemode": 1,
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "e79e3c25db76497386281aa85465dc1d",
     "name": "kony.ui.Image2",
     "parent": "flxTop",

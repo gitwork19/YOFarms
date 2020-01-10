@@ -35,7 +35,7 @@
     "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
-        "flxCustList"
+        "flxVertical"
     ],
     "clipbounds": true,
     "containerId": true,

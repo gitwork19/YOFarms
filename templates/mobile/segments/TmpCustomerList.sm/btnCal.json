@@ -4,11 +4,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "26dp"
     },
     "_left_": {
         "type": "string",
-        "value": "1%"
+        "value": "10%"
     },
     "_margin_": [
         6,
@@ -22,7 +22,7 @@
         0,
         0
     ],
-    "_skin_": "se556434f92c4a848007c3c592e9098e",
+    "_skin_": "sba34a17323241a79187e1a7625b871c",
     "_text_": "Button",
     "_top_": {
         "type": "string",
@@ -30,14 +30,14 @@
     },
     "_width_": {
         "type": "string",
-        "value": "24%"
+        "value": "26dp"
     },
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "s23ed7106b4d49f4a2586f1fbee61518",
+    "focusskin": "sba34a17323241a79187e1a7625b871c",
     "id": "btnCal",
     "ide_onClick": "AS_Button_df9c6bcec1234915a83fbd77ccb9f021",
     "info": null,

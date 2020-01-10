@@ -46,6 +46,7 @@
         "flxDailyTxt",
         "flxInvCal",
         "flxActivationDate",
+        "radTime",
         "flxBtns"
     ],
     "clipbounds": true,

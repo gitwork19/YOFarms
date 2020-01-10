@@ -1,6 +1,8 @@
 //Type your code here
 var httpclient;
 var LType = 0; // 0- Admin, 1 - Customer , 2 - Delivery
+var gblProdList;
+var gblDeliveryProdList;
 
 function onClickAdminLp(){
   frmLogin.flxAdmin.skin = "flxLitBG";
@@ -61,9 +63,9 @@ function onClcikLoginProceed(){
     };
     var userDetailsJ = JSON.stringify(userDetails);
     showLoadingIndicator();
-    frmDashboard.show();
-    dismissLoadingIndicator();
-   // invokeServiceCall("login", userDetailsJ, constants.HTTP_METHOD_POST, onClickLoginBtnCallBack, "application/json");
+   // frmDashboard.show();
+    //dismissLoadingIndicator();
+    invokeServiceCall("login", userDetailsJ, constants.HTTP_METHOD_POST, onClickLoginBtnCallBack, "application/json");
   }
   
 }
@@ -75,11 +77,48 @@ function onClickLoginBtnCallBack(){
  {
  if(httpclient.readyState == 4)
  {
-   kony.print("donwload call back"  + JSON.stringify(httpclient));
- var responseContent = httpclient.response;
-   if(responseContent["status"] == "000" && responseContent["statusMsg"] == "success"){
-	  frmDashboard.show();
-   }else if(responseContent["status"] == "003" && responseContent["statusMsg"] == "Invalid UserId/Password"){
+   kony.print("donwload call back"  + JSON.stringify(httpclient.response));
+ var httpRes = httpclient.response;
+   
+   if(httpRes["status"] == "000" && httpRes["statusMsg"] == "success"){
+     var responseContent = httpRes.response;
+	  frmDashboard.donutchart1.chartData={"data": [{
+            "colorCode": "#e7ae1f",
+            "label": "",
+            "value": responseContent["PAYMENTDETAILS"]["paidcust"]
+        },{
+            "colorCode": "#777777",
+            "label": "",
+            "value": responseContent["PAYMENTDETAILS"]["duecust"]
+        },]};
+ frmDashboard.donutchart1.enableStaticPreview = true;
+  frmDashboard.donutchart1.enableLegend = false;
+  frmDashboard.donutchart1.legendFontColor = "#000000";
+
+ frmDashboard.donutchart1.legendFontSize = "8";
+  
+   frmDashboard.donutchart2.chartData= {"data": [{
+            "colorCode": "#029372",
+            "label": "",
+            "value": responseContent["PAYMENTDETAILS"]["paidamt"]
+        },{
+            "colorCode": "#777777",
+            "label": "",
+            "value": responseContent["PAYMENTDETAILS"]["dueamt"]
+        }],};
+  
+  frmDashboard.donutchart2.enableStaticPreview = true;
+  frmDashboard.donutchart2.enableLegend = false;
+  frmDashboard.donutchart2.legendFontColor = "#000000";
+  frmDashboard.donutchart2.legendFontSize = "8";
+  frmDashboard.btnTotalCust.text = responseContent["TOTALCUST"].toString();
+  frmDashboard.btnPaidCustomer.text = responseContent["PAYMENTDETAILS"]["paidcust"];
+  frmDashboard.btnDueCustomer.text = responseContent["PAYMENTDETAILS"]["duecust"];
+  gblProdList = responseContent["PRODUCTLIST"];
+  gblDeliveryProdList =  responseContent["PRODUCTDELIVERYLIST"];  
+   showProdDeliListDashboard("mor");  
+     frmDashboard.show();
+   }else if(httpRes["status"] == "003" && httpRes["statusMsg"] == "Invalid UserId/Password"){
      popErrorScreenShow("Please enter valid userName and Password ! ");
    }else{
      popErrorScreenShow(kony.i18n.getLocalizedString("i18n.Err"));
@@ -89,8 +128,39 @@ function onClickLoginBtnCallBack(){
  }
 catch(err)
  { 
- alert("exception is :: " + err.getMessage()); 
+ alert("exception is :: " + err); 
  }
+}
+
+
+function showProdDeliListDashboard(selectedKey){
+  var finalSegDate = [];
+  var productName = "";
+  frmDashboard.segProdDelCount.removeAll();
+  for(var i=0;i<gblDeliveryProdList.length;i++){
+    		for(var k=0;k<gblProdList.length;k++){
+                  if(gblProdList[k]["productid"] == gblDeliveryProdList[i]["productid"]){
+                    productName = gblProdList[k]["name"];
+                  }
+                }
+       if(selectedKey == "mor"){
+    		if(gblDeliveryProdList[i]["prefferedtime"] == "MORNING"){
+                finalSegDate.push({
+                "lblProdName":productName,
+                "btnCount":gblDeliveryProdList[i]["quantity"].toString()
+              })
+            }
+       }else{ // selected key evening
+         if(gblDeliveryProdList[i]["prefferedtime"] == "EVENING"){
+              finalSegDate.push({
+                "lblProdName": productName,
+                "btnCount":gblDeliveryProdList[i]["quantity"]
+              })
+            }
+       }
+    
+  	}
+  frmDashboard.segProdDelCount.setData(finalSegDate);
 }
 
 function frmLoginPreshow(){

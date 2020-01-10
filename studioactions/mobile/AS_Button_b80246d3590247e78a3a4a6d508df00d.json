@@ -18,9 +18,12 @@
         "actions": [{
             "id": "INVOKE_FUNCTION___b4919cb166be4704888a5548db41258f",
             "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "onDeleteClicked",
-            "display": "onDeleteClicked",
-            "inputparams": [],
+            "sequenceKUID": "suspendCustomer",
+            "display": "suspendCustomer",
+            "inputparams": [{
+                "name": "subId",
+                "value": "frmCustomerList.segCustList.selectedRowItems[0][\"lblHiddenSubId\"]"
+            }],
             "parentId": null,
             "disabled": null,
             "source": "module"

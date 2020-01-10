@@ -18,9 +18,12 @@
         "actions": [{
             "id": "INVOKE_FUNCTION___h29bbc31a24842039dba23acb1f4f0dd",
             "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "onEdit",
-            "display": "onEdit",
-            "inputparams": [],
+            "sequenceKUID": "showCustProfileFromList",
+            "display": "showCustProfileFromList",
+            "inputparams": [{
+                "name": "segRes",
+                "value": "frmCustomerList.segCustList.selectedRowItems[0][\"lblHiddenRs\"]"
+            }],
             "parentId": null,
             "callbackType": null,
             "disabled": null,

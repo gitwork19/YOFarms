@@ -4,11 +4,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "26dp"
     },
     "_left_": {
         "type": "string",
-        "value": "1%"
+        "value": "10%"
     },
     "_margin_": [
         6,
@@ -22,7 +22,7 @@
         0,
         0
     ],
-    "_skin_": "se556434f92c4a848007c3c592e9098e",
+    "_skin_": "se3f4eee2aba4302a3bf2dcbd12a49a3",
     "_text_": "Button",
     "_top_": {
         "type": "string",
@@ -30,14 +30,14 @@
     },
     "_width_": {
         "type": "string",
-        "value": "24%"
+        "value": "26dp"
     },
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "s23ed7106b4d49f4a2586f1fbee61518",
+    "focusskin": "se3f4eee2aba4302a3bf2dcbd12a49a3",
     "id": "btnBill",
     "ide_onClick": "AS_Button_b7b98a2aaff74a6aa0d3bcf20e6c5ba7",
     "info": null,

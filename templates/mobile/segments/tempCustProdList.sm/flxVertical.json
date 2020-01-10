@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -36,23 +36,21 @@
     "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
-        "lblName",
-        "lblCustProduct",
-        "lblCustQuantity",
-        "lblNotification"
+        "flxCustList",
+        "flxLineSeperator"
     ],
     "clipbounds": true,
     "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxCustList",
+    "id": "flxVertical",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b976d40dce0145ea9889ee683e73ae62",
-    "layouttype": 3,
+    "kuid": "e1ffa43418284239bb4c31fa1db434e2",
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxVertical",
+    "parent": "flxCustProdList",
     "pf": "tempCustProdList",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

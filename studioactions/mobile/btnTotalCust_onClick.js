@@ -3,5 +3,5 @@ function btnTotalCust_onClick(eventobject) {
 }
 
 function AS_Button_e63e2ed693df41c39d72125b2049e454(eventobject) {
-    frmCustomerList.show();
+    return getCustListFromService.call(this);
 }

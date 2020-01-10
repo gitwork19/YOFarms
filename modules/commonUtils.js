@@ -1,14 +1,19 @@
 //Type your code here
 
 function invokeServiceCall(ServiceId,Postparams,requestType,CallBackEvent,contentType){
-  var endpointURL = "https://1ae655de.ngrok.io/UserManagement/rest/UserService/" + ServiceId; 
-  kony.print("ServiceId" + requestType + endpointURL + Postparams +CallBackEvent + contentType)
+  var endpointURL = "https://fbf2f125.ngrok.io/UserManagement/rest/UserService/" + ServiceId; 
+  kony.print("ServiceId" + requestType + endpointURL + Postparams  + contentType)
   httpclient = new kony.net.HttpRequest();
   httpclient.onReadyStateChange = CallBackEvent; 
   httpclient.open(requestType,endpointURL); // requestType - constants.HTTP_METHOD_POST
-  httpclient.setRequestHeader("Content-Type", contentType); // contentType - application/json , application/x-www-form-urlencoded
+  if(contentType != "" && contentType != null ){
+ 	httpclient.setRequestHeader("Content-Type", contentType); // contentType - application/json , application/x-www-form-urlencoded
+ }
+  if(Postparams != ""){
   httpclient.send(Postparams);
-  
+  }else{
+   httpclient.send();
+  }
 }
 
 

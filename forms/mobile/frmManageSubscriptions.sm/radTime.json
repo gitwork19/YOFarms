@@ -6,10 +6,6 @@
         "type": "ref",
         "value": "preferred"
     },
-    "_left_": {
-        "type": "number",
-        "value": "0"
-    },
     "_margin_": [
         0,
         0,
@@ -29,7 +25,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "70%"
+        "value": "100%"
     },
     "android": {
         "psp": {
@@ -37,14 +33,10 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "groupcells": false,
     "id": "radTime",
-    "ide_onSelection": "AS_RadioButtonGroup_f895aa4edb4c4dc68e8daa26a21a577e",
+    "ide_onSelection": "AS_RadioButtonGroup_i3e70a3caffe4637af056ef1b95b8f14",
     "info": null,
     "ipad": {
         "psp": {
@@ -59,7 +51,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "itemorientation": "horizontal",
-    "kuid": "i0a6c3f9c03041629a9a10339d9a2569",
+    "kuid": "ac55ddb291a7480392949de309b1caf6",
     "masterdata": [
         [
             "mor",
@@ -71,8 +63,8 @@
         ]
     ],
     "name": "kony.ui.RadioButtonGroup",
-    "parent": "flxInventory",
-    "pf": "frmDashboard",
+    "parent": "flxTop",
+    "pf": "frmManageSubscriptions",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "selectedkey": "mor",

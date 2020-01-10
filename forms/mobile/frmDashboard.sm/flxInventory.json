@@ -41,7 +41,7 @@
     "canUpdateUI": true,
     "children": [
         "Label0dd8a65e100d94a",
-        "Segment0e0abda4487e84c",
+        "segProdDelCount",
         "radTime"
     ],
     "clipbounds": true,

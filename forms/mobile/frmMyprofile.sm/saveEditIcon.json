@@ -24,7 +24,7 @@
         0
     ],
     "_skin_": "s210536621f64987a31021f3fcfeef0c",
-    "_src_": "imagedrag.png",
+    "_src_": "edit_blue.png",
     "_top_": {
         "type": "string",
         "value": "10dp"
@@ -38,12 +38,14 @@
     "context": {
         "channel": "mobile",
         "formID": "frmMyprofile",
+        "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },
     "id": "saveEditIcon",
     "imagescalemode": 1,
     "info": null,
+    "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "g3fa0977e649475781bfc34ee2f366eb",
