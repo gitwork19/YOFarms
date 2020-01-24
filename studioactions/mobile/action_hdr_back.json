@@ -1,0 +1,35 @@
+{
+    "AS_Image_i708d17d30d74f85a18807d98ebc2135": {
+        "id": "AS_Image_i708d17d30d74f85a18807d98ebc2135",
+        "type": "ACTION_SEQUENCE",
+        "name": "action_hdr_back",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "tmpHeaderTwo",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b60b3761050d4c1cb06a9494d3009149"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___eeef430dbe004798a54099dae4fa6247",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "hdrBackClick",
+            "display": "hdrBackClick",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

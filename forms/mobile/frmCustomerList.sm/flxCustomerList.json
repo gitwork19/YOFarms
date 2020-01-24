@@ -38,7 +38,8 @@
     "bounces": true,
     "canUpdateUI": true,
     "children": [
-        "segCustList"
+        "segCustList",
+        "flxTxtBox"
     ],
     "clipbounds": true,
     "containerweight": 100,

@@ -9,6 +9,7 @@ function animationMngTop() {
             "animationEnd": endCallBack
         }
     );
+  
 }
 
 function animationMngBtm() {
@@ -102,3 +103,36 @@ function onClickMyChoiceInv(){
 }
 
 
+function populateSegDateMngSubEdit(){
+  var selSegData = frmManageSubscriptions.segMngSub.selectedRowItems[0];
+  frmManageSubscriptions.lblProductNameSE.text = selSegData["lblProductName"];
+  frmManageSubscriptions.lblUnitsSE.text = selSegData["lblUnits"];
+  frmManageSubscriptions.lblfrmDateSE.text = selSegData["lblfrmDate"];
+  frmManageSubscriptions.txtSunVal.text = selSegData["lblSunVal"];
+  frmManageSubscriptions.txtMonVal.text = selSegData["lblMonVal"];
+  frmManageSubscriptions.txtTueVal.text = selSegData["lblTueVal"];
+  frmManageSubscriptions.txtWedVal.text = selSegData["lblWedVal"];
+  frmManageSubscriptions.txtThuVal.text = selSegData["lblThrVal"];
+  frmManageSubscriptions.txtFriVal.text = selSegData["lblFriVal"];
+  frmManageSubscriptions.txtSatVal.text = selSegData["lblSatVal"];
+  animationMngTop();
+}
+
+
+function invokeaddprdcttosubscrbyadmin(){
+ /*  var addSubsProd = {
+    "subsrid": subId,
+    "productid": today,
+     "quantity":,
+     "startdate":frmManageSubscriptions.calFrom.,
+     "prefferedtime":,
+     "userid":,
+     "frequency":
+    };*/
+    var suspendDetJ = JSON.stringify(suspendDet);
+    showLoadingIndicator();
+   // frmDashboard.show();
+    //dismissLoadingIndicator();
+    invokeServiceCall("addprdcttosubscrbyadmin", addSubsProd, constants.HTTP_METHOD_POST, suspendCustomerCallBack, "application/x-www-form-urlencoded");
+ 
+}

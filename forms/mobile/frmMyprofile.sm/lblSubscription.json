@@ -22,7 +22,7 @@
         0,
         0
     ],
-    "_skin_": "s48c6a8082ec48d3ad9995a9703a30a7",
+    "_skin_": "s33896da404447f29d8045621112ed13",
     "_text_": "Manage Subscription",
     "_width_": {
         "type": "ref",
@@ -38,7 +38,7 @@
     "canUpdateUI": true,
     "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "40%"
     },
     "containerweight": 100,
     "contentalignment": 4,

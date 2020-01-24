@@ -63,9 +63,9 @@ function onClcikLoginProceed(){
     };
     var userDetailsJ = JSON.stringify(userDetails);
     showLoadingIndicator();
-   // frmDashboard.show();
-    //dismissLoadingIndicator();
-    invokeServiceCall("login", userDetailsJ, constants.HTTP_METHOD_POST, onClickLoginBtnCallBack, "application/json");
+ //  frmDashboard.show(); //comment this
+  //  dismissLoadingIndicator();  //comment this
+   invokeServiceCall("login", userDetailsJ, constants.HTTP_METHOD_POST, onClickLoginBtnCallBack, "application/json");
   }
   
 }

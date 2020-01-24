@@ -1,0 +1,28 @@
+{
+    "AS_TextField_a58b020b6b9b4fa0ae129388a9866199": {
+        "id": "AS_TextField_a58b020b6b9b4fa0ae129388a9866199",
+        "type": "ACTION_SEQUENCE",
+        "name": "action_CustList_Srch_onDone",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmCustomerList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "gd0e05dc7c864edab2924c01f2612d2f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__gc8bfb1bea1847189dc1538e113994fa",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var modifiedData = getSearchResult(gblCustList, frmCustomerList.txtSearch.text);\nfrmCustomerList.segCustList.setData(modifiedData);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

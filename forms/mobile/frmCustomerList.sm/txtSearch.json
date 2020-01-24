@@ -4,7 +4,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "40dp"
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -13,51 +17,50 @@
         0
     ],
     "_padding_": [
-        3,
+        2,
         0,
         0,
         0
     ],
-    "_placeholder_": "None",
-    "_right_": {
+    "_placeholder_": "Search",
+    "_skin_": "s8aaecf0b5e14fdf88c3db093e6e8f95",
+    "_text_": "",
+    "_top_": {
         "type": "string",
         "value": "0dp"
     },
-    "_skin_": "s64dc8df5b624358b2e3dd9b5b0aceb4",
-    "_text_": "",
     "_width_": {
         "type": "string",
-        "value": "60%"
+        "value": "100%"
     },
     "autocapitalize": "none",
     "autocomplete": false,
     "autocorrect": false,
     "autofilter": false,
     "canUpdateUI": true,
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerheight": "",
     "containerheightmode": 1,
     "containerweight": 100,
-    "contentalignment": 5,
-    "focusskin": "sb516a52152c4fa6a6c3ee3bb13358e0",
-    "id": "txtSubscription",
+    "contentalignment": 4,
+    "focusskin": "s875717af8d14b4ba13e8dfb1368d758",
+    "id": "txtSearch",
+    "ide_onTextChange": "AS_TextField_c30a3bf7d7cf4014bd04c6a517279ece",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
+    "keyboardstyle": "A",
     "keyboardtype": "A",
-    "kuid": "bf34a053a6f94efaa3e49d56f25129b7",
-    "mode": "A",
+    "kuid": "j927ff3e5c794dcc975ff2e91c3f7266",
+    "mode": "N",
     "name": "kony.ui.TextBox2",
-    "parent": "flxSubscription",
-    "pf": "frmMyprofile",
+    "paddinginpixel": false,
+    "parent": "flxTxtBox",
+    "pf": "frmCustomerList",
     "placeholderskin": "s06c27c93dbd4a34bc9d4a81c68b9388",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "securetextentry": false,
-    "textinputmode": "A",
+    "textinputmode": "N",
     "tooltip": "",
     "viewtype": "default",
     "wType": "TextField",

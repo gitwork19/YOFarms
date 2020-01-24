@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_data_": [
         {
-            "Button0c7364414fc934f": {
+            "btnEditSub": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Button"
             },
@@ -94,7 +94,7 @@
             }
         },
         {
-            "Button0c7364414fc934f": {
+            "btnEditSub": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Button"
             },
@@ -184,7 +184,7 @@
             }
         },
         {
-            "Button0c7364414fc934f": {
+            "btnEditSub": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Button"
             },
@@ -274,7 +274,7 @@
             }
         },
         {
-            "Button0c7364414fc934f": {
+            "btnEditSub": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Button"
             },
@@ -364,7 +364,7 @@
             }
         },
         {
-            "Button0c7364414fc934f": {
+            "btnEditSub": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Button"
             },
@@ -454,7 +454,7 @@
             }
         },
         {
-            "Button0c7364414fc934f": {
+            "btnEditSub": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Button"
             },
@@ -544,7 +544,7 @@
             }
         },
         {
-            "Button0c7364414fc934f": {
+            "btnEditSub": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Button"
             },
@@ -634,7 +634,7 @@
             }
         },
         {
-            "Button0c7364414fc934f": {
+            "btnEditSub": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Button"
             },
@@ -724,7 +724,7 @@
             }
         },
         {
-            "Button0c7364414fc934f": {
+            "btnEditSub": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Button"
             },
@@ -814,7 +814,7 @@
             }
         },
         {
-            "Button0c7364414fc934f": {
+            "btnEditSub": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Button"
             },
@@ -994,8 +994,8 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
-        "Button0c7364414fc934f": "Button0c7364414fc934f",
         "FlexContainer0g3850448416a4b": "FlexContainer0g3850448416a4b",
+        "btnEditSub": "btnEditSub",
         "flxCal": "flxCal",
         "flxDates": "flxDates",
         "flxEdit": "flxEdit",

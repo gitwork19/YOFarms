@@ -43,6 +43,7 @@
         "topLevelBox": null
     },
     "id": "imgBack",
+    "ide_onTouchStart": "AS_Image_i708d17d30d74f85a18807d98ebc2135",
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",

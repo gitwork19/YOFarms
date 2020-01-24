@@ -1,0 +1,32 @@
+{
+    "AS_Button_b69cd6a9124b4457abee6517e7ce6630": {
+        "id": "AS_Button_b69cd6a9124b4457abee6517e7ce6630",
+        "type": "ACTION_SEQUENCE",
+        "name": "action_MngSub_EditClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tmpManageSubscription",
+            "type": "templates",
+            "platform": "",
+            "KUID": "e81c5036eb5c41818b85ca9917570210"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___f72f5c6219ab40999438bcc24fbd5ff5",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "populateSegDateMngSubEdit",
+            "display": "populateSegDateMngSubEdit",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

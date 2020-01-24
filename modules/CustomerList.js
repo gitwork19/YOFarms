@@ -1,7 +1,10 @@
 //Type your code here
+gblCustList = [];
 function getCustListFromService(){
-   showLoadingIndicator();
-  invokeServiceCall("getcustomerdetails", "", constants.HTTP_METHOD_POST, CustListFromServiceCallBack,  "");
+    showLoadingIndicator();
+    invokeServiceCall("getcustomerdetails", "", constants.HTTP_METHOD_POST, CustListFromServiceCallBack,  "");
+//gblCustList = frmCustomerList.segCustList.data;
+ // frmCustomerList.show(); //comment this
 }
 
 function CustListFromServiceCallBack(){
@@ -38,8 +41,9 @@ function CustListFromServiceCallBack(){
                   })
     
      } 
-     
+      gblCustList  = userData;
       frmCustomerList.segCustList.setData(userData);
+      frmCustomerList.headers[0].lblHeader.text = "Customer List";       
       frmCustomerList.show();
      
     }else{
@@ -119,6 +123,7 @@ function showCustProfileFromList(segRes){
   frmMyprofile.txtEmail.setEnabled(false);
   frmMyprofile.txtStatus.setEnabled(false);
   frmMyprofile.txtDelivery.setEnabled(false);
+  frmMyprofile.headers[0].lblHeader.text = "Customer Profile";
   frmMyprofile.show();
 }
 
@@ -126,12 +131,60 @@ function showManageSubForm(prodDet){
   kony.print(JSON.stringify(prodDet) + "prodDet");
   var prodNameList = pushProdName();
   var currProdList = [];
+   kony.print(JSON.stringify(prodNameList) + "prodNameList");
   frmManageSubscriptions.listbProdTypeAdd.masterData = prodNameList;
-  for(var i=0;i<prodDet;i++){
+  for(var i=0;i<prodDet.length;i++){
+   var pName = getProductNameFrmId(prodDet[i]["productid"]);
+   var pUnit = getProductUnitFrmId(prodDet[i]["productid"]);
+   var suspendDate = prodDet[i]["suspenddate"];
+    if(suspendDate != "null" && suspendDate != null && suspendDate != "" && suspendDate != undefined){
+      kony.print("do nothing");
+    }else{
+      suspendDate = "NA";
+    }
+    var lblSunFrmSer = prodDet[i]["quantity"] ,lblMonFrmSer = prodDet[i]["quantity"],lblTueFrmSer = prodDet[i]["quantity"],lblWedFrmSer = prodDet[i]["quantity"],lblThuFrmSer = prodDet[i]["quantity"],lblFriFrmSer = prodDet[i]["quantity"],lblSatFrmSer = prodDet[i]["quantity"]  ;
+    if(prodDet[i]["frequency"] == "0"){
+      kony.print("do nothing");
+    }else{
+      lblSunFrmSer = "0";
+      lblMonFrmSer = "1";
+      lblTueFrmSer = "2";
+      lblWedFrmSer = "3";
+      lblThuFrmSer = "4";
+      lblFriFrmSer = "3";
+      lblSatFrmSer = "2";
+    }
+    
     currProdList.push({
-      
+      "lblProductName":pName,
+      "imgDairyfarm":"profile.png",
+      "lblFrom":"FROM DATE",
+      "lblTO":"END DATE",
+      "lblUnits":pUnit,
+      "btnEditSub": {skin:"btnEdit"},
+      "lblfrmDate":prodDet[i]["startdate"],
+      "lblToDate": suspendDate,
+      "lblsun": "SUN",
+      "lblMon": "MON",
+      "lbltue": "TUE",
+      "lblwed": "WED",
+      "lblthr": "THR",
+      "lblfri": "FRI",
+      "lblsat": "SAT",
+      "lblSunVal": lblSunFrmSer,
+      "lblMonVal": lblMonFrmSer,
+      "lblTueVal": lblTueFrmSer,
+      "lblWedVal": lblWedFrmSer,
+      "lblThrVal": lblThuFrmSer,
+      "lblFriVal": lblFriFrmSer,
+      "lblSatVal": lblSatFrmSer
     })
   }
+  frmManageSubscriptions.listbProdTypeAdd.onSelection = function (){
+    alert(frmManageSubscriptions.listbProdTypeAdd.selectedKeyValue)
+   var prodUnitMp = pushProdUnit(frmManageSubscriptions.listbProdTypeAdd.selectedKeyValue[1]);
+    frmManageSubscriptions.listBoxProdunit.masterData = prodUnitMp
+  };
   frmManageSubscriptions.segMngSub.setData(currProdList);
   frmManageSubscriptions.show();
 }
@@ -140,9 +193,24 @@ function pushProdName(){
   var prodList = [];
   for(var i=0;i<gblProdList.length;i++){
     var keyname = "prodType"+i
-    prodList.push({
-      keyname :gblProdList[i]["name"]
-    })
+    var keyList = [keyname,gblProdList[i]["name"],gblProdList[i]["productid"]]
+    prodList.push(keyList)
+  }
+  return prodList;
+}
+
+
+
+function pushProdUnit(selProd){
+  alert("selProd" + selProd)
+  var prodList = [];
+  for(var i=0;i<gblProdList.length;i++){
+    var keyname = "prodUnit"+i
+   if (gblProdList[i]["name"] == selProd){
+   alert("going into if" + gblProdList[i]["unit"])
+     var keyList = [keyname,gblProdList[i]["unit"]]
+     prodList.push(keyList)
+     }
   }
   return prodList;
 }

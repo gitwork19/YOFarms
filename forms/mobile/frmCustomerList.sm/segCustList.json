@@ -72,7 +72,7 @@
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "sdcsd"
             },
             "lblNumber": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -114,7 +114,7 @@
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "qweq"
             },
             "lblNumber": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -156,7 +156,7 @@
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "tyrt"
             },
             "lblNumber": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -198,7 +198,7 @@
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "dfgfd"
             },
             "lblNumber": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -240,7 +240,7 @@
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "dfgdfg"
             },
             "lblNumber": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -282,7 +282,7 @@
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "tyu"
             },
             "lblNumber": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -324,7 +324,7 @@
             },
             "lblName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "rtutyu"
             },
             "lblNumber": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -448,7 +448,7 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "50dp"
     },
     "_width_": {
         "type": "string",
@@ -458,6 +458,8 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "counter": "09",
+    "enablehapticfeedback": false,
+    "enablereordering": false,
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": false,

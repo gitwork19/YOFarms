@@ -40,10 +40,13 @@
     "device": "GalaxyS5",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "header": "frmMyprofile_header",
+    "headersId": "b60b3761050d4c1cb06a9494d3009149",
     "id": "frmMyprofile",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
+    "invokedProperty": "headers",
     "ipad": {
         "needAppMenu": false,
         "psp": {

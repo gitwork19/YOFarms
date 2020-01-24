@@ -698,3 +698,23 @@ function frmPaymentOnClickContinue()
           //alert("error message");
         }
 }
+
+
+function invokeNewCustReg(){
+   /*var addSubsProd = {
+    "username": "", //TO DO
+    "mobileno": frmRegStep1.tbxMobileNumber.text,
+     "emailid": frmRegStep1.tbxEmail.text,
+     "lastname":frmRegStep1.tbxLastName.text,
+     "firstname": frmRegStep1.tbxFirstName.text,
+     "prefferedtime":frmRegStep1.RadiobtnsForTime.selectedKeyValue, //TO DO
+     "addline1":,
+     "addline2":
+    };*/
+    var suspendDetJ = JSON.stringify(suspendDet);
+    showLoadingIndicator();
+   // frmDashboard.show();
+    //dismissLoadingIndicator();
+    invokeServiceCall("adduserwithsubscription", addSubsProd, constants.HTTP_METHOD_POST, suspendCustomerCallBack, "application/x-www-form-urlencoded");
+ 
+}

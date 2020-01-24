@@ -1,7 +1,7 @@
 //Type your code here
 
 function invokeServiceCall(ServiceId,Postparams,requestType,CallBackEvent,contentType){
-  var endpointURL = "https://fbf2f125.ngrok.io/UserManagement/rest/UserService/" + ServiceId; 
+  var endpointURL = "https://5e4aa872.ngrok.io/UserManagement/rest/UserService/" + ServiceId; 
   kony.print("ServiceId" + requestType + endpointURL + Postparams  + contentType)
   httpclient = new kony.net.HttpRequest();
   httpclient.onReadyStateChange = CallBackEvent; 
@@ -59,4 +59,74 @@ function selectSignedIn(){
     kony.store.removeItem("startupform");
   }
   
+}
+
+
+
+function getSearchResult(mData, searchValue) {
+  var sData = [];
+  for (var i = 0; i < mData.length; i++) {
+
+    if (mData[i] !== null || mData[i] !== undefined) {
+      var txt1 = "";
+      if (mData[i].lblName !== null && mData[i].lblName !== undefined) {
+
+        txt1 = mData[i].lblName;
+		txt1 = txt1.toLowerCase();
+      }
+
+      var pattern = searchValue;
+      pattern = pattern.toLowerCase();
+
+      if (txt1.indexOf(pattern.trim()) == 0) {
+        sData.push(mData[i]);
+        var dataLength = sData.length - 1;
+      }
+    }
+  }
+
+  return sData;
+}
+
+
+function hdrBackClick(){
+  var currentForm = kony.application.getCurrentForm();
+
+  switch (currentForm.id){
+    case "frmCustomerList":
+      frmDashboard.show();
+      break;
+    case "frmMyprofile":
+       frmCustomerList.show();
+      break;
+    case "frmManageSubscriptions":
+      frmMyprofile.show();
+      break;
+    default:
+       frmDashboard.show();
+       break;
+  }
+  
+
+}
+
+
+function getProductNameFrmId(prodId){
+  var productName;
+  for(var k=0;k<gblProdList.length;k++){
+                  if(gblProdList[k]["productid"] == parseInt(prodId)){
+                    productName = gblProdList[k]["name"];
+                  }
+   }
+  return productName;
+}
+
+function getProductUnitFrmId(prodId){
+  var productUnit;
+  for(var k=0;k<gblProdList.length;k++){
+                  if(gblProdList[k]["productid"] == parseInt(prodId)){
+                    productUnit = gblProdList[k]["unit"];
+                  }
+   }
+  return productUnit;
 }

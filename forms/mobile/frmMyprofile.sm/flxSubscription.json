@@ -37,7 +37,6 @@
     "canUpdateUI": true,
     "children": [
         "lblSubscription",
-        "txtSubscription",
         "CopyLabel0d9b68bea739944"
     ],
     "clipbounds": true,
