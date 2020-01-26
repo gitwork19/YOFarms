@@ -41,9 +41,9 @@
         "flxPhone",
         "flxEmail",
         "flxStatus",
-        "flxSubscription",
         "flxPayment",
-        "flxDelivery"
+        "flxDelivery",
+        "flxSubscription"
     ],
     "clipbounds": true,
     "containerweight": 100,

@@ -128,7 +128,8 @@ function onClickLoginBtnCallBack(){
  }
 catch(err)
  { 
- alert("exception is :: " + err); 
+   dismissLoadingIndicator();
+   alert("exception is :: " + err); 
  }
 }
 

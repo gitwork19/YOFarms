@@ -22,8 +22,8 @@
         "actions": [{
             "id": "INVOKE_FUNCTION___be934d3925524acca2de25aee16fabd2",
             "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "currentMonthData",
-            "display": "currentMonthData",
+            "sequenceKUID": "showInvetoryForm",
+            "display": "showInvetoryForm",
             "inputparams": [],
             "parentId": null,
             "callbackType": null,

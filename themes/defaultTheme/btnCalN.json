@@ -9,9 +9,9 @@
     "font_size": 100,
     "isForked": false
   },
-  "background_color": "00000000",
-  "bg_type": "one",
-  "border_color": "000000ff",
+  "background_image": "cal.png",
+  "bg_type": "image",
+  "border_color": "ffffffff",
   "border_style": "plain",
   "border_type": 0,
   "border_width": 0,
@@ -21,7 +21,7 @@
     "isForked": false
   },
   "fontSizeInPx": false,
-  "font_color": "9e9e9eff",
+  "font_color": "ffffff00",
   "font_name": "iphoneSystem",
   "font_size": 100,
   "font_style": "normal",
@@ -42,7 +42,7 @@
     "font_size": 100,
     "isForked": false
   },
-  "kuid": "sd36c16bf40f4099b7b83b2fefd76d8d",
+  "kuid": "s681d2c2cdf844569e3efb58b4762359",
   "spaan": {
     "font_name": "Helvetica",
     "font_size": 100,
@@ -83,7 +83,7 @@
     "font_size": 100,
     "isForked": false
   },
-  "wType": "Label",
+  "wType": "Button",
   "watchos": {
     "font_name": "System",
     "font_size": 100,

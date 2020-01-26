@@ -43,6 +43,7 @@
         "topLevelBox": null
     },
     "id": "saveEditIcon",
+    "ide_onTouchStart": "AS_Image_dfa22b1ffc62458d9092d86c9d7ae9e3",
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",

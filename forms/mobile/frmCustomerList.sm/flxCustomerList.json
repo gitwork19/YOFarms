@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "92%"
     },
     "_left_": {
         "type": "number",
@@ -25,8 +25,8 @@
     "_percent_": true,
     "_skin_": "s540cd8fdf8d4dda980e26193feb29e4",
     "_top_": {
-        "type": "number",
-        "value": "0"
+        "type": "string",
+        "value": "8%"
     },
     "_width_": {
         "type": "string",
@@ -38,8 +38,7 @@
     "bounces": true,
     "canUpdateUI": true,
     "children": [
-        "segCustList",
-        "flxTxtBox"
+        "segCustList"
     ],
     "clipbounds": true,
     "containerweight": 100,

@@ -16,8 +16,8 @@
         "actions": [{
             "id": "INVOKE_FUNCTION___if58926204644e22a2a193436704417e",
             "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "animationMngTop",
-            "display": "animationMngTop",
+            "sequenceKUID": "invokeaddprdcttosubscrbyadmin",
+            "display": "invokeaddprdcttosubscrbyadmin",
             "inputparams": [],
             "parentId": null,
             "callbackType": null,

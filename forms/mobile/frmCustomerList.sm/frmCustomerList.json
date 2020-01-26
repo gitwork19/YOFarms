@@ -30,6 +30,7 @@
     },
     "canUpdateUI": true,
     "children": [
+        "flxTxtBox",
         "flxCustomerList"
     ],
     "containerweight": 100,

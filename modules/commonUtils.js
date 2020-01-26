@@ -1,7 +1,7 @@
 //Type your code here
 
 function invokeServiceCall(ServiceId,Postparams,requestType,CallBackEvent,contentType){
-  var endpointURL = "https://5e4aa872.ngrok.io/UserManagement/rest/UserService/" + ServiceId; 
+  var endpointURL = "https://5db3712f.ngrok.io/UserManagement/rest/UserService/" + ServiceId; 
   kony.print("ServiceId" + requestType + endpointURL + Postparams  + contentType)
   httpclient = new kony.net.HttpRequest();
   httpclient.onReadyStateChange = CallBackEvent; 
@@ -31,6 +31,13 @@ function popErrorScreenShow(errorContent){
   PopupErrorScreen.btnOK.onClick = function (){
     PopupErrorScreen.dismiss();
   };
+  PopupErrorScreen.show();
+} 
+
+function popSucessScreenShow(hdng,content,okFunction){
+  PopupErrorScreen.lblHeading.text = hdng;
+  PopupErrorScreen.lblError.text = content;
+  PopupErrorScreen.btnOK.onClick = okFunction;
   PopupErrorScreen.show();
 } 
 
@@ -102,6 +109,9 @@ function hdrBackClick(){
     case "frmManageSubscriptions":
       frmMyprofile.show();
       break;
+    case "frmCustomerCalendar":
+       frmCustomerList.show();
+      break;
     default:
        frmDashboard.show();
        break;
@@ -121,6 +131,17 @@ function getProductNameFrmId(prodId){
   return productName;
 }
 
+
+function getIdFrmProductName(prodName){
+  var producID;
+  for(var k=0;k<gblProdList.length;k++){
+                  if(gblProdList[k]["name"] == prodName){
+                    producID = gblProdList[k]["productid"];
+                  }
+   }
+  return producID;
+}
+
 function getProductUnitFrmId(prodId){
   var productUnit;
   for(var k=0;k<gblProdList.length;k++){
@@ -130,3 +151,4 @@ function getProductUnitFrmId(prodId){
    }
   return productUnit;
 }
+

@@ -1,8 +1,8 @@
 {
-    "AS_Label_j9e028ca712f4c3293f7a7e402b0123b": {
-        "id": "AS_Label_j9e028ca712f4c3293f7a7e402b0123b",
+    "AS_Image_dfa22b1ffc62458d9092d86c9d7ae9e3": {
+        "id": "AS_Image_dfa22b1ffc62458d9092d86c9d7ae9e3",
         "type": "ACTION_SEQUENCE",
-        "name": "lblCustAttnd_TuchStart",
+        "name": "action_image_EditProfile",
         "params": [{
             "datatype": "collection",
             "name": "eventobject"
@@ -14,17 +14,17 @@
             "name": "y"
         }],
         "contextObj": {
-            "name": "frmDashboard",
+            "name": "frmMyprofile",
             "type": "forms",
             "platform": "",
-            "KUID": "c855106ba94b44ad8d0d918ae746cb92"
+            "KUID": "b7ef8b27926f4e399f943fd1c8bc208b"
         },
         "language": "js",
         "actions": [{
-            "id": "INVOKE_FUNCTION___c5536f12d1374c2fb9a9dc35885104da",
+            "id": "INVOKE_FUNCTION___b8d2b6b10f9c4fa1abc77b760045d0d7",
             "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "showInvetoryForm",
-            "display": "showInvetoryForm",
+            "sequenceKUID": "onclickEditCustProfile",
+            "display": "onclickEditCustProfile",
             "inputparams": [],
             "parentId": null,
             "callbackType": null,

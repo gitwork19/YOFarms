@@ -1,5 +1,8 @@
 //Type your code here
 gblCustList = [];
+gblSubIdMngSub = "";
+gblUserIdMngSub = "";
+
 function getCustListFromService(){
     showLoadingIndicator();
     invokeServiceCall("getcustomerdetails", "", constants.HTTP_METHOD_POST, CustListFromServiceCallBack,  "");
@@ -14,6 +17,7 @@ function CustListFromServiceCallBack(){
  {
    kony.print("CustListInventoryCallBack print"  + JSON.stringify(httpclient));
  	var httpRes = httpclient.response;
+   
      var userData = [];
      if(httpRes["status"] == "000" && httpRes["statusMsg"] == "success"){
      var responseContent = httpRes.response;
@@ -36,12 +40,13 @@ function CustListFromServiceCallBack(){
                 "lblPayable":"asdfsd",
                 "lblPaidAmt":"asefwef",
                 "lblHiddenSubId": extractedRes["subscriptionid"],
-                "lblHiddenRs" :extractedRes
-                 
+                "lblHiddenRs" :extractedRes,
+                 "lblHiddenUserID":key
                   })
     
      } 
       gblCustList  = userData;
+       alert(userData.length)
       frmCustomerList.segCustList.setData(userData);
       frmCustomerList.headers[0].lblHeader.text = "Customer List";       
       frmCustomerList.show();
@@ -116,7 +121,7 @@ function showCustProfileFromList(segRes){
   frmMyprofile.txtAddress.text  = segRes["addline1"] + segRes["addline2"];
   frmMyprofile.txtPhone.text  = segRes["mobileno"];
   frmMyprofile.txtEmail.text  = segRes["emailid"];
-  frmMyprofile.flxSubscription.onTouchStart = function(){showManageSubForm(segRes["productdetials"])};
+  frmMyprofile.flxSubscription.onTouchStart = function(){showManageSubForm(segRes["productdetials"],segRes["subscriptionid"],segRes["lblHiddenUserID"])};
   frmMyprofile.txtName.setEnabled(false);
   frmMyprofile.txtAddress.setEnabled(false);
   frmMyprofile.txtPhone.setEnabled(false);
@@ -127,32 +132,61 @@ function showCustProfileFromList(segRes){
   frmMyprofile.show();
 }
 
-function showManageSubForm(prodDet){
+function showManageSubForm(prodDet,subscrId,userId){
   kony.print(JSON.stringify(prodDet) + "prodDet");
+  gblSubIdMngSub = subscrId;
+  gblUserIdMngSub = userId;
   var prodNameList = pushProdName();
   var currProdList = [];
    kony.print(JSON.stringify(prodNameList) + "prodNameList");
   frmManageSubscriptions.listbProdTypeAdd.masterData = prodNameList;
+  frmManageSubscriptions.listBoxDairyName.masterData =[["lbl1","Jeevana"]];
   for(var i=0;i<prodDet.length;i++){
+    kony.print(i + "qwer")
    var pName = getProductNameFrmId(prodDet[i]["productid"]);
    var pUnit = getProductUnitFrmId(prodDet[i]["productid"]);
    var suspendDate = prodDet[i]["suspenddate"];
     if(suspendDate != "null" && suspendDate != null && suspendDate != "" && suspendDate != undefined){
-      kony.print("do nothing");
+      kony.print("do nothing suspendDate");
     }else{
       suspendDate = "NA";
     }
     var lblSunFrmSer = prodDet[i]["quantity"] ,lblMonFrmSer = prodDet[i]["quantity"],lblTueFrmSer = prodDet[i]["quantity"],lblWedFrmSer = prodDet[i]["quantity"],lblThuFrmSer = prodDet[i]["quantity"],lblFriFrmSer = prodDet[i]["quantity"],lblSatFrmSer = prodDet[i]["quantity"]  ;
     if(prodDet[i]["frequency"] == "0"){
-      kony.print("do nothing");
+      kony.print("do nothing" + prodDet[i]["frequency"]);
     }else{
-      lblSunFrmSer = "0";
-      lblMonFrmSer = "1";
-      lblTueFrmSer = "2";
-      lblWedFrmSer = "3";
-      lblThuFrmSer = "4";
-      lblFriFrmSer = "3";
-      lblSatFrmSer = "2";
+      kony.print(prodDet[i]["frequency"] + "freq");
+      var pattern = prodDet[i]["pattern"];
+      for (var key in pattern) {
+       switch (key){
+          case "sun":
+           kony.print("sun");
+            lblSunFrmSer = pattern[key];
+            break;
+          case "mon":
+           kony.print("mon");
+            lblMonFrmSer = pattern[key];
+            break;
+           case "tue":
+           kony.print("tue");
+            lblTueFrmSer = pattern[key];
+            break;
+          case "wen":
+           kony.print("wed");
+            lblWedFrmSer = pattern[key];
+            break;
+           case "thr":
+            lblThuFrmSer = pattern[key];
+            break;
+          case "fri":
+            lblFriFrmSer = pattern[key];
+            break;
+          case "sat":
+            lblSatFrmSer = pattern[key];
+            break;
+        }
+      } 
+      
     }
     
     currProdList.push({
@@ -181,9 +215,8 @@ function showManageSubForm(prodDet){
     })
   }
   frmManageSubscriptions.listbProdTypeAdd.onSelection = function (){
-    alert(frmManageSubscriptions.listbProdTypeAdd.selectedKeyValue)
    var prodUnitMp = pushProdUnit(frmManageSubscriptions.listbProdTypeAdd.selectedKeyValue[1]);
-    frmManageSubscriptions.listBoxProdunit.masterData = prodUnitMp
+    frmManageSubscriptions.listBoxProdunit.masterData = prodUnitMp;
   };
   frmManageSubscriptions.segMngSub.setData(currProdList);
   frmManageSubscriptions.show();
@@ -193,7 +226,7 @@ function pushProdName(){
   var prodList = [];
   for(var i=0;i<gblProdList.length;i++){
     var keyname = "prodType"+i
-    var keyList = [keyname,gblProdList[i]["name"],gblProdList[i]["productid"]]
+    var keyList = [keyname,gblProdList[i]["name"]]
     prodList.push(keyList)
   }
   return prodList;
@@ -202,12 +235,10 @@ function pushProdName(){
 
 
 function pushProdUnit(selProd){
-  alert("selProd" + selProd)
   var prodList = [];
   for(var i=0;i<gblProdList.length;i++){
     var keyname = "prodUnit"+i
    if (gblProdList[i]["name"] == selProd){
-   alert("going into if" + gblProdList[i]["unit"])
      var keyList = [keyname,gblProdList[i]["unit"]]
      prodList.push(keyList)
      }

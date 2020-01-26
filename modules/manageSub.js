@@ -90,7 +90,7 @@ function onClickDailyInv(){
   frmManageSubscriptions.imgMyChoice.src = "radio.png";
   frmManageSubscriptions.flxInvCal.setVisibility(false);
   frmManageSubscriptions.flxDailyTxt.setVisibility(true);
-  var wigArr = [frmManageSubscriptions.txtSunValInv,frmManageSubscriptions.txtMonValInv,frmManageSubscriptions.txtTueValInv,frmManageSubscriptions.txtWedInv,frmManageSubscriptions.txtThuValInv,frmManageSubscriptions.txtFriValInv,frmManageSubscriptions.txtSatValInv];
+  var wigArr = [frmManageSubscriptions.txtSunValInv,frmManageSubscriptions.txtMonValInv,frmManageSubscriptions.txtTueValInv,frmManageSubscriptions.txtWedValInv,frmManageSubscriptions.txtThuValInv,frmManageSubscriptions.txtFriValInv,frmManageSubscriptions.txtSatValInv];
   setDefaultTxtValue(wigArr)
 }
 
@@ -120,19 +120,64 @@ function populateSegDateMngSubEdit(){
 
 
 function invokeaddprdcttosubscrbyadmin(){
- /*  var addSubsProd = {
-    "subsrid": subId,
-    "productid": today,
-     "quantity":,
-     "startdate":frmManageSubscriptions.calFrom.,
-     "prefferedtime":,
-     "userid":,
-     "frequency":
-    };*/
-    var suspendDetJ = JSON.stringify(suspendDet);
+  
+ var freq = "";
+ if(frmManageSubscriptions.imgDaily.src == "radio01.png"){
+    freq = "0";
+  }else if(frmManageSubscriptions.imgMyChoice.src == "radio01.png"){
+    freq = "1";
+  }
+  
+   var addSubsProd = {
+    "subsrid": gblSubIdMngSub,
+    "productid": getIdFrmProductName(frmManageSubscriptions.listbProdTypeAdd.selectedKeyValue[1]),
+     "quantity":frmManageSubscriptions.txtDaily.text,
+     "startdate":frmManageSubscriptions.calFrom.day + frmManageSubscriptions.calFrom.month +frmManageSubscriptions.calFrom.year ,
+     "prefferedtime":frmManageSubscriptions.radTime.selectedKey != null && frmManageSubscriptions.radTime.selectedKey == "mor" ? "MORNING" : "EVENING", 
+     "userid":gblUserIdMngSub,
+     "frequency":freq,
+     "sun": frmManageSubscriptions.txtSunValInv.text,
+     "mon": frmManageSubscriptions.txtMonValInv.text,
+     "tue": frmManageSubscriptions.txtTueValInv.text,
+     "wen": frmManageSubscriptions.txtWedValInv.text,
+     "thr": frmManageSubscriptions.txtThuValInv.text,
+     "fri": frmManageSubscriptions.txtFriValInv.text,
+     "sat": frmManageSubscriptions.txtSatValInv.text,
+    };
+    var addSubsProdJ = JSON.stringify(addSubsProd);
     showLoadingIndicator();
-   // frmDashboard.show();
-    //dismissLoadingIndicator();
-    invokeServiceCall("addprdcttosubscrbyadmin", addSubsProd, constants.HTTP_METHOD_POST, suspendCustomerCallBack, "application/x-www-form-urlencoded");
+    invokeServiceCall("addprdcttosubscrbyadmin", addSubsProdJ, constants.HTTP_METHOD_POST, addprdcttosubscrbyadminCB, "application/x-www-form-urlencoded");
  
+}
+
+
+function addprdcttosubscrbyadminCB(){
+    try 
+ {
+ if(httpclient.readyState == 4)
+ {
+   kony.print("addprdcttosubscrbyadminCB print"  + JSON.stringify(httpclient));
+ 	var httpRes = httpclient.response;
+     
+   if(httpRes["status"] == "000" && httpRes["statusMsg"] == "success"){
+     
+      popSucessScreenShow("Success","New product subscription is added successfully",addPrctSubByAdminSuc)
+     
+    }else{
+     popErrorScreenShow(kony.i18n.getLocalizedString("i18n.Err"));
+   }
+ dismissLoadingIndicator();
+ }
+ }
+catch(err)
+ { 
+ dismissLoadingIndicator();
+ alert("exception is :: " + err); 
+   
+ }
+}
+
+function addPrctSubByAdminSuc(){
+  frmDashboard.show();
+  PopupErrorScreen.dismiss();
 }

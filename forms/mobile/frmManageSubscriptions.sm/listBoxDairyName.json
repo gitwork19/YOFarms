@@ -38,7 +38,7 @@
     "dropdownimage": "listboxarw.png",
     "focusskin": "sa9fb38fbf6f4a92b000e66509fb79e7",
     "groupcells": false,
-    "id": "ListBox0bbdf8c061bef4c",
+    "id": "listBoxDairyName",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
@@ -47,14 +47,6 @@
         [
             "lb1",
             "Placeholder One"
-        ],
-        [
-            "lb2",
-            "Placeholder Two"
-        ],
-        [
-            "lb3",
-            "Placeholder Three"
         ]
     ],
     "name": "kony.ui.ListBox",
@@ -63,7 +55,6 @@
     "pf": "frmManageSubscriptions",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "selectedkey": null,
     "selectedkeys": null,
     "selectedkeyvalue": null,
     "selectedkeyvalues": null,

@@ -93,8 +93,10 @@ function createCal(){
   frmCustomerCalendar.imgNext.onTouchStart = next;
   frmCustomerCalendar.imgPrev.onTouchStart = previous;
   kony.print("month" + month + year);
-  frmCustomerCalendar.lblMonthYear.text = months[month] + " "+ year; 
-	frmCustomerCalendar.show();
+  frmCustomerCalendar.lblMonthYear.text = months[month] + " "+ year;
+  frmCustomerCalendar.headers[0].lblHeader.text = "Customer Calendar";
+  gblSubIdMngSub = frmCustomerList.segCustList.selectedRowItems[0]["lblHiddenSubId"];
+  frmCustomerCalendar.show();
 
 }
 function next() {
@@ -210,4 +212,29 @@ function selectedDateCal(eventobject){
  // alert(JSON.stringify(eventobject));
   kony.print(eventobject.id + "ewfhui" + eventobject.text);
   onClickCalDate(eventobject.text);
+}
+
+function frmEditPreShow(){
+  frmEdit.headers[0].lblHeader.text = "Edit";
+  frmEdit.calFrom.clear();
+  frmEdit.calTo.clear();
+}
+
+
+function invokeEditTempCustProdDel(){
+  var inpPar = {
+    "subsrid": gblSubIdMngSub,
+    "productid": today,//"04-12-21"
+    "requesttype":"",
+    "requestby":"ADMIN",
+    "quantity":"",
+    "frmdate":"",
+    "todate":"",
+    "subprdid":"",
+    "requeststatus":"APPROVED"
+    };
+    var inpParJ = JSON.stringify(inpPar);
+    showLoadingIndicator();
+    invokeServiceCall("updateprdsubscrbyadmin", inpParJ, constants.HTTP_METHOD_POST, suspendCustomerCallBack, "application/x-www-form-urlencoded");
+ 
 }
