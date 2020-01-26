@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "90px"
     },
     "_left_": {
         "type": "string",
@@ -24,14 +24,14 @@
         0
     ],
     "_skin_": "s210536621f64987a31021f3fcfeef0c",
-    "_src_": "option3.png",
+    "_src_": "phone.png",
     "_top_": {
         "type": "string",
         "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "30%"
+        "value": "90px"
     },
     "canUpdateUI": true,
     "centery": {
@@ -42,11 +42,11 @@
     "containerweight": 100,
     "context": {
         "channel": "mobile",
-        "platform": "iphone",
+        "formID": "TmpCustomerList",
         "templateType": "segments",
         "topLevelBox": null
     },
-    "id": "Image0cb0848f240b145",
+    "id": "imgPhone",
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",

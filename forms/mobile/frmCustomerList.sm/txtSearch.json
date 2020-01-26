@@ -60,7 +60,7 @@
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "securetextentry": false,
-    "textinputmode": "N",
+    "textinputmode": "A",
     "tooltip": "",
     "viewtype": "default",
     "wType": "TextField",
