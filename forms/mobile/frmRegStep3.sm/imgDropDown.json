@@ -37,13 +37,12 @@
     "containerweight": 100,
     "context": {
         "channel": "mobile",
-        "formID": "frmPayment",
+        "formID": "frmRegStep3",
         "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },
     "id": "imgDropDown",
-    "ide_onTouchStart": "AS_Image_f756ca6380004642919bd24a91194f3f",
     "imagescalemode": 1,
     "info": null,
     "iscustomlayout": false,

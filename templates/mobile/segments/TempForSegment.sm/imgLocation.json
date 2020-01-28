@@ -4,12 +4,12 @@
     "__parentReadjusting__": false,
     "_base64_": null,
     "_height_": {
-        "type": "string",
-        "value": "40%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "25%"
+        "value": "25dp"
     },
     "_margin_": [
         0,
@@ -27,11 +27,11 @@
     "_src_": "location.png",
     "_top_": {
         "type": "string",
-        "value": "25%"
+        "value": "25dp"
     },
     "_width_": {
         "type": "string",
-        "value": "8%"
+        "value": "8dp"
     },
     "canUpdateUI": true,
     "containerId": true,
@@ -47,7 +47,7 @@
     "info": null,
     "invokedProperty": "src",
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "i7574c6954d64fd083e7d860ce5514c1",
     "name": "kony.ui.Image2",
     "parent": "flxSeg",

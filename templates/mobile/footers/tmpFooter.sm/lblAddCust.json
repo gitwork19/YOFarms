@@ -44,6 +44,7 @@
     "containerweight": 100,
     "contentalignment": 5,
     "id": "lblAddCust",
+    "ide_onTouchStart": "AS_Label_e8565de6ab6c4b418073088c566cfbde",
     "info": null,
     "ipad": {
         "psp": {

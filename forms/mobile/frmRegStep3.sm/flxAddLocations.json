@@ -46,7 +46,7 @@
     "id": "flxAddLocations",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "hd3298f3925d42bdbd52d6657831662f",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

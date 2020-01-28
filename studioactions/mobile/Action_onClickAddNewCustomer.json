@@ -1,8 +1,8 @@
 {
-    "AS_Label_hb9ce2cfff4342f8a5881326dff074b0": {
-        "id": "AS_Label_hb9ce2cfff4342f8a5881326dff074b0",
+    "AS_Label_e8565de6ab6c4b418073088c566cfbde": {
+        "id": "AS_Label_e8565de6ab6c4b418073088c566cfbde",
         "type": "ACTION_SEQUENCE",
-        "name": "action_footer_AddEditProd",
+        "name": "Action_onClickAddNewCustomer",
         "params": [{
             "datatype": "collection",
             "name": "eventobject"
@@ -21,17 +21,17 @@
         },
         "language": "js",
         "actions": [{
-            "id": "NAVIGATE_TO_FORM___fcec66064cdd44a4b7ba7fea4d0a7ca1",
+            "id": "NAVIGATE_TO_FORM___h3e38d7ffaaf4f02b82d3699d7f21411",
             "type": "NAVIGATE_TO_FORM",
-            "formId": "frmAddEditProduct",
-            "formKUID": "j34e2dc2eb0c4854bcf7ccc99c1072a3",
+            "formId": "frmRegStep1",
+            "formKUID": "af1b86edc5244371b0841c04791535b2",
             "mappings": {},
             "mappingsOrder": [],
             "parentId": "",
             "callbackType": null,
             "enableMappingEditor": true,
             "package": "",
-            "navigationObj": "{\n\"_meta_\" : {\n\t\"eventName\" : \"onTouchStart\",\n\t\"widgetId\" : \"lblProd\"\n}\n}",
+            "navigationObj": "{\n\"_meta_\" : {\n\t\"eventName\" : \"onTouchStart\",\n\t\"widgetId\" : \"lblAddCust\"\n}\n}",
             "isCustomInput": false
         }]
     }

@@ -37,7 +37,7 @@
     "containerweight": 100,
     "context": {
         "channel": "mobile",
-        "formID": "frmPayment",
+        "formID": "frmRegStep3",
         "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
@@ -46,7 +46,7 @@
     "imagescalemode": 1,
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "hd0119603bdf4742a9ff181591d7b521",
     "name": "kony.ui.Image2",
     "parent": "flxInner1",

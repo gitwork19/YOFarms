@@ -43,7 +43,7 @@
     "containerweight": 100,
     "contentalignment": 5,
     "disabledSkins": {
-        "focusSkin": "s09bb1d5139142c2b2fc4e7e3b0b059b"
+        "focusSkin": "sb516a52152c4fa6a6c3ee3bb13358e0"
     },
     "id": "tbxMoonSat",
     "info": null,
@@ -57,7 +57,7 @@
     "paddinginpixel": false,
     "parent": "flxTbxsDown",
     "pf": "frmRegStep3",
-    "placeholderskin": "s3724127fb74484c87eb67fb6438d564",
+    "placeholderskin": "s06c27c93dbd4a34bc9d4a81c68b9388",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "securetextentry": false,

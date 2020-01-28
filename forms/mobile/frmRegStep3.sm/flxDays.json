@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "15%"
+        "value": "12%"
     },
     "_left_": {
         "type": "string",
@@ -47,7 +47,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "h057046593ec4b499188edb27adcb38f",
-    "layouttype": 3,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxscrollMain",
     "pf": "frmRegStep3",

@@ -42,7 +42,7 @@
     "id": "flxDotGrey3",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "j90e824c33b748828f09b80c04665f41",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

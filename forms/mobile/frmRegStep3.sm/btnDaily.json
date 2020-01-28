@@ -23,7 +23,7 @@
         0
     ],
     "_skin_": "s758a6b0dfcc40869b086557dddcc9c6",
-    "_text_": "      DAILY",
+    "_text_": "DAILY",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -34,7 +34,7 @@
     },
     "canUpdateUI": true,
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 5,
     "disabledSkins": {
         "focusSkin": "s070eb920a27468dbe7237f2ac3ad1bd"
     },
@@ -45,6 +45,7 @@
     "isvisible": true,
     "kuid": "gb4bc0035c51496e9ab81bf56b15f1fa",
     "name": "kony.ui.Button",
+    "paddinginpixel": false,
     "parent": "flxForInventryPattern",
     "pf": "frmRegStep3",
     "retaincontentalignment": false,

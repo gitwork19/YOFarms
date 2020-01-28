@@ -2,13 +2,17 @@
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
     "__parentReadjusting__": false,
+    "_blur_": {
+        "enabled": false,
+        "value": 0
+    },
     "_height_": {
         "type": "string",
-        "value": "2dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "10dp"
+        "value": "2dp"
     },
     "_margin_": [
         1,
@@ -22,15 +26,15 @@
         0,
         0
     ],
-    "_skin_": "s75eb95d72ab4a19a3498ddc26da406f",
-    "_text_": "",
+    "_skin_": "s839edbfa0714c62a0314f8d7923e117",
+    "_text_": "From Date * ",
     "_top_": {
         "type": "string",
-        "value": "4%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "96.83%"
+        "value": "42%"
     },
     "_wrapping_": 2,
     "android": {
@@ -42,7 +46,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lineHorizontal5",
+    "id": "lblFromDate",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +60,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "h00ea51c0fb54a3eae387059d01dd654",
+    "kuid": "e16be55a87c34200977a447812b11692",
     "name": "kony.ui.Label",
-    "parent": "flxForHouse",
-    "pf": "frmRegStep2",
+    "parent": "flxActivationDate",
+    "pf": "frmRegStep1",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},

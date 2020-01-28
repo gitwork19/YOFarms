@@ -23,7 +23,7 @@
         0,
         0
     ],
-    "_skin_": "sd4dafbd3d3f4adab2c6d4b956c9a3e6",
+    "_skin_": "s210536621f64987a31021f3fcfeef0c",
     "_src_": "imagedrag.png",
     "_top_": {
         "type": "string",
@@ -37,7 +37,7 @@
     "containerweight": 100,
     "context": {
         "channel": "mobile",
-        "formID": "frmPayment",
+        "formID": "frmRegStep3",
         "platform": "android",
         "templateType": "forms",
         "topLevelBox": null

@@ -7,17 +7,21 @@ function frmReg_Init(){
 //   frmRegStep1.tbxLastName.text = "" ;
 //   frmRegStep1.tbxMobileNumber.text = "";
 //   frmRegStep1.tbxEmail.text = "";
+  frmRegStep1.footers[0].btnContinue.text= "CONTINUE";
+    frmRegStep1.footers[0].ArrowRight.isVisible= true;
   frmRegStep1.footers[0].btnContinue.onClick = showLocalityForm;
- // frmRegStep1.headers[0].ImgBackArrow.onTouchStart=onClickBackImgfrmReg;
+  frmRegStep1.calFrom.setData(dictionary)
+ frmRegStep1.headers[0].ImgBackArrow.onTouchStart=function(){
+   frmDashboard.show();
+ };
 }
 
 function onClickBackImgfrmReg()
-  {
-    frmRegStep3.lblErrMsgPayment.text = "";
-    frmPayment_Init();
-    frmRegStep3.show();
-  }
-
+{
+  frmRegStep3.lblErrMsgPayment.text = "";
+  frmPayment_Init();
+  frmRegStep3.show();
+}
 function showLocalityForm(){
   var firstName = frmRegStep1.tbxFirstName.text;
   // alert(firstName);
@@ -42,6 +46,7 @@ function showLocalityForm(){
     frmRegStep2.tbxStreet.placeholder= "Choose Your Street";
     frmRegStep2.tbxStreet.setEnabled(false);
     frmLocality_Init();
+    
     frmRegStep2.show();
   }else{
     frmRegStep1.lblErrMsg.text = "Please fill all the details";
@@ -60,6 +65,8 @@ function frmLocality_Init(){
 
   frmRegStep2.btnFlat.onClick = showFlatDetails;
   frmRegStep2.btnHouse.onClick = showHouseDetails;
+   frmRegStep1.footers[0].btnContinue.text= "CONTINUE";
+    frmRegStep1.footers[0].ArrowRight.isVisible= true;
   frmRegStep2.footers[0].btnContinue.onClick  = showPaymentForm;
   frmRegStep2.headers[0].ImgBackArrow.onTouchStart = onClickOfBackArrow;
   frmRegStep2.imgDropDown.onTouchStart = showLocations;
@@ -100,13 +107,10 @@ function showPaymentForm(){
   var flatNo = frmRegStep2.tbxApartment.text;
   var landmark = frmRegStep2.tbxLandmark.text;
   if(((locality !== null && locality !== "" && locality !== undefined)&&
-      (street !== null && street !== "" && street !== undefined) &&
-      (houseNo !== null && houseNo !== "" && houseNo !== undefined) &&
-      (landmark !== null && landmark !== "" && landmark !== undefined))||
-     ((locality !== null && locality !== "" && locality !== undefined)&&
-      (street !== null && street !== "" && street !== undefined) &&
-      (flatNo !== null && flatNo !== "" && flatNo !== undefined) &&
-      (landmark !== null && landmark !== "" && landmark !== undefined)))
+      (street !== null && street !== "" && street !== undefined) &&      
+      (landmark !== null && landmark !== "" && landmark !== undefined)) &&
+      ((houseNo !== null && houseNo !== "" && houseNo !== undefined && frmRegStep2.btnHouse.skin == "bgGreen") || 
+	  (flatNo !== null && flatNo !== "" && flatNo !== undefined && frmRegStep2.btnFlat.skin == "bgGreen")))
   {
     frmRegStep3.tbxSelectProduct.placeholder= "Choose Your Product";
     frmRegStep3.tbxSelectProduct.setEnabled(false);
@@ -125,25 +129,6 @@ function showPaymentForm(){
 
 function frmPayment_Init(){
   
-//   frmRegStep3.tbxSelectProduct.text="";
-//   frmRegStep3.tbxSelectUnit.text="";
-//   frmRegStep3.lblErrMsgPayment.text = "";
-//   frmRegStep3.tbxQuantity.text="";
-//   frmRegStep3.tbxDeliveryCharges.text="";
-//   frmRegStep3.tbxS.text="";
-//   frmRegStep3.tbxMoonS.text="";
-//   frmRegStep3.tbxM.text="";
-//   frmRegStep3.tbxMoonM.text="";
-//   frmRegStep3.tbxT.text="";
-//   frmRegStep3.tbxMoonT.text="";
-//   frmRegStep3.tbxW.text="";
-//   frmRegStep3.tbxMoonW.text="";
-//   frmRegStep3.tbxTh.text="";
-//   frmRegStep3.tbxMoonTh.text="";
-//   frmRegStep3.tbxF.text="";
-//   frmRegStep3.tbxMoonF.text="";
-//   frmRegStep3.tbxSat.text="";
-//   frmRegStep3.tbxMoonSat.text="";
   
   frmRegStep3.headers[0].ImgBackArrow.onTouchStart = onClickBackfrmPayment;
   frmRegStep3.btnDaily.onClick = onClickOfBtnDialy;
@@ -154,7 +139,10 @@ function frmPayment_Init(){
   frmRegStep3.btnAddLocations.onClick= hideSegmentProducts;
   frmRegStep3.imgDropDown2.onTouchStart = chooseUnit;
   frmRegStep3.btnAddUnits.onClick= hideSegmentUnits;
-  frmRegStep3.footers[0].flxBtn.onTouchStart=frmPaymentOnClickContinue;
+  //frmRegStep3.footers[0].flxBtn.onTouchStart=frmPaymentOnClickContinue;
+   frmRegStep1.footers[0].btnContinue.text= "SUBMIT";
+    frmRegStep1.footers[0].ArrowRight.isVisible= false;
+  frmRegStep3.footers[0].btnContinue.onClick  = frmPaymentOnClickContinue;
   frmRegStep3.flxRoundS.onTouchStart = onTouchStartTbxS;
   frmRegStep3.flxRoundM.onTouchStart = onTouchStartTbxM;
   frmRegStep3.flxRoundT.onTouchStart = onTouchStartTbxT;
@@ -167,6 +155,8 @@ function frmPayment_Init(){
 function onClickBackfrmPayment()
 {
    //frmLocality_Init();
+   frmRegStep2.footers[0].btnContinue.text= "CONTINUE";
+    frmRegStep2.footers[0].ArrowRight.isVisible= true;
    frmRegStep2.show();
 }
 
@@ -529,8 +519,10 @@ function onClickOfBtnMyChoice(){
   frmRegStep3.flxTbxsDown.setVisibility(true);
   frmRegStep3.tbxSunDaily.setVisibility(false);
   frmRegStep3.tbxMoonDaily.setVisibility(false);
-  
- 
+  frmRegStep3.flxDays.setVisibility(true);
+  frmRegStep3.lblQuantity.isVisible = false;
+  frmRegStep3.tbxQuantity.isVisible = false;
+frmRegStep3.lineHorizontal4.isVisible = false;
   
 }
 
@@ -543,6 +535,10 @@ function onClickOfBtnDialy(){
   frmRegStep3.flxTbxsDown.setVisibility(false);
   frmRegStep3.tbxSunDaily.setVisibility(true);
   frmRegStep3.tbxMoonDaily.setVisibility(true);
+  frmRegStep3.flxDays.setVisibility(false);
+  frmRegStep3.lblQuantity.isVisible = true;
+  frmRegStep3.tbxQuantity.isVisible = true;
+  frmRegStep3.lineHorizontal4.isVisible = true;
 }
 
 function onClickOfPrepaid(){
@@ -624,11 +620,19 @@ function chooseProduct()
 {
   frmRegStep3.lineHorizontal.setVisibility(false);
   frmRegStep3.flxSegmentLocality.setVisibility(true); 
+ var productData = [];
+  for(var i=0;i<gblProdList.length;i++){
+    productData.push({
+                "lblSegmentData": gblProdList[i].name,
+                "productid":gblProdList[i].productid,
+      			"unit": gblProdList[i].unit,
+      			"price":gblProdList[i].price
+              })
+  }  
+  kony.print("productData>>"+JSON.stringify(productData))
+   frmRegStep3.segCity.setData(productData)
   frmRegStep3.segCity.onRowClick = selectProduct;
 }
-
-
-    
 function selectProduct()
 {
   var array =frmRegStep3.segCity.selectedRowItems; 
@@ -653,6 +657,20 @@ function chooseUnit()
 { 
   frmRegStep3.lblUnderLine2.setVisibility(false);
   frmRegStep3.flxSegmentUnit.setVisibility(true); 
+  kony.print("frmRegStep3.segCity.selectedRowItems>>"+JSON.stringify(frmRegStep3.segCity.selectedRowItems));
+  var prodName = frmRegStep3.segCity.selectedRowItems[0].lblSegmentData;
+  kony.print("prodName>>"+prodName);
+  var units = getProductUnitFrmProdName(prodName);
+  kony.print("unit for product"+JSON.stringify(units));
+  var unitData = [];
+  for(var i=0;i<units.length;i++){
+    unitData.push({
+                "lblSegmentData": units[i].unit,
+                "productid":units[i].prodID      			
+              })
+  }  
+  kony.print("unitData>>"+JSON.stringify(unitData))
+  frmRegStep3.segUnit.setData(unitData)
   frmRegStep3.segUnit.onRowClick = selectUnit;
 }
 
@@ -680,14 +698,15 @@ function frmPaymentOnClickContinue()
   var unit=frmRegStep3.tbxSelectUnit.text;
   var quantity=frmRegStep3.tbxQuantity.text;
   var deliveryCharges=frmRegStep3.tbxDeliveryCharges.text;
-  
   if(((product !== null && product !== "" && product !== undefined)&&
-      (unit !== null && unit !== "" && unit !== undefined) &&
-      (quantity !== null && quantity !== "" && quantity !== undefined) &&
-      (deliveryCharges !== null && deliveryCharges !== "" && deliveryCharges !== undefined)))
+      (unit !== null && unit !== "" && unit !== undefined) &&      
+      (deliveryCharges !== null && deliveryCharges !== "" && deliveryCharges !== undefined)) &&
+	  ((quantity !== null && quantity !== "" && quantity !== undefined && frmRegStep3.btnDaily.skin == "bgGreen") || (frmRegStep3.btnMyChoice.skin == "bgGreen")) 
+      )
       {
         kony.print("in validations success");
          frmRegStep3.lblErrMsgPayment.text = "";
+        invokeNewCustReg();
        // frmReg_Init();
         //frmRegStep1.show();
                  //alert("Validations satisfied");
@@ -700,21 +719,105 @@ function frmPaymentOnClickContinue()
 }
 
 
-function invokeNewCustReg(){
-   /*var addSubsProd = {
-    "username": "", //TO DO
+function invokeNewCustReg(){  
+  showLoadingIndicator();
+  var PrefTime = (frmRegStep1.RadiobtnsForTime.selectedKey!==null &&  frmRegStep1.RadiobtnsForTime.selectedKey == "Morning") ? "MORNING" : "EVENING";
+  var frequency =  frmRegStep3.btnDaily.skin == "bgGreen" ? "0" : "1";
+   var Qty =  frmRegStep3.btnDaily.skin == "bgGreen" ? frmRegStep3.tbxQuantity.text : "";
+	var Mon = frmRegStep3.btnMyChoice.skin == "bgGreen" ? frmRegStep3.tbxM.text : "";
+  	var Tue = frmRegStep3.btnMyChoice.skin == "bgGreen" ? frmRegStep3.tbxT.text : "";
+	var Wed = frmRegStep3.btnMyChoice.skin == "bgGreen" ? frmRegStep3.tbxW.text : "";
+	var Thu = frmRegStep3.btnMyChoice.skin == "bgGreen" ? frmRegStep3.tbxTh.text : "";
+	var Fri = frmRegStep3.btnMyChoice.skin == "bgGreen" ? frmRegStep3.tbxF.text : "";
+	var Sat = frmRegStep3.btnMyChoice.skin == "bgGreen" ? frmRegStep3.tbxSat.text : "";
+	var Sun = frmRegStep3.btnMyChoice.skin == "bgGreen" ? frmRegStep3.tbxS.text : "";  
+  var addSubsProd = 
+  
+//   { 
+//    "username" : "9177333352",
+// "mobileno" : "9177333352",
+// "emailid" : "aaa@aaa.com",
+// "lastname": "andavarapu",
+// "firstname" : "chaitanya",
+// "addline1" : "sdfsdf",
+// "addline2" : "sdfsdf",
+// "landmark" : "kphb",
+// "city" : "Hyderabad",
+// "state" : "Telangana",
+// "pincode" : "500090",
+// "role" : "USER",
+// "productid" : "1",
+// "quantity" : "2",
+// "startdate" : "24-01-20",
+// "prefferedtime" : "MORNING",
+// "frequency" : "1",
+//  "mon" : "1",
+// "tue" : "2",
+// "wen" : "1",
+// "thr" : "1",
+// "fri" : "1",
+// "sat" : "1",
+// "sun" : "1",
+// "addProduct":"true"
+// };
+    {"username": frmRegStep1.tbxMobileNumber.text, //TO DO
     "mobileno": frmRegStep1.tbxMobileNumber.text,
      "emailid": frmRegStep1.tbxEmail.text,
      "lastname":frmRegStep1.tbxLastName.text,
      "firstname": frmRegStep1.tbxFirstName.text,
-     "prefferedtime":frmRegStep1.RadiobtnsForTime.selectedKeyValue, //TO DO
-     "addline1":,
-     "addline2":
-    };*/
-    var suspendDetJ = JSON.stringify(suspendDet);
-    showLoadingIndicator();
-   // frmDashboard.show();
-    //dismissLoadingIndicator();
-    invokeServiceCall("adduserwithsubscription", addSubsProd, constants.HTTP_METHOD_POST, suspendCustomerCallBack, "application/x-www-form-urlencoded");
- 
+     "addline1":frmRegStep2.tbxStreet.text + " " + frmRegStep2.tbxHouseNo.text,
+     "addline2":frmRegStep2.tbxLandmark.text + " " + frmRegStep2.tbxLocation.text,
+     "landmark": frmRegStep2.tbxLandmark.text,
+     "city": "Hyderabad",
+     "state": "Telangana",
+     "pincode": "500090",
+     "role": "USER",
+     "productid": frmRegStep3.segUnit.selectedRowItems[0].productid,
+     "quantity": Qty,
+    "startdate": DateFormatddmmyy(frmRegStep1.calFrom.formattedDate),
+     "prefferedtime": PrefTime,
+     "frequency": frequency,
+     "mon": Mon,
+     "tue": Tue,
+     "wen": Wed,
+     "thr": Thu,
+     "fri": Fri,
+     "sat": Sat,
+     "sun": Sun
+    };
+  kony.print("addSubsProd inputparama>>"+JSON.stringify(addSubsProd));
+  var addSubsProdJ = JSON.stringify(addSubsProd);
+   invokeServiceCall("adduserwithsubscription", addSubsProdJ, constants.HTTP_METHOD_POST, NewCustomerRegCallBack, "application/x-www-form-urlencoded"); 
+}
+function NewCustomerRegCallBack(){
+  try{
+    kony.print("Cust reg back1111"  + JSON.stringify(httpclient.response));
+
+    if(httpclient.readyState == 4)
+    {
+      kony.print("Cust reg back"  + JSON.stringify(httpclient.response));
+      var resObj = httpclient.response;
+      if(resObj.status == "000" && resObj.statusMsg == "success"){
+        var responseContent = resObj.response;
+        kony.print("Cust reg back response"  + responseContent);
+        popErrorScreenShow("Customer registered succesfully!!");
+       // frmDashboard.show();
+      }
+       if(resObj.status == "002"){
+        popErrorScreenShow("Customer already registered, please enter valid details!!");
+       // frmDashboard.show();
+      }
+    }
+  }
+  catch(e){
+     kony.print("create new registration exception is :: " + e);
+  }
+  dismissLoadingIndicator();  
+} 
+function DateFormatddmmyy(Date){
+  var finalDate = "";
+  var dateVal = Date.split("/");
+  finalDate = dateVal[0]+"-"+dateVal[1]+"-"+dateVal[2].substring(2,4);
+  kony.print("finalDate>>"+finalDate);
+  return finalDate;
 }

@@ -46,7 +46,7 @@
     "id": "flxInner3",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "a209cbd867274340a4f9e3d4f6dbe7e5",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
