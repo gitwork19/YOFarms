@@ -37,7 +37,7 @@
     "canUpdateUI": true,
     "children": [
         "lblQty",
-        "txtQty"
+        "flxtxtCont"
     ],
     "clipbounds": true,
     "containerweight": 100,

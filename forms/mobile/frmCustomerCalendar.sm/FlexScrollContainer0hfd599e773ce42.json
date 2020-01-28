@@ -38,6 +38,8 @@
     "bounces": true,
     "canUpdateUI": true,
     "children": [
+        "lblUserName",
+        "flxLine1",
         "flxHeader",
         "flxweeks",
         "flxDates",

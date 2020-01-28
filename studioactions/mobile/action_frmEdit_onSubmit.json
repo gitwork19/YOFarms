@@ -1,0 +1,29 @@
+{
+    "AS_Button_cf58234824a84df395958354b5b05972": {
+        "id": "AS_Button_cf58234824a84df395958354b5b05972",
+        "type": "ACTION_SEQUENCE",
+        "name": "action_frmEdit_onSubmit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEdit",
+            "type": "forms",
+            "platform": "",
+            "KUID": "i553d084f3ff409a82fc94770912dd37"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___ib4c61699fcf4751a2014c8e7631a7f7",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "invokeEditTempCustProdDel",
+            "display": "invokeEditTempCustProdDel",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

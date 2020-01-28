@@ -240,6 +240,11 @@ function frmEditPreShow(){
          }
   frmEdit.listBoxProdType.masterData = prodList;
   frmEdit.ListBoxDairy.masterData =[["lbl1","Jeevana"]];
+   frmEdit.lblUserName.text =  frmCustomerCalendar.lblUserName.text
+  frmEdit.listBoxProdType.onSelection = function (){
+   var prodUnitMp = pushProdUnit(frmEdit.listBoxProdType.selectedKeyValue[1]);
+    frmEdit.listBoxUnit.masterData = prodUnitMp;
+  };
   
 }
 
@@ -247,13 +252,11 @@ function frmEditPreShow(){
 function invokeEditTempCustProdDel(){
   var inpPar = {
     "subsrid": gblSubIdMngSub,
-    "productid": today,//"04-12-21"
-    "requesttype":"",
+    "subprdid":  getIdFrmProductName(frmEdit.listBoxProdType.selectedKeyValue[1]),
     "requestby":"ADMIN",
-    "quantity":"",
-    "frmdate":"",
-    "todate":"",
-    "subprdid":"",
+    "quantity":frmEdit.txtQty.text,
+    "frmdate":DateFormatddmmyy(frmEdit.calFrom.formattedDate),
+    "todate":DateFormatddmmyy(frmEdit.calTo.formattedDate),
     "requeststatus":"APPROVED"
     };
     var inpParJ = JSON.stringify(inpPar);
@@ -266,5 +269,6 @@ function onclckCalCustList(){
   gblSelCustRs = frmCustomerList.segCustList.selectedRowItems[0]["lblHiddenRs"];
   alert(gblSelCustRs)
   gblUserIdMngSub = frmCustomerList.segCustList.selectedRowItems[0]["lblHiddenUserID"];
+  frmCustomerCalendar.lblUserName.text = gblSelCustRs["firstname"] + gblSelCustRs["lastname"];
   currentMonthData();
 }

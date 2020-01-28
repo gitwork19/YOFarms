@@ -4,11 +4,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "90%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "2dp"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -27,11 +27,11 @@
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "1dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "56%"
+        "value": "100%"
     },
     "autocapitalize": "none",
     "autocomplete": false,
@@ -51,7 +51,7 @@
     "kuid": "h5f5be13da984211bac3b189e625f317",
     "mode": "A",
     "name": "kony.ui.TextBox2",
-    "parent": "flxQuantity",
+    "parent": "flxtxtCont",
     "pf": "frmEdit",
     "placeholderskin": "s06c27c93dbd4a34bc9d4a81c68b9388",
     "retaincontentalignment": false,

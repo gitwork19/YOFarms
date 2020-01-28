@@ -186,3 +186,40 @@ function addPrctSubByAdminSuc(){
   frmDashboard.show();
   PopupErrorScreen.dismiss();
 }
+
+
+
+function editProdSubByAdmin(){
+  var freq = "";
+ if(frmManageSubscriptions.imgDaily.src == "radio01.png"){
+    freq = "daily";
+  }else if(frmManageSubscriptions.imgMyChoice.src == "radio01.png"){
+    freq = "1";
+  }
+  var caldate = DateFormatddmmyy(frmManageSubscriptions.calFrom.formattedDate) ;
+   var addSubsProd = {
+    "subsrid": gblSubIdMngSub+"",
+    "productid": getIdFrmProductName(frmManageSubscriptions.listbProdTypeAdd.selectedKeyValue[1]),
+     "quantity":frmManageSubscriptions.txtDaily.text,
+     "startdate":caldate,
+     "prefferedtime":frmManageSubscriptions.radTime.selectedKey != null && frmManageSubscriptions.radTime.selectedKey == "mor" ? "MORNING" : "EVENING", 
+     //"userid":gblUserIdMngSub,
+     "frequency":freq
+    };
+  if(freq == "1"){
+   var addSubsProd2 = {
+      "sun": frmManageSubscriptions.txtSunValInv.text,
+     "mon": frmManageSubscriptions.txtMonValInv.text,
+     "tue": frmManageSubscriptions.txtTueValInv.text,
+     "wen": frmManageSubscriptions.txtWedValInv.text,
+     "thr": frmManageSubscriptions.txtThuValInv.text,
+     "fri": frmManageSubscriptions.txtFriValInv.text,
+     "sat": frmManageSubscriptions.txtSatValInv.text
+    } 
+   addSubsProd = Object.assign(addSubsProd, addSubsProd2);
+  }
+    var addSubsProdJ = JSON.stringify(addSubsProd);
+    showLoadingIndicator();
+    invokeServiceCall("addprdcttosubscrbyadmin", addSubsProdJ, constants.HTTP_METHOD_POST, addprdcttosubscrbyadminCB, "application/x-www-form-urlencoded");
+ 
+}

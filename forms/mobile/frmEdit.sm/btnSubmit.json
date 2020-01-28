@@ -35,17 +35,18 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "50%"
+        "value": "49.94%"
     },
     "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "50.00%"
     },
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "s23ed7106b4d49f4a2586f1fbee61518",
+    "focusskin": "s81cbfc4784f47e1a7cdb330a9234843",
     "id": "btnSubmit",
+    "ide_onClick": "AS_Button_cf58234824a84df395958354b5b05972",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
