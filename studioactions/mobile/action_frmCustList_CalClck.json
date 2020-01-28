@@ -19,8 +19,8 @@
         "actions": [{
             "id": "INVOKE_FUNCTION___bf7578b6539a4b3d9badb1bc7de0e389",
             "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "createCal",
-            "display": "createCal",
+            "sequenceKUID": "onclckCalCustList",
+            "display": "onclckCalCustList",
             "inputparams": [],
             "parentId": null,
             "callbackType": null,

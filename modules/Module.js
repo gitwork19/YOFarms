@@ -31,7 +31,7 @@ function setChartValue()
   frmDashboard.donutchart2.legendFontColor = "#000000";
   frmDashboard.donutchart2.legendFontSize = "8";*/
   frmDashboard.hamburgerMenu.menuItems = [{
-      "lblMenuItem":"hello",
+      "lblMenuItem":"Delivery Boy",
       "imgMenuItem":""
     },{
       "lblMenuItem":"hello",
@@ -97,6 +97,7 @@ function onClickMenu()
   	frmDashboard.hamburgerMenu.setMenuVisibility(true);
   else
     frmDashboard.hamburgerMenu.setMenuVisibility(false);
+
 }
 
 function onBack(){

@@ -1,3 +1,4 @@
+var menuItemObject;
 define(function() {
     //logger module
     var konyLoggerModule = require('com/konymp/hamburgerMenu/konyLogger');
@@ -26,13 +27,18 @@ define(function() {
         */
         onSegMenuRowClick: function(rowNumber) {
             konymp.logger.trace("Entering hamburgerMenu Component onSegMenuRowClick  ", konymp.logger.FUNCTION_ENTRY);
-            if (this.onMenuItemClick) {
-                var menuItemObject = {
+        
+           /* if (this.onMenuItemClick) {
+                 menuItemObject = {
                     "menuItemIndex": this.view.segMenu.selectedRowIndex[1].toFixed(0),
                     "menuItemText": this.view.segMenu.selectedRowItems[0].lblMenuItem
                 };
-                this.onMenuItemClick(menuItemObject);
-            }
+                this.onMenuItemClick(menuItemObject);*/
+               kony.print("on click hamburger menu" +this.view.segMenu.selectedRowItems[0].lblMenuItem)
+              if(this.view.segMenu.selectedRowItems[0].lblMenuItem == "Delivery Boy"){
+               showDeliveryBoyListFrm();
+              }
+           // }
             konymp.logger.trace("Exiting hamburgerMenu Component onSegMenuRowClick  ", konymp.logger.FUNCTION_EXIT);
         },
 

@@ -115,8 +115,8 @@ function currentMonthData(){
     month = d.getMonth();
     year = d.getFullYear();  
     createCal()
-
 }
+
 function getFullDates(){
 	var d = new Date();
     month = d.getMonth();
@@ -129,7 +129,7 @@ function getFullDates(){
  kony.print("getData data::"+JSON.stringify(getData));	
 }
 function retrivemonthData(month, year){
-	
+	kony.print("month>>"+month+year>>+year);
 	try{
 			var d = new Date();
             d.setDate(1);
@@ -218,6 +218,29 @@ function frmEditPreShow(){
   frmEdit.headers[0].lblHeader.text = "Edit";
   frmEdit.calFrom.clear();
   frmEdit.calTo.clear();
+  
+  kony.print(gblSelCustRs + "gblSelCustRs")
+  
+  var currProdList = [];
+    var prodList = [];
+  var prodDetails = gblSelCustRs["productdetials"];
+  kony.print(prodDetails + "prodDetails" + prodDetails.length);
+  for(var j=0;j< prodDetails.length;j++){
+			
+          		for(var k=0;k<gblProdList.length;k++){
+                  if(gblProdList[k]["productid"] == parseInt(prodDetails[j]["productid"])){
+                    productName = gblProdList[k]["name"];
+                  }
+                }
+          
+    
+          var keyname = "prodType"+j
+          var keyList = [keyname,productName]
+          prodList.push(keyList)
+         }
+  frmEdit.listBoxProdType.masterData = prodList;
+  frmEdit.ListBoxDairy.masterData =[["lbl1","Jeevana"]];
+  
 }
 
 
@@ -237,4 +260,11 @@ function invokeEditTempCustProdDel(){
     showLoadingIndicator();
     invokeServiceCall("updateprdsubscrbyadmin", inpParJ, constants.HTTP_METHOD_POST, suspendCustomerCallBack, "application/x-www-form-urlencoded");
  
+}
+
+function onclckCalCustList(){
+  gblSelCustRs = frmCustomerList.segCustList.selectedRowItems[0]["lblHiddenRs"];
+  alert(gblSelCustRs)
+  gblUserIdMngSub = frmCustomerList.segCustList.selectedRowItems[0]["lblHiddenUserID"];
+  currentMonthData();
 }

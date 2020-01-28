@@ -67,11 +67,7 @@
     "pf": "frmManageSubscriptions",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "selectedkey": "mor",
-    "selectedkeyvalue": [
-        "mor",
-        "Morning"
-    ],
+    "selectedkeyvalue": null,
     "size": 18,
     "tickedimage": "radio01.png",
     "untickedimage": "radio.png",

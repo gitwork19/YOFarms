@@ -1,7 +1,8 @@
 //Type your code here
-gblCustList = [];
-gblSubIdMngSub = "";
-gblUserIdMngSub = "";
+gblCustList = []; //used for search in customer list
+gblSubIdMngSub = ""; //used for invoking service in manage sub
+gblUserIdMngSub = ""; //used for invoking service in manage sub
+var gblSelCustRs; //used to store selected customer list response - calendar flow
 
 function getCustListFromService(){
     showLoadingIndicator();
@@ -47,7 +48,6 @@ function CustListFromServiceCallBack(){
     
      } 
       gblCustList  = userData;
-       alert(userData.length)
       frmCustomerList.segCustList.setData(userData);
       frmCustomerList.headers[0].lblHeader.text = "Customer List";       
       frmCustomerList.show();

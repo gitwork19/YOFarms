@@ -2,6 +2,10 @@
     "@class": "com.kony.gen.viz.model.component.KVizRadio",
     "DNDConfig": null,
     "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "10dp"
+    },
     "_height_": {
         "type": "ref",
         "value": "preferred"
@@ -71,6 +75,7 @@
         ]
     ],
     "name": "kony.ui.RadioButtonGroup",
+    "paddinginpixel": false,
     "parent": "flxInventory",
     "pf": "frmDashboard",
     "retaincontentalignment": false,

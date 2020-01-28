@@ -123,27 +123,32 @@ function invokeaddprdcttosubscrbyadmin(){
   
  var freq = "";
  if(frmManageSubscriptions.imgDaily.src == "radio01.png"){
-    freq = "0";
+    freq = "daily";
   }else if(frmManageSubscriptions.imgMyChoice.src == "radio01.png"){
     freq = "1";
   }
-  
+  var caldate = DateFormatddmmyy(frmManageSubscriptions.calFrom.formattedDate) ;
    var addSubsProd = {
-    "subsrid": gblSubIdMngSub,
+    "subsrid": gblSubIdMngSub+"",
     "productid": getIdFrmProductName(frmManageSubscriptions.listbProdTypeAdd.selectedKeyValue[1]),
      "quantity":frmManageSubscriptions.txtDaily.text,
-     "startdate":frmManageSubscriptions.calFrom.day + frmManageSubscriptions.calFrom.month +frmManageSubscriptions.calFrom.year ,
+     "startdate":caldate,
      "prefferedtime":frmManageSubscriptions.radTime.selectedKey != null && frmManageSubscriptions.radTime.selectedKey == "mor" ? "MORNING" : "EVENING", 
-     "userid":gblUserIdMngSub,
-     "frequency":freq,
-     "sun": frmManageSubscriptions.txtSunValInv.text,
+     //"userid":gblUserIdMngSub,
+     "frequency":freq
+    };
+  if(freq == "1"){
+   var addSubsProd2 = {
+      "sun": frmManageSubscriptions.txtSunValInv.text,
      "mon": frmManageSubscriptions.txtMonValInv.text,
      "tue": frmManageSubscriptions.txtTueValInv.text,
      "wen": frmManageSubscriptions.txtWedValInv.text,
      "thr": frmManageSubscriptions.txtThuValInv.text,
      "fri": frmManageSubscriptions.txtFriValInv.text,
-     "sat": frmManageSubscriptions.txtSatValInv.text,
-    };
+     "sat": frmManageSubscriptions.txtSatValInv.text
+    } 
+   addSubsProd = Object.assign(addSubsProd, addSubsProd2);
+  }
     var addSubsProdJ = JSON.stringify(addSubsProd);
     showLoadingIndicator();
     invokeServiceCall("addprdcttosubscrbyadmin", addSubsProdJ, constants.HTTP_METHOD_POST, addprdcttosubscrbyadminCB, "application/x-www-form-urlencoded");
@@ -161,7 +166,7 @@ function addprdcttosubscrbyadminCB(){
      
    if(httpRes["status"] == "000" && httpRes["statusMsg"] == "success"){
      
-      popSucessScreenShow("Success","New product subscription is added successfully",addPrctSubByAdminSuc)
+      popSucessScreenShow("Success","New product subscription is added successfully!!",addPrctSubByAdminSuc)
      
     }else{
      popErrorScreenShow(kony.i18n.getLocalizedString("i18n.Err"));

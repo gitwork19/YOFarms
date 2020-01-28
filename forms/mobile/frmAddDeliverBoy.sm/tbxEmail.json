@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "102%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "-1%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        2,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "* Email Id",
+    "_skin_": "se44c7b284954e5b9f56114dd1dd6e94",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "-5%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "102%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "sb516a52152c4fa6a6c3ee3bb13358e0",
+    "id": "tbxEmail",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "a37adf812a2a410f91b91af743835e6f",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "paddinginpixel": false,
+    "parent": "flxEMal",
+    "pf": "frmAddDeliverBoy",
+    "placeholderskin": "s06c27c93dbd4a34bc9d4a81c68b9388",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

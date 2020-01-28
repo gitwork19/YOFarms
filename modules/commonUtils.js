@@ -1,7 +1,7 @@
 //Type your code here
 
 function invokeServiceCall(ServiceId,Postparams,requestType,CallBackEvent,contentType){
-  var endpointURL = "https://5db3712f.ngrok.io/UserManagement/rest/UserService/" + ServiceId; 
+  var endpointURL = "https://22250ca5.ngrok.io/UserManagement/rest/UserService/" + ServiceId; 
   kony.print("ServiceId" + requestType + endpointURL + Postparams  + contentType)
   httpclient = new kony.net.HttpRequest();
   httpclient.onReadyStateChange = CallBackEvent; 
@@ -108,6 +108,7 @@ function hdrBackClick(){
       break;
     case "frmManageSubscriptions":
       frmMyprofile.show();
+      frmManageSubscriptions.destroy();
       break;
     case "frmCustomerCalendar":
        frmCustomerList.show();
@@ -152,3 +153,10 @@ function getProductUnitFrmId(prodId){
   return productUnit;
 }
 
+function DateFormatddmmyy(Date){
+  var finalDate = "";
+  var dateVal = Date.split("/");
+  finalDate = dateVal[0]+"-"+dateVal[1]+"-"+dateVal[2].substring(2,4);
+  kony.print("finalDate>>"+finalDate);
+  return finalDate;
+}
