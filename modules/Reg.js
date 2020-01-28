@@ -814,10 +814,3 @@ function NewCustomerRegCallBack(){
   }
   dismissLoadingIndicator();  
 } 
-function DateFormatddmmyy(Date){
-  var finalDate = "";
-  var dateVal = Date.split("/");
-  finalDate = dateVal[0]+"-"+dateVal[1]+"-"+dateVal[2].substring(2,4);
-  kony.print("finalDate>>"+finalDate);
-  return finalDate;
-}

@@ -160,3 +160,17 @@ function DateFormatddmmyy(Date){
   kony.print("finalDate>>"+finalDate);
   return finalDate;
 }
+
+
+function getProductUnitFrmProdName(prodName){	
+  var prodUnit = [];	
+  for(var k=0;k<gblProdList.length;k++){	
+    if(gblProdList[k]["name"] == prodName){	
+      prodUnit.push({	
+        "unit": gblProdList[k]["unit"],	
+        "prodID": gblProdList[k]["productid"]	
+      });	
+    }	
+   }	
+  return prodUnit;	
+}
